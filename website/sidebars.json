@@ -1,16 +1,61 @@
 {
   "docs": {
     "Getting Started": [
+      "getting-started/introduction",
       "getting-started/what-is-badaso",
       "getting-started/prerequisite",
       "getting-started/installation",
       "getting-started/configuration"
     ],
-    "CRUD": [
-      "crud/introduction"
+    "CRUD Generator": [
+      "crud/introduction",
+      {
+        "type": "subcategory",
+        "label": "Form Field",
+        "ids" :[
+            "form-fields/text",
+            "form-fields/email",
+            "form-fields/password",
+            "form-fields/textarea",
+            "form-fields/checkbox",
+            "form-fields/search",
+            "form-fields/number",
+            "form-fields/url",
+            "form-fields/time",
+            "form-fields/date",
+            "form-fields/datetime",
+            "form-fields/select",
+            "form-fields/select-multiple",
+            "form-fields/radio",
+            "form-fields/switch",
+            "form-fields/slider",
+            "form-fields/text-editor",
+            "form-fields/tags",
+            "form-fields/color-picker",
+            "form-fields/upload-image",
+            "form-fields/upload-image-multiple",
+            "form-fields/upload-file",
+            "form-fields/upload-file-multiple",
+            "form-fields/hidden",
+            "form-fields/code-editor",
+            "form-fields/relation"
+        ]
+      }
     ],
-    "Core Concept": ["doc3"],
-    "Customization": ["doc4"],
+    "Core Concept": [
+      "core-concept/routing",
+      "core-concept/role-and-permissions",
+      "core-concept/menu-builder",
+      "core-concept/site-management",
+      "core-concept/helpers",
+      "core-concept/multilanguage"
+    ],
+    "Customization": [
+      "customization/introduction",
+      "customization/overriding-controller",
+      "customization/create-view",
+      "customization/additional-css-js"
+    ],
     "Troubleshooting": ["doc5"]
   }
 }
