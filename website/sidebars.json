@@ -1,0 +1,16 @@
+{
+  "docs": {
+    "Getting Started": [
+      "getting-started/what-is-badaso",
+      "getting-started/prerequisite",
+      "getting-started/installation",
+      "getting-started/configuration"
+    ],
+    "CRUD": [
+      "crud/introduction"
+    ],
+    "Core Concept": ["doc3"],
+    "Customization": ["doc4"],
+    "Troubleshooting": ["doc5"]
+  }
+}
