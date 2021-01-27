@@ -8,16 +8,17 @@ sidebar_label: Select Multiple
 
 ```
 {
-  "items": [
-    {
-      "label": "This is label",
-      "value": "this_is_value"
-    }
-  ]
+    "size": "6", // 1-12 default 12
+    "items": [
+        {
+            "label": "This is label",
+            "value": "this_is_value"
+        }
+    ]
 }
 ```
 
-- View
+- View: BadasoSelectMultiple
 
 ```
 size: {

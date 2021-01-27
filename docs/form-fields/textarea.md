@@ -5,7 +5,13 @@ sidebar_label: Textarea
 ---
 
 - Generate CRUD
-- View
+```
+    {
+        "size": "6" // 1-12 default 12
+    }
+```
+
+- View: BadasoTextarea
 
 ```
 size: {

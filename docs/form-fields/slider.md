@@ -5,7 +5,13 @@ sidebar_label: Slider
 ---
 
 - Generate CRUD
-- View
+```
+    {
+        "size": "6" // 1-12 default 12
+    }
+```
+
+- View: BadasoSlider
 
 ```
 size: {

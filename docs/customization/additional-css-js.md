@@ -5,13 +5,17 @@ sidebar_label: Addtional CSS and JS
 ---
 
 CSS
-- your project
-    - resources
-        - js
-            - badaso
-                - assets
-                    - scss
+```
+|-- your project
+    |-- resources
+        |-- js
+            |-- badaso
+                |-- assets
+                    |-- scss
+```
 
 JS
-- your project
-    - package.json
+```
+|-- your project
+    |-- package.json
+```

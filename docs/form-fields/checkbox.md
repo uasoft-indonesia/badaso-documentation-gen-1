@@ -7,6 +7,7 @@ sidebar_label: Checkbox
 - Generate CRUD
 ```
 {
+  "size": "6", // 1-12 default 12
   "items": [
     {
       "label": "This is label",
@@ -16,7 +17,7 @@ sidebar_label: Checkbox
 }
 ```
 
-- View
+- View: BadasoCheckbox
 
 ```
 size: {

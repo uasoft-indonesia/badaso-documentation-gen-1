@@ -5,7 +5,13 @@ sidebar_label: Upload Image Multiple
 ---
 
 - Generate CRUD
-- View
+```
+    {
+        "size": "6" // 1-12 default 12
+    }
+```
+
+- View: BadasoUploadImageMultiple
 
 ```
 size: {

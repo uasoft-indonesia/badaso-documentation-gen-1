@@ -13,4 +13,9 @@ Badaso merupakan produk SPA (*Single Page Application*) Skalabel untuk Laravel d
 - Sebuah dashboard admin untuk aplikasi laravel kamu
 - Tambah, edit atau hapus data aplikasi kamu dengan mudah 
 - Buat menu kamu dengan mudah dengan menggunakan menu builder
-- CRUD atau BREAD Generator
+- change color, title and logo without code
+- CRUD Generator
+- View your log in dashboard
+- record your admin activity
+- config your backup from env to google drive, dropbox and aws
+- easily manage users, roles and permissions

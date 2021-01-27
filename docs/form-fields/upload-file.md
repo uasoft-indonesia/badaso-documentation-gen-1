@@ -5,7 +5,13 @@ sidebar_label: Upload File
 ---
 
 - Generate CRUD
-- View
+```
+    {
+        "size": "6" // 1-12 default 12
+    }
+```
+
+- View: BadasoUploadFile
 
 ```
 size: {

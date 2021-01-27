@@ -4,25 +4,27 @@ title: Multilanguage
 sidebar_label: Multilanguage
 ---
 
-Another one
-
 Backend
-- your project
-    - resources
-        - lang
-            - badaso
-                - en
-                    - api_response.php
-                    - validation.php
-                - add your lang
-                    - api_response.php
-                    - validation.php
+```
+|-- your project
+    |-- resources
+        |-- lang
+            |-- badaso
+                |-- en
+                    |-- api_response.php
+                    |-- validation.php
+                |-- add your lang
+                    |-- api_response.php
+                    |-- validation.php
+```
 
 Frontend
-- your project
-    - resources
-        - js
-            - lang
-                - module
-                    - en.js
-                    - add your lang js
+```
+|-- your project
+    |-- resources
+        |-- js
+            |-- lang
+                |-- module
+                    |-- en.js
+                    |-- add your lang js
+```
