@@ -19,6 +19,16 @@ sidebar_label: Select Multiple
 ```
 
 - View: BadasoSelectMultiple
+```
+<badaso-select-multiple
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+    :items="items"
+></badaso-select-multiple>
+```
 
 ```
 size: {

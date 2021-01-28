@@ -6,13 +6,28 @@ sidebar_label: Pengenalan
 
 Ketika menambahkan atau mengubah CRUD yang telah ada, kamu akan melihat beberapa info yang dapat kamu ubah yaitu Display Name (Singular dan Plural), Server Side, URL Slug, Icon, Model Name, Controller Name, Order Column, Order Display Column, Order Direction dan Description. Kamu juga dapat memilih jika kamu ingin membuat **Permission** secara otomatis.
 
+## Create Table Description
 ![crud-add-image](assets/crud-add-part-1.png)
+
+## Set Field property
+* BROWSE (field will show up when you browse the current data)
+* READ (field will show when you click to view the current data)
+* EDIT (field will be visible and allow you to edit the data)
+* ADD (field will be visible when you choose to create a new data type)
+* DELETE (doesn't pertain to delete so this can be checked or unchecked)
+
 ![generate-crud](assets/generate-crud.png)
+
+## Form Result
 ![form-field](assets/form-field.png)
+
+## From Ouput
+
+Setiap form yang di generate, akan menggunakan vue component yang sudah disediakan badaso.
+Pada JSON dibawah, property value adalah output dari tiap form, dan field adalah nama kolom dari table yang di generate.
 
 ```
 {
-  "slug": "data-test",
   "data": [
     {
       "field": "badaso_text",

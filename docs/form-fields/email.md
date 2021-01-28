@@ -12,6 +12,15 @@ sidebar_label: Email
 ```
 
 - View: BadasoEmail
+```
+<badaso-email
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-email>
+```
 
 ```
 size: {

@@ -12,6 +12,15 @@ sidebar_label: Url
 ```
 
 - View: BadasoUrl
+```
+<badaso-url
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-url>
+```
 
 ```
 size: {

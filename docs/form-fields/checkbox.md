@@ -18,6 +18,16 @@ sidebar_label: Checkbox
 ```
 
 - View: BadasoCheckbox
+```
+<badaso-checkbox
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+    :items="items"
+></badaso-checkbox>
+```
 
 ```
 size: {

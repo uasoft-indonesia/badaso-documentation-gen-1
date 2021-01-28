@@ -12,6 +12,15 @@ sidebar_label: Number
 ```
 
 - View: BadasoNumber
+```
+<badaso-number
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-number>
+```
 
 ```
 size: {

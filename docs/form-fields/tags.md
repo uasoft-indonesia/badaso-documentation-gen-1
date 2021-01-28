@@ -12,6 +12,15 @@ sidebar_label: Tags
 ```
 
 - View: BadasoTags
+```
+<badaso-tags
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-tags>
+```
 
 ```
 size: {

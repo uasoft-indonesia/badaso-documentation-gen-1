@@ -12,6 +12,15 @@ sidebar_label: Time
 ```
 
 - View: BadasoTime
+```
+<badaso-time
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-time>
+```
 
 ```
 size: {

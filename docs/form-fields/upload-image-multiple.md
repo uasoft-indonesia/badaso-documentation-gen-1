@@ -12,6 +12,15 @@ sidebar_label: Upload Image Multiple
 ```
 
 - View: BadasoUploadImageMultiple
+```
+<badaso-upload-image-multiple
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-upload-image-multiple>
+```
 
 ```
 size: {

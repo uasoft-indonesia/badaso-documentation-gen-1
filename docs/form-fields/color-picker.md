@@ -12,6 +12,15 @@ sidebar_label: Color Picker
 ```
 
 - View: BadasoColorPicker
+```
+<badaso-color-picker
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-color-picker>
+```
 
 ```
 size: {

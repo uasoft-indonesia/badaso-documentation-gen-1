@@ -12,7 +12,15 @@ sidebar_label: Text Editor
 ```
 
 - View: BadasoEditor
-
+```
+<badaso-editor
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-editor>
+```
 
 ```
 size: {

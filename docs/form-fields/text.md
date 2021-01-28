@@ -12,6 +12,15 @@ sidebar_label: Text
 ```
 
 - View: BadasoText
+```
+<badaso-text
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-text>
+```
 
 ```
 size: {

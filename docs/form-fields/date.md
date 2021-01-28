@@ -12,7 +12,15 @@ sidebar_label: Date
 ```
 
 - View: BadasoDate
-
+```
+<badaso-date
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-date>
+```
 
 ```
 size: {

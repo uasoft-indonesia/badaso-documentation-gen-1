@@ -18,6 +18,16 @@ sidebar_label: Select
 ```
 
 - View: BadasoSelect
+```
+<badaso-select
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+    :items="items"
+></badaso-select>
+```
 
 ```
 size: {

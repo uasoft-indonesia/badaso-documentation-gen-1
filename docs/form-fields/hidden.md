@@ -12,6 +12,14 @@ sidebar_label: Hidden
 ```
 
 - View: BadasoHidden
+```
+<badaso-hidden
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    :alert="error"
+></badaso-hidden>
+```
 
 ```
 {

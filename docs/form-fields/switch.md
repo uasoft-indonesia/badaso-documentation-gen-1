@@ -12,6 +12,15 @@ sidebar_label: Switch
 ```
 
 - View: BadasoSwitch
+```
+<badaso-switch
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-switch>
+```
 
 ```
 size: {

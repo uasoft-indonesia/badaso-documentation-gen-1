@@ -12,6 +12,15 @@ sidebar_label: Textarea
 ```
 
 - View: BadasoTextarea
+```
+<badaso-textarea
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-textarea>
+```
 
 ```
 size: {

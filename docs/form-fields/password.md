@@ -12,6 +12,15 @@ sidebar_label: Password
 ```
 
 - View: BadasoPassword
+```
+<badaso-password
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-password>
+```
 
 ```
 size: {

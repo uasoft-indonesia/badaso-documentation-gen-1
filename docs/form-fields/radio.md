@@ -18,6 +18,16 @@ sidebar_label: Radio
 ```
 
 - View: BadasoRadio
+```
+<badaso-radio
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+    :items="items"
+></badaso-radio>
+```
 
 ```
 size: {

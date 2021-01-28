@@ -12,6 +12,15 @@ sidebar_label: Slider
 ```
 
 - View: BadasoSlider
+```
+<badaso-slider
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-slider>
+```
 
 ```
 size: {

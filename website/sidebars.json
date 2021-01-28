@@ -48,7 +48,8 @@
       "core-concept/menu-builder",
       "core-concept/site-management",
       "core-concept/helpers",
-      "core-concept/multilanguage"
+      "core-concept/multilanguage",
+      "core-concept/commands"
     ],
     "Customization": [
       "customization/introduction",

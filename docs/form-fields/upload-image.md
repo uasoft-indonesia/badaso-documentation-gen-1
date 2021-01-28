@@ -12,6 +12,15 @@ sidebar_label: Upload Image
 ```
 
 - View: BadasoUploadImage
+```
+<badaso-upload-image
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-upload-image>
+```
 
 ```
 size: {

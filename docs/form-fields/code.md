@@ -12,6 +12,15 @@ sidebar_label: Code Editor
 ```
 
 - View: BadasoCode
+```
+<badaso-code-editor
+    :label="label"
+    :placeholder="placeholder"
+    v-model="model"
+    size="12"
+    :alert="error"
+></badaso-code-editor>
+```
 
 ```
 value: {
