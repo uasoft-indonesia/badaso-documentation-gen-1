@@ -158,3 +158,12 @@ Pada JSON dibawah, property value adalah output dari tiap form, dan field adalah
   ]
 }
 ```
+## Catatan
+
+setiap component yang disediakan badaso, ditujukan untuk digunakan di dalam tag dengan css class row. 
+semua component yang disedikan badaso merupakan component yang terdiri dari vs-col. jadi pada CRUD Generator, 
+bagian Optional details dapat di isi JSON dengan property size. property size ini berisi angka 1-12 yang mana angka ini adalah nilai untuk diterapkan pada vs-col.
+Contoh:
+```
+<vs-row>{{component}}</vs-row>
+```

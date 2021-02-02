@@ -4,7 +4,9 @@ title: Checkbox
 sidebar_label: Checkbox
 ---
 
-- Generate CRUD
+## Generate CRUD
+
+Pada saat membuat CRUD, bagian Optional Details Checkbox dapat di isi dengan json seperti dibawah. property `items` harus di isi sedangkan size tidak harus di isi karena secara default sudah di isi 12. property `items` berguna sebagai item checkbox sedangkan size adalah untuk mengatur lebar container checkbox.
 ```
 {
   "size": "6", // 1-12 default 12
@@ -17,7 +19,9 @@ sidebar_label: Checkbox
 }
 ```
 
-- View: BadasoCheckbox
+## View: BadasoCheckbox
+
+Badaso menyediakan vue component untuk penggunaan checkbox, yakni BadasoCheckbox. Penggunaan BadasoCheckbox dapat dilihat pada sampel code dibawah.
 ```
 <badaso-checkbox
     :label="label"
@@ -28,6 +32,7 @@ sidebar_label: Checkbox
     :items="items"
 ></badaso-checkbox>
 ```
+untuk penggunaan BadasoCheckbox terdapat beberapa props yang harus di isi dan optional. code di bawah adalah daftar props untuk BadasoCheckbox.
 
 ```
 size: {
@@ -59,3 +64,5 @@ alert: {
     default: "",
 },
 ```
+## Catatan
+Props value diisi menggunakan v-model.

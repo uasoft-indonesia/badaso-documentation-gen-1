@@ -4,14 +4,21 @@ title: Hidden
 sidebar_label: Hidden
 ---
 
-- Generate CRUD
+## Generate CRUD
+
+Badaso menyediakan sebuah component untuk input tersembunyi, yakni BadasoHidden. 
+Pada saat membuat/generate CRUD, lebar component ini dapat diatur pada Optional Details dengan format seperti berikut
 ```
     {
-        "size": "6" // 1-12 default 12
+        "size": "6" // 1-12 default 12,
+        "value": "" // harus diisi saat generate CRUD jika kolom pada table tidak boleh null
     }
 ```
 
-- View: BadasoHidden
+## View: BadasoHidden
+
+Code dibawah adalah sample untuk penggunaan BadasoHidden pada vue template.
+
 ```
 <badaso-hidden
     :label="label"
@@ -21,11 +28,7 @@ sidebar_label: Hidden
 ></badaso-hidden>
 ```
 
-```
-{
-  "value": "value"
-}
-```
+Berikut adalah daftar props yang disediakan component ini.
 
 ```
 size: {

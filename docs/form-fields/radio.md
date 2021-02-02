@@ -4,7 +4,10 @@ title: Radio
 sidebar_label: Radio
 ---
 
-- Generate CRUD
+## Generate CRUD
+
+Badaso menyediakan sebuah component untuk input berupa pilihan dengan radio button, yakni BadasoRadio. 
+Pada saat membuat/generate CRUD, lebar container untuk component ini dapat diatur pada Optional Details dengan format seperti code di bawah. untuk menggunakan radio, saat membuat CRUD, propery items pada OptionalDetails harus diisi.
 ```
 {
     "size": "6", // 1-12 default 12
@@ -17,7 +20,10 @@ sidebar_label: Radio
 }
 ```
 
-- View: BadasoRadio
+## View: BadasoRadio
+
+Code dibawah adalah sample untuk penggunaan BadasoRadio pada vue template.
+
 ```
 <badaso-radio
     :label="label"
@@ -28,6 +34,8 @@ sidebar_label: Radio
     :items="items"
 ></badaso-radio>
 ```
+
+Berikut adalah daftar props yang disediakan component ini.
 
 ```
 size: {

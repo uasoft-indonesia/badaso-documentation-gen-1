@@ -4,14 +4,18 @@ title: Code Editor
 sidebar_label: Code Editor
 ---
 
-- Generate CRUD
+## Generate CRUD
+
+Badaso menyediakan sebuah text editor yang bertujuan untuk input berupa code. 
+Saat generate CRUD, untuk Type Code, bagian Optional Details dapat diisi dengan JSON yang memiliki propert `size` untuk mengatur lebar container Code Editor.
 ```
     {
         "size": "6" // 1-12 default 12
     }
 ```
 
-- View: BadasoCode
+## View: BadasoCode
+Code dibawah adalah sample untuk penggunaan BadasoCodeEditor pada vue template.
 ```
 <badaso-code-editor
     :label="label"
@@ -22,6 +26,7 @@ sidebar_label: Code Editor
 ></badaso-code-editor>
 ```
 
+Berikut adalah daftar props yang disediakan BadasoCodeEditor.
 ```
 value: {
     type: String,

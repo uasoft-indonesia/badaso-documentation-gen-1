@@ -4,14 +4,20 @@ title: Number
 sidebar_label: Number
 ---
 
-- Generate CRUD
+## Generate CRUD    
+
+Badaso menyediakan sebuah component untuk input angka, yakni BadasoNumber. 
+Pada saat membuat/generate CRUD, lebar component ini dapat diatur pada Optional Details dengan format seperti berikut
 ```
     {
         "size": "6" // 1-12 default 12
     }
 ```
 
-- View: BadasoNumber
+## View: BadasoNumber
+
+Code dibawah adalah sample untuk penggunaan BadasoNumber pada vue template.
+
 ```
 <badaso-number
     :label="label"
@@ -21,6 +27,8 @@ sidebar_label: Number
     :alert="error"
 ></badaso-number>
 ```
+
+Berikut adalah daftar props yang disediakan component ini.
 
 ```
 size: {

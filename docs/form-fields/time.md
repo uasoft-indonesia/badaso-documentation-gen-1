@@ -4,14 +4,20 @@ title: Time
 sidebar_label: Time
 ---
 
-- Generate CRUD
+## Generate CRUD
+
+Badaso menyediakan sebuah component untuk input waktu(jam, menit, detik), yakni BadasoTime. 
+Pada saat membuat/generate CRUD, lebar component ini dapat diatur pada Optional Details dengan format seperti berikut
 ```
     {
         "size": "6" // 1-12 default 12
     }
 ```
 
-- View: BadasoTime
+## View: BadasoTime
+
+Code dibawah adalah sample untuk penggunaan BadasoTime pada vue template.
+
 ```
 <badaso-time
     :label="label"
@@ -21,6 +27,8 @@ sidebar_label: Time
     :alert="error"
 ></badaso-time>
 ```
+
+Berikut adalah daftar props yang disediakan component ini.
 
 ```
 size: {

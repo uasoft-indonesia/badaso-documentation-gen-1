@@ -4,7 +4,14 @@ title: Relation
 sidebar_label: Relation
 ---
 
-For CRUD Generated
+## Generate CRUD
+
+Badaso menyediakan fitur untuk merelasikan data dari suatu table dengan table lain. saat membuat sebuah CRUD, user dapat merelasikan sebuah field dari suatu table ke table lain. dengan memilih field mana yang akan direlasikan, memilih jenis relasi dan table tujuan.
+
+## View
+
+Code dibawah adalah sample untuk penggunaan Relation pada vue template.
+
 ```
 <badaso-select
     v-if="formType === 'relation' && relationType === 'belongs_to'"

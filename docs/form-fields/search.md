@@ -4,14 +4,20 @@ title: Search
 sidebar_label: Search
 ---
 
-- Generate CRUD
+## Generate CRUD
+
+Badaso menyediakan sebuah component untuk input pencarian, yakni BadasoSearch. 
+Pada saat membuat/generate CRUD, lebar component ini dapat diatur pada Optional Details dengan format seperti berikut
 ```
     {
         "size": "6" // 1-12 default 12
     }
 ```
 
-- View: BadasoSearch
+## View: BadasoSearch
+
+Code dibawah adalah sample untuk penggunaan BadasoSearch pada vue template.
+
 ```
 <badaso-search
     :label="label"
@@ -22,8 +28,9 @@ sidebar_label: Search
 ></badaso-search>
 ```
 
-```
+Berikut adalah daftar props yang disediakan component ini.
 
+```
 size: {
     type: String,
     default: "12"

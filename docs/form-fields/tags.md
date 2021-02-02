@@ -4,14 +4,20 @@ title: Tags
 sidebar_label: Tags
 ---
 
-- Generate CRUD
+## Generate CRUD
+
+Badaso menyediakan sebuah component untuk input tags, yakni BadasoTagss. 
+Pada saat membuat/generate CRUD, lebar component ini dapat diatur pada Optional Details dengan format seperti berikut
 ```
     {
         "size": "6" // 1-12 default 12
     }
 ```
 
-- View: BadasoTags
+## View: BadasoTags
+
+Code dibawah adalah sample untuk penggunaan BadasoTags pada vue template.
+
 ```
 <badaso-tags
     :label="label"
@@ -21,6 +27,8 @@ sidebar_label: Tags
     :alert="error"
 ></badaso-tags>
 ```
+
+Berikut adalah daftar props yang disediakan component ini.
 
 ```
 size: {

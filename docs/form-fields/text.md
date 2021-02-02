@@ -4,14 +4,20 @@ title: Text
 sidebar_label: Text
 ---
 
-- Generate CRUD
+## Generate CRUD
+
+Badaso menyediakan sebuah component untuk input text pendek, yakni BadasoText. 
+Pada saat membuat/generate CRUD, lebar component ini dapat diatur pada Optional Details dengan format seperti berikut
 ```
     {
         "size": "6" // 1-12 default 12
     }
 ```
 
-- View: BadasoText
+## View: BadasoText
+
+Code dibawah adalah sample untuk penggunaan BadasoText pada vue template.
+
 ```
 <badaso-text
     :label="label"
@@ -21,6 +27,8 @@ sidebar_label: Text
     :alert="error"
 ></badaso-text>
 ```
+
+Berikut adalah daftar props yang disediakan component ini.
 
 ```
 size: {

@@ -4,14 +4,20 @@ title: Text Editor
 sidebar_label: Text Editor
 ---
 
-- Generate CRUD
+## Generate CRUD
+
+Badaso menyediakan sebuah component untuk input text dengan format HTML, yakni BadasoEditor. 
+Pada saat membuat/generate CRUD, lebar component ini dapat diatur pada Optional Details dengan format seperti berikut
 ```
     {
         "size": "6" // 1-12 default 12
     }
 ```
 
-- View: BadasoEditor
+## View: BadasoEditor
+
+Code dibawah adalah sample untuk penggunaan BadasoEditor pada vue template.
+
 ```
 <badaso-editor
     :label="label"
@@ -21,6 +27,8 @@ sidebar_label: Text Editor
     :alert="error"
 ></badaso-editor>
 ```
+
+Berikut adalah daftar props yang disediakan component ini.
 
 ```
 size: {

@@ -4,14 +4,20 @@ title: Slider
 sidebar_label: Slider
 ---
 
-- Generate CRUD
+## Generate CRUD
+
+Badaso menyediakan sebuah component untuk input angka dalam bentuk slider, yakni BadasoSlider. 
+Pada saat membuat/generate CRUD, lebar component ini dapat diatur pada Optional Details dengan format seperti berikut
 ```
     {
         "size": "6" // 1-12 default 12
     }
 ```
 
-- View: BadasoSlider
+## View: BadasoSlider
+
+Code dibawah adalah sample untuk penggunaan BadasoSlider pada vue template.
+
 ```
 <badaso-slider
     :label="label"
@@ -21,6 +27,8 @@ sidebar_label: Slider
     :alert="error"
 ></badaso-slider>
 ```
+
+Berikut adalah daftar props yang disediakan component ini.
 
 ```
 size: {

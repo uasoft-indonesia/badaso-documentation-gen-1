@@ -4,14 +4,20 @@ title: Datetime
 sidebar_label: Datetime
 ---
 
-- Generate CRUD
+## Generate CRUD
+
+Badaso menyediakan sebuah component untuk input tanggal dan waktu, yakni BadasoDatetime. 
+Pada saat membuat/generate CRUD, lebar component ini dapat diatur pada Optional Details dengan format seperti berikut
 ```
     {
         "size": "6" // 1-12 default 12
     }
 ```
 
-- View: BadasoDatetime
+## View: BadasoDatetime
+
+Code dibawah adalah sample untuk penggunaan BadasoDatetime pada vue template.
+
 ```
 <badaso-datetime
     :label="label"
@@ -21,6 +27,8 @@ sidebar_label: Datetime
     :alert="error"
 ></badaso-datetime>
 ```
+
+Berikut adalah daftar props yang disediakan component ini.
 
 ```
 size: {
