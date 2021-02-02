@@ -7,7 +7,7 @@
 
 const React = require('react');
 
-import Icon from "@material-ui/core/Icon";
+const Icon = require("@material-ui/core/Icon").default;
 const CompLibrary = require('../../core/CompLibrary.js');
 
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
