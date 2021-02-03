@@ -1,33 +1,54 @@
 ---
 id: role-and-permissions
-title: Role and Permissions
-sidebar_label: Role and Permissions
+title: Wewenang dan Izin
+sidebar_label: Wewenang dan Izin
 ---
 
-**CRUD Generated**
+## CRUD *Generated*
 
-setiap membuat sebuah CRUD menggukan crud generator, user dapat menentukan apakah generate permission atau tidak
-jika generate permission, maka akan di generate 5 permission dengan format sebagai berikut
-- browse_{{table_name}}
-- read_{{table_name}}
-- edit_{{table_name}}
-- add_{{table_name}}
-- delete_{{table_name}}
+Setiap CRUD dibuat menggunakan CRUD *generator*, kamu dapat menentukan apakah ingin *generate* izin atau tidak. Jika *generate* izin, maka akan di *generate* 5 izin secara otomatis dengan format sebagai berikut.
+- browse_{{ TABLE_NAME }}
+- read_{{ TABLE_NAME }}
+- edit_{{ TABLE_NAME }}
+- add_{{ TABLE_NAME }}
+- delete_{{ TABLE_NAME }}
 
-setiap permission yang digenerate akan otomatis di assigne ke role administrator, jadi user yang login dengan role administrator akan langsung memiliki permission tersebut
+sebagai contoh:
 
-berikut adalah tampilan user management
-di fitur ini user(yang login) dapat melihat, mengubah, menambah dan menghapus informasi user beserta menentukan role untuk user tersebut
+* browse_posts
+* read_posts
+* edit_posts
+* add_posts
+* delete_posts
+
+Setiap izin yang di-*generate* akan otomatis di *assign* ke wewenang administrator, jadi pengguna yang masuk dengan wewenang administrator akan langsung memiliki izin tersebut
+
+## Manajemen Pengguna
+
+Berikut merupakan tampilan manajemen pengguna. Pada fitur ini pengguna yang telah masuk dapat melihat, mengubah, menambah dan menghapus informasi user beserta menentukan wewenang untuk user tersebut.
+
 ![user-management](assets/user-management.png)
 
-tampilan berikut adalah tampilan fitur role management, fitur ini untuk menentukan role apa saja yang akan digunakan pada sistem, secara default hanya ada 1 yaitu Administraot
+## Manajemen Wewenang
+
+Tampilan berikut merupakan tampilan fitur manajemen wewenang, fitur ini yang berfungsi untuk menentukan wewenang apa saja yang akan digunakan pada sistem, secara *default* hanya ada 1 yaitu Administrator.
+
 ![role-management](assets/role-management.png)
 
-Permission management adalah fitur untuk mengelola permission / CRUD permission
+## Manajemen Izin
+
+Manajemen Izin merupakan fitur untuk mengelola perizinan / CRUD *permission*. Berikut merupakan tampilan dari manajemen izin.
+
 ![permission-management](assets/permission-management.png)
 
-setiap role dapat memiliki minimal 1 atau lebih role
+## Manajemen Wewenang Pengguna
+
+Setiap pengguna dapat memiliki minimal 1 atau lebih wewenang. Berikut merupakan tampilan dari manajemen wewenang untuk pengguna.
+
 ![user-role-management](assets/user-role-management.png)
 
-setiap role memiliki permission
+## Manajemen Izin Wewenang
+
+Setiap wewenang memiliki izin. Berikut merupakan tampilan dari manajemen izin wewenang.
+
 ![role-permission-management](assets/role-permission-management.png)

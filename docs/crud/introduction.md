@@ -6,27 +6,30 @@ sidebar_label: Pengenalan
 
 Ketika menambahkan atau mengubah CRUD yang telah ada, kamu akan melihat beberapa info yang dapat kamu ubah yaitu Display Name (Singular dan Plural), Server Side, URL Slug, Icon, Model Name, Controller Name, Order Column, Order Display Column, Order Direction dan Description. Kamu juga dapat memilih jika kamu ingin membuat **Permission** secara otomatis.
 
-## Create Table Description
+## Membuat Deskripsi Tabel
 ![crud-add-image](assets/crud-add-part-1.png)
 
-## Set Field property
-* BROWSE (field will show up when you browse the current data)
-* READ (field will show when you click to view the current data)
-* EDIT (field will be visible and allow you to edit the data)
-* ADD (field will be visible when you choose to create a new data type)
-* DELETE (doesn't pertain to delete so this can be checked or unchecked)
+## Setel Properti *Field*
+* BROWSE (menyetel *field* yang akan tampil ketika kamu menjelajahi data saat ini).
+* READ (menyetel *field* yang akan tampil ketika kamu menampilkan satu data).
+* EDIT (menyetel *field* yang akan tampil dan dapat diubah ketika kamu mengubah data).
+* ADD (menyetel *field* yang akan tampil dan dapat ditambah ketika kamu menambahkan data).
+* DELETE (tidak memiliki efek apapun, jadi ini bisa dicentang atau tidak).
 
 ![generate-crud](assets/generate-crud.png)
 
-## Form Result
+## Hasil *Form*
+
+Berikut ini hasil tampilan dari *field* yang tersedia di Badaso.
+
 ![form-field](assets/form-field.png)
 
-## From Ouput
+## Keluaran *Form*
 
-Setiap form yang di generate, akan menggunakan vue component yang sudah disediakan badaso.
-Pada JSON dibawah, property value adalah output dari tiap form, dan field adalah nama kolom dari table yang di generate.
+Setiap *form* yang di *generate*, akan menggunakan Vue Component yang sudah disediakan Badaso.
+Pada JSON di bawah, properti *value* adalah keluaran nilai dari tiap *form*, dan *field* adalah nama kolom dari tabel yang di *generate*.
 
-```
+```json
 {
   "data": [
     {
@@ -160,10 +163,12 @@ Pada JSON dibawah, property value adalah output dari tiap form, dan field adalah
 ```
 ## Catatan
 
-setiap component yang disediakan badaso, ditujukan untuk digunakan di dalam tag dengan css class row. 
-semua component yang disedikan badaso merupakan component yang terdiri dari vs-col. jadi pada CRUD Generator, 
-bagian Optional details dapat di isi JSON dengan property size. property size ini berisi angka 1-12 yang mana angka ini adalah nilai untuk diterapkan pada vs-col.
+Setiap komponen yang disediakan badaso ditujukan untuk digunakan di dalam tag dengan css class ```row```. 
+semua komponen yang disedikan badaso merupakan komponen yang terdiri dari ```vs-col```. jadi pada CRUD *generator*, bagian Optional Details dapat di isi JSON dengan properti ```size```. property size ini berisi angka 1-12 yang mana angka ini adalah nilai untuk diterapkan pada ```vs-col```.
 Contoh:
-```
+<!--DOCUSAURUS_CODE_TABS-->
+<!--JavaScript-->
+```js
 <vs-row>{{component}}</vs-row>
 ```
+<!--END_DOCUSAURUS_CODE_TABS-->

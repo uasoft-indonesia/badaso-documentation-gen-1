@@ -4,24 +4,31 @@ title: Instalasi
 sidebar_label: Instalasi
 ---
 
-1. Menginstal Badaso sangatlah mudah. Setelah laravel terinstal, kamu dapat menambahkan Badaso dengan cara mengetikan perintah berikut.
+1. Menginstal Badaso sangatlah mudah. Setelah laravel terinstal, kamu dapat menambahkan Badaso dengan cara berikut ini.
 
 ```
 composer require uasoft-indonesia/badaso
 ```
 
-2. Tambahkan Badaso provider dan JWT provider berikut ini pada ```config/app.php```.
+2. Tambahkan Badaso *provider* dan JWT *provider* berikut ini pada ```config/app.php```.
 
+<!--DOCUSAURUS_CODE_TABS-->
+<!--PHP-->
 ```php
 Uasoft\Badaso\Providers\BadasoServiceProvider::class,
 Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 ```
 
-3. Tambahkan juga aliases berikut ini pada ```config/app.php```.
+<!--END_DOCUSAURUS_CODE_TABS-->
+
+3. Tambahkan juga *aliases* berikut ini pada ```config/app.php```.
+<!--DOCUSAURUS_CODE_TABS-->
+<!--PHP-->
 ```php
 'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
 'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
 ```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 4. Jalankan perintah berikut ini secara berurutan.
 ```
@@ -34,9 +41,10 @@ php artisan migrate
 php artisan db:seed --class=BadasoSeeder
 ```
 
-5. Tambahkan javascript libraries berikut ini pada ```package.json```.
-```javascript
-{
+5. Tambahkan javascript *libraries* berikut ini pada ```package.json```.
+<!--DOCUSAURUS_CODE_TABS-->
+<!--JSON-->
+```json
   "devDependencies": {
     "axios": "^0.18",
     "bootstrap": "^4.0.0",
@@ -70,12 +78,17 @@ php artisan db:seed --class=BadasoSeeder
   }
 }
 ```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 6. Jalankan perintah ```npm install```
 7. Tambahkan baris berikut ini pada ```webpack.mix.js```
-```javascript
+<!--DOCUSAURUS_CODE_TABS-->
+<!--JavaScript-->
+```js
 mix.js('resources/js/badaso/app.js', 'public/js/badaso.js')
 ```
+<!--END_DOCUSAURUS_CODE_TABS-->
+
 8. Buka file ```.env``` lalu tambahkan baris berikut ini dan isi nilai dari masing-masing nilai jika dibutuhkan.
 ```
 JWT_SECRET={Your JWT secret key}
@@ -91,18 +104,18 @@ MIX_DATE_FORMAT=
 MIX_TIME_FORMAT=
 MIX_DATETIME_FORMAT=
 
-#optional
+#opsional
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 AWS_DEFAULT_REGION=
 AWS_BUCKET=
 AWS_URL=
-#optional
+#opsional
 GOOGLE_DRIVE_CLIENT_ID=
 GOOGLE_DRIVE_CLIENT_SECRET=
 GOOGLE_DRIVE_REFRESH_TOKEN=
 GOOGLE_DRIVE_FOLDER_ID=
-#optional
+#opsional
 DROPBOX_AUTH_TOKEN=
 
 #fill with one of all,database,files, backup will not run if BACKUP_TARGET empty
@@ -111,8 +124,10 @@ BACKUP_TARGET=
 BACKUP_DISK=
 ```
 
-9. Tambahkan Badaso guard dan auth provider berikut ini dan jadikan badaso guard sebagai auth default pada ```config/auth.php```.
-```PHP
+9. Tambahkan Badaso *guard* dan *auth provider* berikut ini dan jadikan Badaso *guard* sebagai *auth default* pada ```config/auth.php```.
+<!--DOCUSAURUS_CODE_TABS-->
+<!--PHP-->
+```php
 return [
   'defaults' => [
     'guard' => 'badaso_guard',
@@ -138,9 +153,12 @@ return [
   ...,
 ]
 ```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 11. Tambahkan baris berikut ini pada ```config/database.php```
-```PHP
+<!--DOCUSAURUS_CODE_TABS-->
+<!--PHP-->
+```php
 ...,
 'connections' => [
 	'mysql' => [
@@ -154,9 +172,12 @@ return [
   ],
 ...,
 ```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 12. Tambahkan baris berikut ini pada ```config/filesystem.php```
-```PHP
+<!--DOCUSAURUS_CODE_TABS-->
+<!--PHP-->
+```php
 'disks' => [
 
   ...,
@@ -185,6 +206,7 @@ return [
 
 ],
 ```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 13. Langkah terakhir yaitu pembuatan akun admin dengan cara mengetikan perintah berikut ini.
 ```
