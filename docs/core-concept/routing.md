@@ -1,56 +1,78 @@
 ---
 id: routing
-title: Routing
-sidebar_label: Routing
+title: Rute
+sidebar_label: Rute
 ---
 
-disini dijelaskan mengenai routing frontend dan backend untuk CRUD yang digenerate
+Pada halaman ini dijelaskan mengenai *routing frontend* dan *backend* untuk CRUD yang di-*generate*.
 
-Config
-* MIX_API_ROUTE_PREFIX
-* MIX_ADMIN_PANEL_ROUTE_PREFIX
+Konfigurasi *Environtment*:
+```
+MIX_API_ROUTE_PREFIX=
+MIX_ADMIN_PANEL_ROUTE_PREFIX=
+```
 
-CRUD GENERATED Routes
+## CRUD *Generated Routes*
 
-**Backend**
-berikut adalah url api yang dipanggil
+### *Backend*
+
+Berikut ini merupakan tipe URL API yang dipanggil untuk Backend.
 
 * Browse/Index (List) : GET
 
-```{{BaseUrl}}/{{MIX_API_ROUTE_PREFIX}}/v1/entities/{{table slug}}```
+```javascript
+BASE_URL/MIX_API_ROUTE_PREFIX/v1/entities/TABLE_SLUG
+```
 
 * Add/Create : POST
 
-```{{BaseUrl}}/{{MIX_API_ROUTE_PREFIX}}/v1/entities/{{table slug}}/add```
+```javascript
+BASE_URL/MIX_API_ROUTE_PREFIX/v1/entities/TABLE_SLUG/add
+```
 
 * Read/Detail : GET
 
-```{{BaseUrl}}/{{MIX_API_ROUTE_PREFIX}}/v1/entities/{{table slug}}/read```
+```javascript
+BASE_URL/MIX_API_ROUTE_PREFIX/v1/entities/TABLE_SLUG/read
+```
 
 * Edit/Update : PUT
 
-```{{BaseUrl}}/{{MIX_API_ROUTE_PREFIX}}/v1/entities/{{table slug}}/edit```
+```javascript
+BASE_URL/MIX_API_ROUTE_PREFIX/v1/entities/TABLE_SLUG/edit
+```
 
 * Delete/Remove : DELETE
 
-```{{BaseUrl}}/{{MIX_API_ROUTE_PREFIX}}/v1/entities/{{table slug}}/delete```
+```javascript
+BASE_URL/MIX_API_ROUTE_PREFIX/v1/entities/TABLE_SLUG/delete
+```
 
 
-**Frontend**
-berikut adalah url untuk navigasi frontend
+### *Frontend*
+
+Berikut ini merupakan tipe URL API yang dipanggil untuk Frontend.
 
 * Browse/Index (List)
 
-```{{BaseUrl}}/{{MIX_ADMIN_PANEL_ROUTE_PREFIX}}/main/{{table slug}}```
+```javascript
+BASE_URL/MIX_ADMIN_PANEL_ROUTE_PREFIX/main/TABLE_SLUG
+```
 
 * Add/Create
 
-```{{BaseUrl}}/{{MIX_ADMIN_PANEL_ROUTE_PREFIX}}/main/{{table slug}}/add```
+```javascript
+BASE_URL/MIX_ADMIN_PANEL_ROUTE_PREFIX/main/TABLE_SLUG/add
+```
 
 * Read/Detail
 
-```{{BaseUrl}}/{{MIX_ADMIN_PANEL_ROUTE_PREFIX}}/main/{{table slug}}/{{id}}```
+```javascript
+BASE_URL/MIX_ADMIN_PANEL_ROUTE_PREFIX/main/TABLE_SLUG/ID/detail
+```
 
-* Delete/Remove
+* Edit/Update
 
-```{{BaseUrl}}/{{MIX_ADMIN_PANEL_ROUTE_PREFIX}}/main/{{table slug}}/{{id}}/edit```
+```javascript
+BASE_URL/MIX_ADMIN_PANEL_ROUTE_PREFIX/main/TABLE_SLUG/ID/edit
+```

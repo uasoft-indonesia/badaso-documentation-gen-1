@@ -4,30 +4,37 @@ title: Date
 sidebar_label: Date
 ---
 
-## Generate CRUD
+## *Generate* CRUD
 
-Badaso menyediakan sebuah component untuk input tanggal, yakni BadasoDate. 
-Pada saat membuat/generate CRUD, lebar component ini dapat diatur pada Optional Details dengan format seperti berikut
-```
+Badaso menyediakan sebuah komponen masukan untuk tanggal, yaitu BadasoDate. Pada saat *generate* CRUD, lebar komponen ini dapat diatur pada Optional Details dengan format seperti berikut.
+<!--DOCUSAURUS_CODE_TABS-->
+<!--JSON-->
+```JSON
     {
         "size": "6" // 1-12 default 12
     }
 ```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 ## View: BadasoDate
 
-Code dibawah adalah sample untuk penggunaan BadasoDate pada vue template.
-```
+Kode di bawah merupakan sampel untuk penggunaan BadasoDate pada Vue Template.
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Vue-->
+```vue
 <badaso-date
     :label="label"
     :placeholder="placeholder"
     v-model="model"
     size="12"
-    :alert="error"
-></badaso-date>
+    :alert="error">
+</badaso-date>
 ```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
-Berikut adalah daftar props yang disediakan component ini.
+### ```props```
+
+Berikut merupakan daftar *props* yang disediakan komponen ini.
 
 ```
 size: {

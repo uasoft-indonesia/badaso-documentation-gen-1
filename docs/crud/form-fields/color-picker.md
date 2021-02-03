@@ -4,30 +4,37 @@ title: Color Picker
 sidebar_label: Color Picker
 ---
 
-## Generate CRUD
+## *Generate* CRUD
 
-Badaso menyediakan component untuk color picker, yakni BadasoColorPicker, yang dapat diatur lebar nya dengan menambahkan property `size` pada Optional Details saat generate CRUD.
-```
+Badaso menyediakan komponen untuk *color picker*, yaitu BadasoColorPicker, yang dapat diatur lebarnya dengan menambahkan properti `size` pada Optional Details saat *generate* CRUD.
+<!--DOCUSAURUS_CODE_TABS-->
+<!--JSON-->
+```JSON
     {
         "size": "6" // 1-12 default 12
     }
 ```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 ## View: BadasoColorPicker
 
-Berikut adalah code sample untuk penggunakan BadasoColorPicker di dalam template vue.
-```
+Berikut merupakan sampel kode untuk penggunakan BadasoColorPicker di dalam Vue *template*.
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Vue-->
+```vue
 <badaso-color-picker
     :label="label"
     :placeholder="placeholder"
     v-model="model"
     size="12"
-    :alert="error"
-></badaso-color-picker>
+    :alert="error">
+</badaso-color-picker>
 ```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
-Berikut adalah daftar props yang disediakan component ini.
+### ```props```
 
+Berikut merupakan daftar *props* yang disediakan komponent ini.
 
 ```
 size: {

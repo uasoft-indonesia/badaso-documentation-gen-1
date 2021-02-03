@@ -1,7 +1,7 @@
 ---
 id: introduction
-title: Introduction
-sidebar_label: Introduction
+title: Pengantar
+sidebar_label: Pengantar
 ---
 
-Welcome to the Badaso documentation for version 1.0.0. This documentation will teach you how to install, configure, and use Badaso so that way you can create some kick ass stuff!
+Selamat datang di dokumentasi Badaso untuk versi 1.0. Dokumentasi ini akan mengajari kamu cara menginstal, mengkonfigurasi, dan menggunakan Badaso sehingga kamu bisa membuat beberapa hal keren!

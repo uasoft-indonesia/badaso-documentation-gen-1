@@ -1,14 +1,13 @@
 ---
 id: multilanguage
-title: Multilanguage
-sidebar_label: Multilanguage
+title: Multi Bahasa
+sidebar_label: Multi Bahasa
 ---
 
-Backend
-badaso menyediakan bahasa inggris secara default untuk language dari backend
-untuk mengubah bahasa, perlu di config laravel locale, 
-config ini dapat di set melalui env
-code dibawah adalah struktur direktori untuk menambahkan bahasa/lang baru
+## Backend
+
+Badaso menyediakan bahasa inggris secara *default* untuk bahasa dari *backend*. Untuk mengubah bahasa, perlu dibuatkan konfigurasi lokalisasi untuk laravel, konfigurasi ini dapat diatur melalui ```.env```. Kode di bawah adalah struktur direktori untuk menambahkan bahasa baru.
+
 ```
 |-- your project
     |-- resources
@@ -22,11 +21,9 @@ code dibawah adalah struktur direktori untuk menambahkan bahasa/lang baru
                     |-- validation.php
 ```
 
-Frontend
-untuk beberapa label pada frontent, juga mengunakan lang terpisah dari backend
-code di bawah adalah struktur direktori lang di frontend
-lang pada frontend dapat di ubah melalui navbar header pada dashboard
-lang di frontend hanya mengubah label pada frontent, tidak termasuk response dari backend badaso
+## Frontend
+
+Untuk beberapa label pada frontent, juga menggunakan bahasa terpisah dari *backend*. Kode di bawah adalah struktur direktori bahasa di *frontend*. Bahasa pada *frontend* dapat di ubah melalui navbar header pada dashboard. Bahasa di *frontend* hanya mengubah label pada *frontend*, tidak termasuk response dari *backend* Badaso.
 ```
 |-- your project
     |-- resources
