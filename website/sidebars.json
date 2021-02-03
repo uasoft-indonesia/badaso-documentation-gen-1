@@ -56,7 +56,6 @@
       "customization/overriding-controller",
       "customization/create-view",
       "customization/additional-css-js"
-    ],
-    "Troubleshooting": ["doc5"]
+    ]
   }
 }
