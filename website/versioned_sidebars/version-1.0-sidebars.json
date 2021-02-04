@@ -1,0 +1,61 @@
+{
+  "version-1.0-docs": {
+    "Getting Started": [
+      "version-1.0-getting-started/introduction",
+      "version-1.0-getting-started/what-is-badaso",
+      "version-1.0-getting-started/prerequisite",
+      "version-1.0-getting-started/installation",
+      "version-1.0-getting-started/configuration"
+    ],
+    "CRUD Generator": [
+      "version-1.0-crud/introduction",
+      {
+        "type": "subcategory",
+        "label": "Form Field",
+        "ids": [
+          "version-1.0-crud/form-fields/checkbox",
+          "version-1.0-crud/form-fields/code-editor",
+          "version-1.0-crud/form-fields/color-picker",
+          "version-1.0-crud/form-fields/date",
+          "version-1.0-crud/form-fields/datetime",
+          "version-1.0-crud/form-fields/email",
+          "version-1.0-crud/form-fields/hidden",
+          "version-1.0-crud/form-fields/number",
+          "version-1.0-crud/form-fields/password",
+          "version-1.0-crud/form-fields/radio",
+          "version-1.0-crud/form-fields/search",
+          "version-1.0-crud/form-fields/select",
+          "version-1.0-crud/form-fields/select-multiple",
+          "version-1.0-crud/form-fields/slider",
+          "version-1.0-crud/form-fields/switch",
+          "version-1.0-crud/form-fields/tags",
+          "version-1.0-crud/form-fields/text-editor",
+          "version-1.0-crud/form-fields/textarea",
+          "version-1.0-crud/form-fields/time",
+          "version-1.0-crud/form-fields/upload-file",
+          "version-1.0-crud/form-fields/upload-file-multiple",
+          "version-1.0-crud/form-fields/upload-image",
+          "version-1.0-crud/form-fields/upload-image-multiple",
+          "version-1.0-crud/form-fields/url",
+          "version-1.0-crud/form-fields/text",
+          "version-1.0-crud/form-fields/relation"
+        ]
+      }
+    ],
+    "Core Concept": [
+      "version-1.0-core-concept/routing",
+      "version-1.0-core-concept/role-and-permissions",
+      "version-1.0-core-concept/menu-builder",
+      "version-1.0-core-concept/site-management",
+      "version-1.0-core-concept/helpers",
+      "version-1.0-core-concept/multilanguage",
+      "version-1.0-core-concept/commands"
+    ],
+    "Customization": [
+      "version-1.0-customization/introduction",
+      "version-1.0-customization/overriding-controller",
+      "version-1.0-customization/create-view",
+      "version-1.0-customization/additional-css-js"
+    ]
+  }
+}
