@@ -4,9 +4,9 @@ title: Search
 sidebar_label: Search
 ---
 
-## *Generate* CRUD
+## Generate CRUD
 
-Badaso menyediakan sebuah komponen masukan untuk pencarian, yaitu BadasoSearch. Pada saat *generate* CRUD, lebar komponen ini dapat diatur pada Optional Details dengan format seperti berikut.
+Badaso provides an input component for search, namely BadasoSearch. When generating CRUD, the width of this component can be set in Optional Details with the following format.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```json
@@ -18,7 +18,7 @@ Badaso menyediakan sebuah komponen masukan untuk pencarian, yaitu BadasoSearch. 
 
 ## View: BadasoSearch
 
-Kode di bawah merupakan sampel untuk penggunaan BadasoSearch pada Vue Template.
+The code below is a sample for using BadasoSearch on the Vue Template.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->
@@ -35,7 +35,7 @@ Kode di bawah merupakan sampel untuk penggunaan BadasoSearch pada Vue Template.
 
 ### ```props```
 
-Berikut merupakan daftar *props* yang disediakan komponen ini.
+Below is a list of props that this component provides.
 
 ```
 size: {

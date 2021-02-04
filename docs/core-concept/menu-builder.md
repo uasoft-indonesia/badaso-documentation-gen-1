@@ -1,38 +1,38 @@
 ---
 id: menu-builder
-title: Pembuat Menu
-sidebar_label: Pembuat Menu
+title: Menu Builder
+sidebar_label: Menu Builder
 ---
 
-Berikut merupakan tampilan daftar menu.
+The following is a menu list view.
 
 ![menu-management](assets/menu-management.png)
 
-Tampilan berikut merupakan tampilan dari pembuat menu atau *menu builder*, di halaman ini user dapat mengatur tata letak dan urutan menu.
+The following display is the display of the menu builder, on this page the user can adjust the layout and menu order.
 
 ![menu-builder](assets/menu-builder.png)
 
-## Tambah atau Edit Menu
+## Add or Edit Menu
 
-### Tambah Menu
+### Add Menu
 
-Pada tampilan berikut, tersedia beberapa kolom yang harus diisi ketika membuat sebuah menu yaitu:
+In the following display, there are several fields that must be filled in when creating a menu.
 
-* Title: Teks yang akan tampil pada menu.
-* URL: Halaman URL yang akan diakses ketika menu di klik.
-* Target: Tipe cara akses URL, akses URL di *tab* saat ini atau akses URL di *tab* baru
-* Icon: Ikon yang akan tampil pada menu. Untuk daftar ikon dapat dilihat pada halaman [Material Icon](https://material.io/resources/icons/?style=baseline).
-* Color Picker: Warna yang akan tampil pada *background* menu.
+* Title: The text that will appear on the menu.
+* URL: The URL page that will be accessed when the menu is clicked.
+* Target: Type of URL access method, The URL open in current tab or open in new tab.
+* Icon: The icon that will appear on the menu. For a list of icons can be browse on the [Material Icon](https://material.io/resources/icons/?style=baseline) page.
+* Color Picker: The color that will appear on the background menu.
 
 ![add-menu-item](assets/add-menu-item.png)
 
-### Ubah Menu
+### Edit Menu
 
 ![edit-menu-item](assets/edit-menu-item.png)
 
-### Izin Menu
+### Menu Permission
 
-Setiap menu bisa dipasangkan satu atau beberapa permission. jika pengguna yang masuk memiliki salah satu dari permission tersebut, maka menu tersebut akan muncul pada sidebar. Jika menu ini tidak dipasangkan dengan permission, maka menu akan selalu muncul.
+Each menu can be assigned one or more permissions. If the logged-in user has one of these permissions, the menu will appear in the sidebar. If this menu isn't paired with permissions, it will always appear.
 
 ![set-menu-item-permissions](assets/set-menu-item-permissions.png)
 
@@ -40,7 +40,7 @@ Setiap menu bisa dipasangkan satu atau beberapa permission. jika pengguna yang m
 MIX_DEFAULT_MENU
 ```
 
-Pada frontend, menu diambil dari file store.js. Berikut struktur direktori untuk mengubah pemanggilan API menu.
+On the frontend, the menus are loaded from the store.js file. Here's the directory structure for changing the menu API calls.
 
 ```
 - your project

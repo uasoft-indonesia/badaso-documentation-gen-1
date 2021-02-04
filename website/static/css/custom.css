@@ -136,3 +136,11 @@
 .navigationSlider .slidingNav ul li > a:focus, .navigationSlider .slidingNav ul li > a:hover, .navigationSlider .slidingNav ul li.siteNavItemActive > a, .navigationSlider .slidingNav ul li.siteNavGroupActive > a {
   background-color: #06bbd3;
 }
+
+#languages-dropdown-items {
+  background-color: #06bbd3;
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+  pointer-events: all;
+}

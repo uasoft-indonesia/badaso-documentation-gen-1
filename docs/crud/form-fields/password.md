@@ -4,9 +4,9 @@ title: Password
 sidebar_label: Password
 ---
 
-## *Generate* CRUD
+## Generate CRUD
 
-Badaso menyediakan sebuah komponen untuk input password, yaitu BadasoPassword. Pada saat *generate* CRUD, lebar komponen ini dapat diatur pada Optional Details dengan format seperti berikut.
+Badaso provides a component for password input, namely BadasoPassword. When generating CRUD, the width of this component can be set in Optional Details with the following format.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```json
@@ -18,7 +18,7 @@ Badaso menyediakan sebuah komponen untuk input password, yaitu BadasoPassword. P
 
 ## View: BadasoPassword
 
-Kode di bawah merupakan sampel untuk penggunaan BadasoPassword pada Vue Template.
+The code below is a sample for using BadasoPassword in the Vue Template.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->
@@ -35,7 +35,7 @@ Kode di bawah merupakan sampel untuk penggunaan BadasoPassword pada Vue Template
 
 ### ```props```
 
-Berikut merupakan daftar *props* yang disediakan komponen ini.
+Below is a list of props that this component provides.
 
 ```
 size: {

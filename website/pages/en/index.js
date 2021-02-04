@@ -13,6 +13,7 @@ const CompLibrary = require('../../core/CompLibrary.js');
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
+const translate = require('../../server/translate.js').translate;
 
 class HomeSplash extends React.Component {
   render() {
@@ -66,7 +67,7 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href={docUrl('getting-started/introduction')}>Mulai</Button>
+            <Button href={docUrl('getting-started/introduction')}><translate>Get Started</translate></Button>
             {/* <Button href={docUrl('doc1.html')}>Example Link</Button>
             <Button href={docUrl('doc2.html')}>Example Link 2</Button> */}
           </PromoSection>
@@ -117,35 +118,24 @@ class Index extends React.Component {
         padding={['bottom', 'top']}
         id={props.id}
         background={props.background}>
-        {/* <GridBlock
-          align="center"
-          contents={props.children}
-          layout={props.layout}
-          className="has-zindex-100"
-        /> */}
         <div class="gridBlock">
           <Item contents={props.children} />
         </div>
       </Container>
     );
 
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
     const BadasoCRUD = () => (
       <Block background="light">
         {[
           {
-            content: '*Interface* badaso memungkinkan penggunanya untuk membuat fungsi CRUD (*Create, Read, Update, and Delete*) untuk postingan, halaman, atau tabel lainnya yang ada di dalam *database*.',
+            content: (
+              <translate>Badaso is admin interface allows you to create CRUD functionality to your posts, pages, or any other table in your database.</translate>
+            ),
             image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: 'left',
-            title: 'CRUD Generator',
+            title: (
+              <translate>CRUD Generator</translate>
+            ),
           },
         ]}
       </Block>
@@ -159,21 +149,26 @@ class Index extends React.Component {
             // image: `${baseUrl}img/undraw_react.svg`,
             imageAlign: 'top',
             icon: 'download',
-            title: 'Downloads'
+            title: (
+              <translate>Downloads</translate>
+            )
           },
           {
             content: '125.000',
             // image: `${baseUrl}img/undraw_operating_system.svg`,
             imageAlign: 'top',
             icon: 'star_rate',
-            title: 'Stars'
+            title: (
+              <translate>Stars</translate>
+            )
           },
           {
             content: '45.000',
-            // image: `${baseUrl}img/undraw_operating_system.svg`,
             imageAlign: 'top',
             icon: 'account_tree',
-            title: 'Forks'
+            title: (
+              <translate>Forks</translate>
+            )
           },
         ]}
       </GithubBlock>
@@ -183,35 +178,14 @@ class Index extends React.Component {
       <Block>
         {[
           {
-            content: 'Keren karena badaso mampu menghemat waktu kamu dan membuat aplikasi lebih menyenangkan.',
+            content: (
+              <translate>Badaso can save you so much time and it'll make building applications even more fun!</translate>
+            ),
             image: `${baseUrl}img/undraw_website_builder.svg`,
             imageAlign: 'right',
-            title: 'Badaso itu keren',
-          },
-        ]}
-      </Block>
-    );
-
-    const Features = () => (
-      <Block layout="fourColumn">
-        {[
-          {
-            content: 'This is the content of my feature',
-            // image: `${baseUrl}img/undraw_react.svg`,
-            imageAlign: 'top',
-            title: 'Feature One',
-          },
-          {
-            content: 'The content of my second feature',
-            // image: `${baseUrl}img/undraw_operating_system.svg`,
-            imageAlign: 'top',
-            title: 'Feature Two',
-          },
-          {
-            content: 'The content of my second feature',
-            // image: `${baseUrl}img/undraw_operating_system.svg`,
-            imageAlign: 'top',
-            title: 'Feature Two',
+            title: (
+              <translate>Badaso is Awesome</translate>
+            ),
           },
         ]}
       </Block>
@@ -236,12 +210,12 @@ class Index extends React.Component {
 
       return (
         <div className="productShowcaseSection paddingBottom">
-          <h2>Pengguna Badaso</h2>
+          <h2><translate>Who is Using Badaso?</translate></h2>
           {/* <p>This project is used by all these people</p> */}
           <div className="logos">{showcase}</div>
           <div className="more-users">
             <a className="button" href={pageUrl('users.html')}>
-              Semua Pengguna {siteConfig.title}
+              <translate>All Badaso Users</translate>
             </a>
           </div>
         </div>

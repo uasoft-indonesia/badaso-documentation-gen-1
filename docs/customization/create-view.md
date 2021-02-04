@@ -4,12 +4,12 @@ title: Create View
 sidebar_label: Create View
 ---
 
-Badaso menggunakan framework VueJS untuk Frontend. Maka dari itu untuk menambahkan view pada frontend juga menggunakan VueJS. Blok di bawah adalah struktur direktori untuk menambahkan view baru pada frontend. 
-- untuk menambahkan view, tambahkan pada direktori `views`
-- untuk penyesuaian layout dapat dilakukan pada direktori `layout`
-- untuk mengakses view baru, perlu di tambahkan dulu routing nya pada direktori `router`
-    - tambahkan route pada admin-router.js jika menambahkan view dengan layout admin-panel
-    - tambahkan route pada public-router.js jika menambahkan view dengan layout landing-page
+Badaso uses the VueJS framework for the Frontend. Therefore, adding views to the frontend also uses VueJS. The block below is a directory structure for adding a new view to the frontend.
+- To add a view, add it to the `views` directory
+- layout adjustments can be made in the `layout` directory
+- To access the new view, it is necessary to add the routing to the `router` directory
+     - add a route to admin-router.js if you add a view with admin-panel layout
+     - add a route to public-router.js if you add a view with a landing-page layout
     
 ```
 |-- your project

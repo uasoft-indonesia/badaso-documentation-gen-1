@@ -8,39 +8,39 @@ sidebar_label: Helpers
 
 ### ```formatDate```
 
-Badaso menyediakan utilitas helper untuk mengubah tanggal sesuai dengan format yang ditentukan.
-Untuk konfigurasi format tanggal dapat diubah pada file ```.env```.
+Badaso provides a helper utility to change the date according to the specified format.
+The date format configuration can be changed in the file ```.env```.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JavaScript-->
 ```js
 /**
- ** Gunakan di template
+ ** Use in vue template
  **/
-$helper.formatDate(tanggal)
+$helper.formatDate(date)
 
 /**
- ** Gunakan di script
+ ** Use in vue script
  **/
-this.$helper.formatDate(tanggal)
+this.$helper.formatDate(date)
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 
 ### ```isObjectEmpty```
 
-Helper berikut digunakan untuk memeriksa apakah sebuah nilai obyek adalah kosong atau tidak.
+The following helper is used to check whether an object value is empty or not.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JavaScript-->
 ```js
 /**
- ** Gunakan di template
+ ** Use in vue template
  **/
 $helper.isObjectEmpty
 
 /**
- ** Gunakan di script
+ ** Use in vue script
  **/
 this.$helper.isObjectEmpty
 ```
@@ -51,12 +51,12 @@ this.$helper.isObjectEmpty
 
 ### ```CaseConvert```
 
-Badaso menyediakan sebuah helper untuk mengubah kunci kasus (*case key*) dari sebuah *array* dan properti dari sebuah obyek menjadi kasus yang ditentukan.
+Badaso provides a helper for converting the case keys of an array and the properties of an object to specified cases.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```PHP
-CaseConvert::camel($obyek)
+CaseConvert::camel($object)
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
@@ -64,7 +64,7 @@ CaseConvert::camel($obyek)
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```PHP
-CaseConvert::snake($obyek)
+CaseConvert::snake($object)
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
@@ -72,12 +72,12 @@ CaseConvert::snake($obyek)
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```PHP
-CaseConvert::pascal($obyek)
+CaseConvert::pascal($object)
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-Berikut ini merupakan contoh keluaran dari helper tersebut.
+The following is an example of the output of the helper.
 
 ```json
 input: {
@@ -91,16 +91,11 @@ output: {
 
 ### ```AuthenticatedUser```
 
-Helper berikut merupakan helper untuk mendapatkan informasi terkait user yang masuk atau pemanggil API menggunakan JWT token. Informasi yang tersedia yaitu informasi user, wewenang dan izin.
+The following helper is a helper to get information related to an incoming user or API caller using the JWT token. The information that available is user information, role and permissions.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```PHP
-/**
- ** Helper untuk mendapatkan informasi pengguna yang telah
- ** login berupa informasi pengguna, wewenang, dan izin.
- **/
-
 AuthenticatedUser::getUser()
 ```
 
@@ -109,11 +104,6 @@ AuthenticatedUser::getUser()
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```PHP
-/**
- ** Helper untuk mendapatkan informasi wewenang dari pengguna
- ** yang telah login.
- **/
-
 AuthenticatedUser::getRoles($user_id)
 ```
 
@@ -122,11 +112,6 @@ AuthenticatedUser::getRoles($user_id)
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```PHP
-/**
- ** Helper untuk mendapatkan informasi izin dari pengguna
- ** yang telah login.
- **/
-
 AuthenticatedUser::getPermissions($user_id)
 ```
 
@@ -135,11 +120,6 @@ AuthenticatedUser::getPermissions($user_id)
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```PHP
-/**
- ** Helper untuk mendapatkan informasi tentang apakah pengguna
- ** mempunyai izin yang dimaksud.
- **/
- 
 AuthenticatedUser::isAllowedTo($permissions_string)
 ```
 
@@ -147,7 +127,7 @@ AuthenticatedUser::isAllowedTo($permissions_string)
 
 ### ```ApiResponse```
 
-Helper ```ApiResponse``` merupakan helper untuk membuat keluaran API dari controller sesuai standar Badaso.
+Helper ```ApiResponse``` is a helper for generating API output from the controller according to Badaso standards.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->

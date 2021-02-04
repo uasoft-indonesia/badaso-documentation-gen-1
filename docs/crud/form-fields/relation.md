@@ -4,13 +4,13 @@ title: Relation
 sidebar_label: Relation
 ---
 
-## *Generate* CRUD
+## Generate CRUD
 
-Badaso menyediakan fitur untuk merelasikan data dari suatu tabel dengan tabel lain. saat membuat sebuah CRUD, user dapat merelasikan sebuah *field* dari suatu tabel ke tabel lain dengan memilih *field* mana yang akan direlasikan, jenis relasi dan tabel tujuan.
+Badaso provides a feature to relate data from a table to other tables. When creating a CRUD, the user can link a field from one table to another by selecting which field to relate to, the relationship type and the destination table.
 
 ## View
 
-Kode di bawah merupakan sampel untuk penggunaan Relation pada Vue Template.
+The code below is a sample for using the Relation on the Vue Template.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->

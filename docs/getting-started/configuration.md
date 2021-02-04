@@ -1,14 +1,13 @@
 ---
 id: configuration
-title: Pengaturan
-sidebar_label: Pengaturan
+title: Configuration
+sidebar_label: Configuration
 ---
 
-Ketika badaso sudah berhasil terinstal, kamu akan menemukan file konfigurasi pada ```config/badaso.php``` dan ```.env```.
- Pada file ini nanti kamu akan menemukan banyak opsi untuk mengubah konfigurasi dari instalasi Badaso kamu.
+When Badaso has been successfully installed, you will find the configuration files in ```config/badaso.php``` and ```.env```. In this file you will find many options for changing the configuration of your Badaso installation.
 
-## Pencadangan
-Pengaturan pencadangan dapat diubah pada file ```.env```.
+## Back Up
+The backup settings can be changed in the ```.env``` file.
 
 ### AWS S3
 ```
@@ -18,15 +17,15 @@ AWS_DEFAULT_REGION=
 AWS_BUCKET=
 AWS_URL=
 ```
-`AWS_ACCESS_KEY_ID`: Isi untuk menggunakan fitur pencadangan ke AWS S3.
+`AWS_ACCESS_KEY_ID`: Fill in to use the backup feature to AWS S3.
 
-`AWS_SECRET_ACCESS_KEY`: Isi untuk menggunakan fitur pencadangan ke AWS S3.
+`AWS_SECRET_ACCESS_KEY`: Fill in to use the backup feature to AWS S3.
 
-`AWS_DEFAULT_REGION`: Region bucket S3 untuk mengunggah file pencadangan.
+`AWS_DEFAULT_REGION`: S3 bucket region for uploading backup files.
 
-`AWS_BUCKET`: Nama bucket S3 untuk mengunggah file pencadangan.
+`AWS_BUCKET`: S3 bucket name to upload the backup file.
 
-`AWS_URL`: URL bucket AWS S3.
+`AWS_URL`: AWS S3 bucket URL.
 
 ### Google Drive
 ```
@@ -35,16 +34,16 @@ GOOGLE_DRIVE_CLIENT_SECRET=
 GOOGLE_DRIVE_REFRESH_TOKEN=
 GOOGLE_DRIVE_FOLDER_ID=
 ```
-`GOOGLE_DRIVE_CLIENT_ID`: Isi untuk menggunakan fitur pencadangan ke Google Drive.
+`GOOGLE_DRIVE_CLIENT_ID`: Fill in to use the backup feature to Google Drive.
 
-`GOOGLE_DRIVE_CLIENT_SECRET`: Isi untuk menggunakan fitur pencadangan ke Google Drive.
+`GOOGLE_DRIVE_CLIENT_SECRET`: Fill in to use the backup feature to Google Drive.
 
-`GOOGLE_DRIVE_REFRESH_TOKEN`: Isi untuk menggunakan fitur pencadangan ke Google Drive.
+`GOOGLE_DRIVE_REFRESH_TOKEN`: Fill in to use the backup feature to Google Drive.
 
-`GOOGLE_DRIVE_FOLDER_ID`: Id folder untuk mengunggah file pencadangan ke dalam folder yang ditentukan.
+`GOOGLE_DRIVE_FOLDER_ID`: Folder id to upload backup files into the specified folder.
 
 ### Dropbox
 ```
 DROPBOX_AUTH_TOKEN=
 ```
-`GOOGLE_DRIVE_CLIENT_ID`: Isi untuk menggunakan fitur pencadangan ke Dropbox.
+`GOOGLE_DRIVE_CLIENT_ID`: Fill in to use the backup feature to Dropbox.

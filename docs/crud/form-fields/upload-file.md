@@ -4,9 +4,9 @@ title: Upload File
 sidebar_label: Upload File
 ---
 
-## *Generate* CRUD
+## Generate CRUD
 
-Badaso menyediakan sebuah komponen untuk mengunggah file, yaitu BadasoUploadFile. File yang diunggah, akan di *generate* menjadi base64 untuk dikirim ke *backend*. Pada saat *generate* CRUD, lebar komponen ini dapat diatur pada Optional Details dengan format seperti berikut.
+Badaso provides a component for uploading files, namely BadasoUploadFile. The uploaded file will be generated as base64 to be sent to the backend. When generating CRUD, the width of this component can be set in Optional Details with the following format.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```json
@@ -18,7 +18,7 @@ Badaso menyediakan sebuah komponen untuk mengunggah file, yaitu BadasoUploadFile
 
 ## View: BadasoUploadFile
 
-Kode di bawah merupakan sampel untuk penggunaan BadasoUploadFile pada Vue Template.
+The code below is a sample for using BadasoUploadFile in the Vue Template.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->
@@ -35,7 +35,7 @@ Kode di bawah merupakan sampel untuk penggunaan BadasoUploadFile pada Vue Templa
 
 ### ```props```
 
-Berikut merupakan daftar *props* yang disediakan komponen ini.
+Below is a list of props that this component provides.
 
 ```
 size: {

@@ -1,22 +1,22 @@
 ---
 id: routing
-title: Rute
-sidebar_label: Rute
+title: Routing
+sidebar_label: Routing
 ---
 
-Pada halaman ini dijelaskan mengenai *routing frontend* dan *backend* untuk CRUD yang di-*generate*.
+This page explains the frontend and backend routing for the generated CRUD.
 
-Konfigurasi *Environtment*:
+`.env` configuration:
 ```
 MIX_API_ROUTE_PREFIX=
 MIX_ADMIN_PANEL_ROUTE_PREFIX=
 ```
 
-## CRUD *Generated Routes*
+## CRUD Generated Routes
 
-### *Backend*
+### Backend
 
-Berikut ini merupakan tipe URL API yang dipanggil untuk Backend.
+The following is the type of API URL called for the Backend.
 
 * Browse/Index (List) : GET
 
@@ -49,9 +49,9 @@ BASE_URL/MIX_API_ROUTE_PREFIX/v1/entities/TABLE_SLUG/delete
 ```
 
 
-### *Frontend*
+### Frontend
 
-Berikut ini merupakan tipe URL API yang dipanggil untuk Frontend.
+The following is the type of API URL called for the Frontend.
 
 * Browse/Index (List)
 

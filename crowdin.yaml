@@ -1,0 +1,32 @@
+project_id : 439974
+api_token : eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ3UUVxdmhVM3ZMT2EyWGljbVV5VCIsImp0aSI6IjA1MzUyNjJmZTIxYWU0YzUwOGFlZjExMzA1ZWQ2Mjk0ZTI0NDY3ZmQ4NTc3ZTFkMDI2ZTBmN2YwMDBhOGJjNDBjY2EwODgzNDdjY2RiZmY0IiwiaWF0IjoxNjEyMzMxNDgyLCJuYmYiOjE2MTIzMzE0ODIsImV4cCI6MTYxNDkyMzQ4Miwic3ViIjoiMTQ2MDY3NTIiLCJkb21haW4iOm51bGwsInNjb3BlcyI6WyJwcm9qZWN0Il0sImFzc29jaWF0aW9ucyI6WyIqIl0sInNlc3Npb24iOjB9.cnrlnojvmd5xTQ0Vpd4JT0vBKTm5tcJv2-G5M54QZGcUwVKhuHgVp1JVqfFesGHlICqW8otOrTDv5luQhauNqsF837BHfydoIgm8BR8ygeDeIGRR8gNmUxh0ziZLqg9BKEylfT9xAe_fAvvsTxMJwxeSTrjfkx4nDZhzvKqc7dFArvttdMaAflnaElUw1x2YDd2pehsVz4NXxIp79QF_qwNzdnfC4Xs-VHgmNvD-lB4OaphTj5kXHebQKKcvrXwuTbUhqLL3H1OQ0zEvjA9QZdUGBgqcBqSaOdKHE-VJiDypCwPdfxkNjPdNfspH2ovXFN8kUyYX453W3SYcpW9ECgEju4LVNWT_IjMinZkDFjWQPmy9MYlBoRvjfIDhuUfoQBclMeLKwuF-SuCoPOduStOAYOYApKFJInMphjuI1NBSgfNSuMdS0ZPBhFe4gfUO_0WT8vlMDQ1MjbVXJoFD2uxsIN9eOsorGJQ-SgGxNqSyC_WAgFXjr5t1m8SrcSd4JlnGwhle7vosHMytK-2788AYc71zbJWq0-GuqvO3mB_f0vDkQmxceyLFKGQ1GbwGh3Q-NZb7BprXCeE0XzxLhmGjs4A-RgQzB7RpdAO7LEeulKq2VsSQxDjekkgmhcCuhu1kPvbXU72hMywGWHjiU_zEpOKBhOHGawKLftwdQ7I
+base_path : "../"
+preserve_hierarchy: true
+
+files:
+  -
+    source: '/docs/**/*.*'
+    ignore: 
+      -
+        '/docs/assets/*.*'
+    translation: '\\website\\translated_docs\\%locale%\\**\\%original_file_name%'
+    languages_mapping: &anchor
+      locale:
+        # 'de': 'de'
+        # 'es-ES': 'es-ES'
+        # 'fr': 'fr'
+        'id': 'id-ID'
+        # 'ja': 'ja'
+        # 'ko': 'ko'
+        # 'mr': 'mr-IN'
+        # 'pt-BR': 'pt-BR'
+        # 'zh-CN': 'zh-CN'
+        # 'zh-TW': 'zh-TW'
+  -
+    source: '/website/i18n/en.json'
+    translation: '/website/i18n/%locale%.json'
+    languages_mapping: *anchor
+  # -
+  #   source: '/website/versioned_docs/**/*.md'
+  #   translation: '/website/translated_docs/%locale%/**/%original_file_name%'
+  #   languages_mapping: *anchor

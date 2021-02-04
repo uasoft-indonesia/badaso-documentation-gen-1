@@ -4,9 +4,9 @@ title: Code Editor
 sidebar_label: Code Editor
 ---
 
-## *Generate* CRUD
+## Generate CRUD
 
-Badaso menyediakan sebuah komponen editor teks untuk masukan berupa kode. Saat *generate* CRUD untuk tipe kode, bagian Optional Details dapat diisi dengan JSON yang memiliki properti `size` untuk mengatur lebar kontainer kode editor teks.
+Badaso provides a text editor component for code input. When generating a CRUD for a code type, the Optional Details section can be filled with JSON which has a `size` property to set the width of the text editor code container.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```json
@@ -17,7 +17,7 @@ Badaso menyediakan sebuah komponen editor teks untuk masukan berupa kode. Saat *
 <!--END_DOCUSAURUS_CODE_TABS-->
 
 ## View: BadasoCode
-Kode di bawah merupakan sampel untuk penggunaan ```BadasoCodeEditor``` pada Vue Template.
+The code below is a sample for using BadasoCodeEditor on the Vue Template.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->
 ```vue
@@ -32,7 +32,7 @@ Kode di bawah merupakan sampel untuk penggunaan ```BadasoCodeEditor``` pada Vue 
 <!--END_DOCUSAURUS_CODE_TABS-->
 
 ### ```props```
-Berikut merupakan daftar *props* yang disediakan BadasoCodeEditor.
+The following is a list of props provided by BadasoCodeEditor.
 ```js
 value: {
     type: String,

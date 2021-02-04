@@ -4,14 +4,14 @@ title: Overriding Controller
 sidebar_label: Overriding Controller
 ---
 
-Setiap CRUD yang digenerate melalui CRUD generator akan menggunakan controller yang sama. ada kalanya controller ini butuh penyesuaian, seperti penambahan logika yang tidak disediakan oleh Badaso. 
+Every CRUD generated through the CRUD generator will use the same controller. there are times when this controller needs adjustments, such as adding logic that is not provided by Badaso.
 
-Untuk membuat controller baru dan menggunakannya pada CRUD yang telah digenerate, ada beberapa langkah yang perlu dilakukan, yakni:
-1. Membuat controller laravel seperti biasa
+To create a new controller and use it in the generated CRUD (overridding), there are several steps that need to be done.
+1. Create a laravel controller as usual
 ```
 php artisan make:controller NewController
 ```
-2. Menambahkan extends ke `BadasoBaseController` pada controller yang baru di buat
+2. Extends the controller to `BadasoBaseController`.
 ```
 <?php
 
@@ -22,10 +22,11 @@ class NewController extends Uasoft\Badaso\Controllers\BadasoBaseController
     //...
 }
 ```
-3. Menimpa method `BadasoBaseController. Berikut method yang tersedia
+3. Overrides the `BadasoBaseController` method. The following methods are available for overrides.
     - all
     - read
     - edit
     - add
     - delete
-4. Edit CRUD pada CRUD Management, tambahkan controller yang baru di buat
+    
+4. Edit CRUD in CRUD Management, add the new controller created

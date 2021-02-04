@@ -4,9 +4,10 @@ title: Select
 sidebar_label: Select
 ---
 
-## *Generate* CRUD
+## Generate CRUD
 
-Badaso menyediakan sebuah komponen masukan berupa pilihan dengan dropdown, yaitu BadasoSelect. Pada saat *generate* CRUD, lebar komponen ini dapat diatur pada Optional Details dengan format seperti kode di bawah. untuk menggunakan radio pada saat membuat CRUD, properti `items` pada Optional Details harus diisi.
+Badaso provides an input component in the form of a dropdown option, namely BadasoSelect. When generating CRUD, the width of this component can be set in Optional Details with the format shown in the code below. To use radio when creating a CRUD, the `items` property in Optional Details is required.
+
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```json
@@ -24,7 +25,7 @@ Badaso menyediakan sebuah komponen masukan berupa pilihan dengan dropdown, yaitu
 
 ## View: BadasoSelect
 
-Kode di bawah merupakan sampel untuk penggunaan BadasoSelect pada Vue Template.
+The code below is a sample for using BadasoSelect in the Vue Template.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->
@@ -42,7 +43,7 @@ Kode di bawah merupakan sampel untuk penggunaan BadasoSelect pada Vue Template.
 
 ### ```props```
 
-Berikut merupakan daftar *props* yang disediakan komponen ini.
+Below is a list of props that this component provides.
 
 ```
 size: {

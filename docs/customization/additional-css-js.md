@@ -1,13 +1,12 @@
 ---
 id: additional-css-js
-title: Addtional CSS and JS
-sidebar_label: Addtional CSS and JS
+title: Additional CSS and JS
+sidebar_label: Additional CSS and JS
 ---
 
 ## CSS
 
-Kamu dapat menambahkan css kustom di direktori `assets` seperti pada direktori di bawah ini.
-Setiap file SCSS yang dibuat, harus didaftarkan/diimport ke file style.scss
+You can add custom css in the `assets` directory as in the shown below. Each SCSS file that is created, must register or import to the style.scss file
 
 ```
 |-- your project
@@ -20,6 +19,6 @@ Setiap file SCSS yang dibuat, harus didaftarkan/diimport ke file style.scss
 
 ## JS
 
-Untuk menambahkan JS lain seperti vanilla JS atau library lainnya dapat dilakukan seperti menginstall library javascript biasa pada laravel. 
-- Untuk penambahan library, install library seperti biasa pada root project laravel.
-- Untuk penambahan Script JS lainnya, dapat dipasang pada semua JS badaso sesuai kebutuhan.
+To add custom JS such as vanilla JS or other libraries, you can do it like installing a regular javascript library on laravel.
+- To add a library, install the library as usual in the laravel project root.
+- For the addition of other JS scripts, it can be installed on all JS badaso as needed.

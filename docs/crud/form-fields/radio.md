@@ -4,9 +4,9 @@ title: Radio
 sidebar_label: Radio
 ---
 
-## *Generate* CRUD
+## Generate CRUD
 
-Badaso menyediakan sebuah komponen masukan berupa pilihan dengan radio *button*, yaitu BadasoRadio. Pada saat *generate* CRUD, lebar kontainer untuk komponen ini dapat diatur pada Optional Details dengan format seperti kode di bawah. Untuk menggunakan radio, saat membuat CRUD, properti `items` pada Optional Details harus diisi.
+Badaso provides an input component in the form of a choice with a radio button, namely BadasoRadio. When generating CRUD, the container width for this component can be set in Optional Details with the format shown in the code below. To use radio, when creating a CRUD the `items` property of Optional Details is required.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```json
@@ -24,7 +24,7 @@ Badaso menyediakan sebuah komponen masukan berupa pilihan dengan radio *button*,
 
 ## View: BadasoRadio
 
-Kode di bawah merupakan sampel untuk penggunaan BadasoRadio pada Vue Template.
+The code below is a sample for using BadasoRadio on the Vue Template.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->
@@ -42,7 +42,7 @@ Kode di bawah merupakan sampel untuk penggunaan BadasoRadio pada Vue Template.
 
 ### ```props```
 
-Berikut merupakan daftar *props* yang disediakan komponen ini.
+Below is a list of props that this component provides.
 
 ```
 size: {
