@@ -4,9 +4,9 @@ title: Checkbox
 sidebar_label: Checkbox
 ---
 
-## *Generate* CRUD
+## Generate CRUD
 
-Pada saat membuat CRUD, bagian Optional Details checkbox dapat di isi dengan JSON seperti di bawah. Properti `items` harus diisi sedangkan `size` tidak harus diisi karena secara *default* sudah diisi 12. Properti `items` berguna sebagai konten checkbox sedangkan `size` berfungsi untuk mengatur lebar kontainer checkbox.
+When generating a CRUD, the Optional Details checkbox can be filled with JSON as shown below. Property `items` must be filled while `size` is not required because by default it is already filled with 12. The `items` property is used as checkbox content while `size` functions to adjust the width of the checkbox container.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```json
@@ -24,7 +24,7 @@ Pada saat membuat CRUD, bagian Optional Details checkbox dapat di isi dengan JSO
 
 ## View: BadasoCheckbox
 
-Badaso menyediakan komponen Vue untuk penggunaan checkbox, yaitu BadasoCheckbox. Penggunaan BadasoCheckbox dapat dilihat pada sampel kode di bawah.
+Badaso provides a Vue component for checkbox use, namely BadasoCheckbox. The use of BadasoCheckbox can be seen in the code sample below.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->
 ```vue
@@ -41,7 +41,7 @@ Badaso menyediakan komponen Vue untuk penggunaan checkbox, yaitu BadasoCheckbox.
 
 ### ```props```
 
-Untuk penggunaan BadasoCheckbox terdapat beberapa *props* yang harus diisi dan opsional. kode di bawah merupakan daftar *props* untuk BadasoCheckbox.
+To use BadasoCheckbox, there are some props that must be filled and optional. the code below is a list of props for BadasoCheckbox.
 
 ```js
 size: {
@@ -74,5 +74,5 @@ alert: {
 },
 ```
 
-## Catatan
-*Props* ```value``` diisi dengan menggunakan v-model.
+## Note
+The ```value``` props are filled using v-model.

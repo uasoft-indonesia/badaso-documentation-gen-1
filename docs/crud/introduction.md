@@ -1,33 +1,32 @@
 ---
 id: introduction
-title: Pengenalan
-sidebar_label: Pengenalan
+title: Introduction
+sidebar_label: Introduction
 ---
 
-Ketika menambahkan atau mengubah CRUD yang telah ada, kamu akan melihat beberapa info yang dapat kamu ubah yaitu Display Name (Singular dan Plural), Server Side, URL Slug, Icon, Model Name, Controller Name, Order Column, Order Display Column, Order Direction dan Description. Kamu juga dapat memilih jika kamu ingin membuat **Permission** secara otomatis.
+When adding or editing an existing CRUD, you will see some information that you can change, namely Display Name (Singular and Plural), Server Side, URL Slug, Icon, Model Name, Controller Name, Order Column, Order Display Column, Order Direction and Description. You can also choose if you want to make a **Permission** automatically.
 
-## Membuat Deskripsi Tabel
+## Create Table Description
 ![crud-add-image](assets/crud-add-part-1.png)
 
-## Setel Properti *Field*
-* BROWSE (menyetel *field* yang akan tampil ketika kamu menjelajahi data saat ini).
-* READ (menyetel *field* yang akan tampil ketika kamu menampilkan satu data).
-* EDIT (menyetel *field* yang akan tampil dan dapat diubah ketika kamu mengubah data).
-* ADD (menyetel *field* yang akan tampil dan dapat ditambah ketika kamu menambahkan data).
-* DELETE (tidak memiliki efek apapun, jadi ini bisa dicentang atau tidak).
+## Set Field Property
+* BROWSE (sets the field that will appear when you browse the current data).
+* READ (set the field that will appear when you display one data).
+* EDIT (set field that will appear and can be changed when you edit the data).
+* ADD (set field that will appear and can be added when you add data).
+* DELETE (it doesn't have any effect, so it can be checked or not).
 
 ![generate-crud](assets/generate-crud.png)
 
-## Hasil *Form*
+## Form Result
 
-Berikut ini hasil tampilan dari *field* yang tersedia di Badaso.
+The following is the display result of field that available at Badaso.
 
 ![form-field](assets/form-field.png)
 
-## Keluaran *Form*
+## Form Output
 
-Setiap *form* yang di *generate*, akan menggunakan Vue Component yang sudah disediakan Badaso.
-Pada JSON di bawah, properti *value* adalah keluaran nilai dari tiap *form*, dan *field* adalah nama kolom dari tabel yang di *generate*.
+Every form generated will use the Vue Component provided by Badaso. In the JSON below, the value property is the output value of each form, and field is the column name of the table generated.
 
 ```json
 {
@@ -161,11 +160,10 @@ Pada JSON di bawah, properti *value* adalah keluaran nilai dari tiap *form*, dan
   ]
 }
 ```
-## Catatan
+## Note
 
-Setiap komponen yang disediakan badaso ditujukan untuk digunakan di dalam tag dengan css class ```row```. 
-semua komponen yang disedikan badaso merupakan komponen yang terdiri dari ```vs-col```. jadi pada CRUD *generator*, bagian Optional Details dapat di isi JSON dengan properti ```size```. property size ini berisi angka 1-12 yang mana angka ini adalah nilai untuk diterapkan pada ```vs-col```.
-Contoh:
+Every component provided by Badaso is intended to be used within tags with the css class ```row```. All components provided by Badaso are components that consist of ```vs-col```. So in CRUD generator, the Optional Details section can be filled in JSON with the property ```size```. This property size contains the numbers 1-12 which is the value to apply to ```vs-col```.
+Example:
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JavaScript-->
 ```js

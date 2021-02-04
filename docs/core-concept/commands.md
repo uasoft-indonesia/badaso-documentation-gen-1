@@ -1,26 +1,26 @@
 ---
 id: commands
-title: Perintah
-sidebar_label: Perintah
+title: Commands
+sidebar_label: Commands
 ---
 
-## Membuat Akun Admin
+## Creating an Admin Account
 
-Badaso menyediakan perintah untuk membuat *superadmin* akun untuk dapat masuk ke halaman dashboard.
+Badaso provides commands to create superadmin accounts to be able to enter the dashboard page.
 ```
 php artisan badaso:admin your@email.com --create
 ```
 
-## Pencadangan
+## Backup
 
-Badaso menyediakan perintah untuk menjalankan pencadangan laravel. Konfigurasi pencadangan terdapat pada file ```.env```. Konfigurasi ini meliputi file yang di cadangkan dan disk pencadangan.
+Badaso provides commands for running laravel backups. The backup configuration is contained in the file ```.env```. This configuration includes backup files and backup disks.
 ```
 php artisan badaso:backup
 ```
 
-## *Seeder*
+## Seeder
 
-Perintah berikut digunakan untuk membuat *seeder* berdasarkan sebuah tabel beserta datanya.
+The following command is used to create seeders based on a table and its data.
 ```
 php artisan badaso:generate-seeder TABLE_NAME
 ```

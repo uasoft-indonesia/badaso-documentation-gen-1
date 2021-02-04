@@ -1,16 +1,16 @@
 ---
 id: installation
-title: Instalasi
-sidebar_label: Instalasi
+title: Installation
+sidebar_label: Installation
 ---
 
-1. Menginstal Badaso sangatlah mudah. Setelah laravel terinstal, kamu dapat menambahkan Badaso dengan cara berikut ini.
+1. Badaso is easy to install. After creating your new Laravel application you can include the Badaso package with the following command.
 
 ```
 composer require uasoft-indonesia/badaso
 ```
 
-2. Tambahkan Badaso *provider* dan JWT *provider* berikut ini pada ```config/app.php```.
+2. Add the following Badaso provider and JWT provider to ```config/app.php```.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
@@ -21,7 +21,7 @@ Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-3. Tambahkan juga *aliases* berikut ini pada ```config/app.php```.
+3. Add the following aliases to ```config/app.php```.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```php
@@ -30,7 +30,7 @@ Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-4. Jalankan perintah berikut ini secara berurutan.
+4. Run the following commands in sequence.
 ```
 php artisan vendor:publish --tag=Badaso
 php artisan vendor:publish --provider="Spatie\Backup\BackupServiceProvider"
@@ -41,7 +41,7 @@ php artisan migrate
 php artisan db:seed --class=BadasoSeeder
 ```
 
-5. Tambahkan javascript *libraries* berikut ini pada ```package.json```.
+5. Add the following javascript libraries to ```package.json```.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```json
@@ -80,8 +80,8 @@ php artisan db:seed --class=BadasoSeeder
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-6. Jalankan perintah ```npm install```
-7. Tambahkan baris berikut ini pada ```webpack.mix.js```
+6. Run the command ```npm install```
+7. Add the following line to ```webpack.mix.js```
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JavaScript-->
 ```js
@@ -89,7 +89,7 @@ mix.js('resources/js/badaso/app.js', 'public/js/badaso.js')
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-8. Buka file ```.env``` lalu tambahkan baris berikut ini dan isi nilai dari masing-masing nilai jika dibutuhkan.
+8. Open the ```env``` file then add the following lines and fill in the value of each value if needed.
 ```
 JWT_SECRET={Your JWT secret key}
 FILESYSTEM_DRIVER={public by default}
@@ -124,7 +124,7 @@ BACKUP_TARGET=
 BACKUP_DISK=
 ```
 
-9. Tambahkan Badaso *guard* dan *auth provider* berikut ini dan jadikan Badaso *guard* sebagai *auth default* pada ```config/auth.php```.
+9. Add the following Badaso guard and auth provider in ```config/auth.php```. Make sure to use Badaso guard as auth default in ```config/auth.php```.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```php
@@ -155,7 +155,7 @@ return [
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-11. Tambahkan baris berikut ini pada ```config/database.php```
+11. Add the following line to the ```config/database.php```
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```php
@@ -174,7 +174,7 @@ return [
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-12. Tambahkan baris berikut ini pada ```config/filesystem.php```
+12. Add the following line to the ```config/filesystem.php```
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```php
@@ -208,8 +208,8 @@ return [
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-13. Langkah terakhir yaitu pembuatan akun admin dengan cara mengetikan perintah berikut ini.
+13. The final step is creating an admin account by typing the following command.
 ```
 php artisan badaso:admin your@email.com --create
 ```
-Jalankan laravel dengan perintah ```npm run watch``` jika dalam masa pengembangan
+Run laravel with the command ```npm run watch``` if it is under development environment.

@@ -4,9 +4,9 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-Meskipun Badaso menyediakan fitur-fitur yang mendukung pembuatan sebuah aplikasi, namun ada kalanya aplikasi tersebut butuh penyesuaian tersendiri.
+Although Badaso provides features that support the creation of an application, there are times when the application needs its own adjustments.
 
-Pada bagian ini akan dijeleskan bagaimana untuk melakukan penyesuaian aplikasi yang menggunakan Badaso. Hal-hal yang dijelaskan sebagai berikut
-1. Membuat controller baru untuk crud
-2. Membuat UI baru
-3. Menambahkan Styling baru
+This section will explain how to customize applications using Badaso. The things are explained as follows
+1. Create a new controller for overriding an CRUD
+2. Creating a new UI
+3. Added new Styling

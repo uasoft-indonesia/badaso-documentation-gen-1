@@ -4,9 +4,9 @@ title: Datetime
 sidebar_label: Datetime
 ---
 
-## *Generate* CRUD
+## Generate CRUD
 
-Badaso menyediakan sebuah komponen masukan untuk tanggal dan waktu, yaitu BadasoDatetime. Pada saat *generate* CRUD, lebar komponen ini dapat diatur pada Optional Details dengan format seperti berikut.
+Badaso provides an input component for date and time, that is BadasoDatetime. When generating CRUD, the width of this component can be set in Optional Details with the following format.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```JSON
@@ -18,7 +18,7 @@ Badaso menyediakan sebuah komponen masukan untuk tanggal dan waktu, yaitu Badaso
 
 ## View: BadasoDatetime
 
-Kode di bawah merupakan sampel untuk penggunaan BadasoDatetime pada Vue Template.
+The code below is a sample for using BadasoDatetime on the Vue Template.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->
@@ -35,7 +35,7 @@ Kode di bawah merupakan sampel untuk penggunaan BadasoDatetime pada Vue Template
 
 ### ```props```
 
-Berikut merupakan daftar *props* yang disediakan komponen ini.
+Below is a list of props that this component provides.
 
 ```
 size: {

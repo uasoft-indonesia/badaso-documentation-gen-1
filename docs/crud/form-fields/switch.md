@@ -4,9 +4,10 @@ title: Switch
 sidebar_label: Switch
 ---
 
-## *Generate* CRUD
+## Generate CRUD
 
-Badaso menyediakan sebuah komponen masukan berupa *boolean* dengan switch, yaitu BadasoRadio. Pada saat *generate* CRUD, lebar kontainer untuk komponen ini dapat diatur pada Optional Details dengan format seperti kode di bawah. Untuk menggunakan radio pada saat membuat CRUD, properti `items` pada Optional Details harus diisi.
+Badaso provides a boolean input component with a switch, namely BadasoSwitch. When generating CRUD, the container width for this component can be set in Optional Details with the format shown in the code below. To use switch when creating a CRUD, the `items` property in Optional Details is required.
+
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```json
@@ -18,7 +19,7 @@ Badaso menyediakan sebuah komponen masukan berupa *boolean* dengan switch, yaitu
 
 ## View: BadasoSwitch
 
-Kode di bawah merupakan sampel untuk penggunaan BadasoSwitch pada Vue Template.
+The code below is a sample for using BadasoSwitch in the Vue Template.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->
@@ -35,7 +36,7 @@ Kode di bawah merupakan sampel untuk penggunaan BadasoSwitch pada Vue Template.
 
 ### ```props```
 
-Berikut merupakan daftar *props* yang disediakan komponen ini.
+Below is a list of props that this component provides.
 
 ```
 size: {

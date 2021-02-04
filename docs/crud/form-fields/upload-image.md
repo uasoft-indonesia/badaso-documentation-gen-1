@@ -4,9 +4,9 @@ title: Upload Image
 sidebar_label: Upload Image
 ---
 
-## *Generate* CRUD
+## Generate CRUD
 
-Badaso menyediakan sebuah komponen untuk mengunggah file gambar, yaitu BadasoUploadImage. File yang diunggah, akan di *generate* menjadi base64 untuk dikirim ke *backend*. Beda dengan BadasoUploadFile, BadasoUploadImage dan BadasoUploadImageMultiple akan langsung menampilkan gambar setelah diunggah. Pada saat *generate* CRUD, lebar komponen ini dapat diatur pada Optional Details dengan format seperti berikut.
+Badaso provides a component for uploading image files, namely BadasoUploadImage. The uploaded file will be generated as base64 to be sent to the backend. Unlike BadasoUploadFile, BadasoUploadImage and BadasoUploadImageMultiple will display images immediately after uploading. When generating CRUD, the width of this component can be set in Optional Details with the following format.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```json
@@ -18,7 +18,7 @@ Badaso menyediakan sebuah komponen untuk mengunggah file gambar, yaitu BadasoUpl
 
 ## View: BadasoUploadImage
 
-Kode di bawah merupakan sampel untuk penggunaan BadasoUploadImage pada Vue Template.
+The code below is a sample for using BadasoUploadImage on the Vue Template.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->
@@ -35,7 +35,7 @@ Kode di bawah merupakan sampel untuk penggunaan BadasoUploadImage pada Vue Templ
 
 ### ```props```
 
-Berikut merupakan daftar *props* yang disediakan komponen ini.
+Below is a list of props that this component provides.
 
 ```
 size: {

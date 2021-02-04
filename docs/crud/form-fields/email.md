@@ -4,9 +4,9 @@ title: Email
 sidebar_label: Email
 ---
 
-## *Generate* CRUD
+## Generate CRUD
 
-Badaso menyediakan sebuah komponen masukan untuk email, yaitu BadasoEmail. Pada saat *generate* CRUD, lebar komponen ini dapat diatur pada Optional Details dengan format seperti berikut.
+Badaso provides an input component for email, namely BadasoEmail. When generating CRUD, the width of this component can be set in Optional Details with the following format.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```json
@@ -18,7 +18,7 @@ Badaso menyediakan sebuah komponen masukan untuk email, yaitu BadasoEmail. Pada 
 
 ## View: BadasoEmail
 
-Kode di bawah merupakan sampel untuk penggunaan BadasoEmail pada Vue Template.
+The code below is a sample for using BadasoEmail on the Vue Template.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->
@@ -35,7 +35,7 @@ Kode di bawah merupakan sampel untuk penggunaan BadasoEmail pada Vue Template.
 
 ### ```props```
 
-Berikut merupakan daftar *props* yang disediakan komponen ini.
+Below is a list of props that this component provides.
 
 ```
 size: {

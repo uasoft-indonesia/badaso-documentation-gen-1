@@ -1,15 +1,15 @@
 ---
 id: site-management
-title: Manajemen Situs
-sidebar_label: Manajemen Situs
+title: Site Management
+sidebar_label: Site Management
 ---
 
-Pada fitur manajemen situs, pengguna dapat mengubah informasi mengenai situs yang menggunakan Badaso. Informasi yang dapat diubah meliputi:
+In the site management feature, users can change information about sites that use Badaso. Information that can be changed includes:
 
 * Title
-* Description (Belum Digunakan)
+* Description (Have not been used)
 * Logo
-* Warna Header
-* Warna Teks Header
+* Header Color
+* Header Text Color
 
 ![site-management](assets/site-management.png)
