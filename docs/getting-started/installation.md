@@ -18,7 +18,7 @@ sidebar_label: Installation
 ]
 ```
 
-1. Add the following Badaso provider and JWT provider to ```config/app.php```.
+2. Add the following Badaso provider and JWT provider to ```config/app.php```.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
