@@ -157,18 +157,6 @@
         "title": "Overriding Controller",
         "sidebar_label": "Overriding Controller"
       },
-      "doc2": {
-        "title": "document number 2"
-      },
-      "doc3": {
-        "title": "This is document number 3"
-      },
-      "doc4": {
-        "title": "Other Document"
-      },
-      "doc5": {
-        "title": "Fifth Document"
-      },
       "getting-started/configuration": {
         "title": "Configuration",
         "sidebar_label": "Configuration"
