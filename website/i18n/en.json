@@ -329,18 +329,6 @@
         "title": "Overriding Controller",
         "sidebar_label": "Overriding Controller"
       },
-      "version-1.0/version-1.0-doc2": {
-        "title": "document number 2"
-      },
-      "version-1.0/version-1.0-doc3": {
-        "title": "This is document number 3"
-      },
-      "version-1.0/version-1.0-doc4": {
-        "title": "Other Document"
-      },
-      "version-1.0/version-1.0-doc5": {
-        "title": "Fifth Document"
-      },
       "version-1.0/getting-started/version-1.0-configuration": {
         "title": "Configuration",
         "sidebar_label": "Configuration"
@@ -364,7 +352,6 @@
     },
     "links": {
       "Docs": "Docs",
-      "API": "API",
       "Help": "Help",
       "Blog": "Blog"
     },
