@@ -6,14 +6,14 @@ sidebar_label: Installation
 
 1. Badaso is easy to install. After creating your new Laravel application you can include the Badaso package with the following command.
 
-```
+```json
 "require": {
   "uasoft-indonesia/badaso": "1.0.*"
 },
 "repositories": [
  {
    "type": "vcs",
-   "url":  "https://github.com/uasoft-indonesia/badaso.git"
+   "url":  "https://gitlab.com/uasoft/badaso.git"
  }
 ]
 ```

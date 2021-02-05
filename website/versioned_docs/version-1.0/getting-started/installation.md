@@ -14,7 +14,7 @@ original_id: installation
 "repositories": [
  {
    "type": "vcs",
-   "url":  "https://github.com/uasoft-indonesia/badaso.git"
+   "url":  "https://gitlab.com/uasoft/badaso.git"
  }
 ]
 ```

@@ -6,14 +6,14 @@ sidebar_label: Instalasi
 
 1. Menginstal Badaso sangatlah mudah. Setelah laravel terinstal, kamu dapat menambahkan Badaso dengan cara berikut ini.
 
-```
+```json
 "require": {
   "uasoft-indonesia/badaso": "1.0.*"
 },
 "repositories": [
  {
    "type": "vcs",
-   "url":  "https://github.com/uasoft-indonesia/badaso.git"
+   "url":  "https://gitlab.com/uasoft/badaso.git"
  }
 ]
 ```
