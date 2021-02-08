@@ -13,6 +13,7 @@ Before installing Badaso, make sure the laravel you are using is supported by Ba
     - **Composer 1.10.17** - Tested ✔️
 3. Laravel
     - **Laravel 5.8** - Tested ✔️
+    - **Laravel 5.7** - Tested ✔️
 4. Node
     - **Node v12.16.1** - Tested ✔️
 5. NPM

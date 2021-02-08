@@ -6,8 +6,16 @@ sidebar_label: Installation
 
 1. Badaso is easy to install. After creating your new Laravel application you can include the Badaso package with the following command.
 
-```
-composer require uasoft-indonesia/badaso
+```json
+"require": {
+  "uasoft-indonesia/badaso": "1.0.*"
+},
+"repositories": [
+ {
+   "type": "vcs",
+   "url":  "https://gitlab.com/uasoft/badaso.git"
+ }
+]
 ```
 
 2. Add the following Badaso provider and JWT provider to ```config/app.php```.
@@ -45,37 +53,36 @@ php artisan db:seed --class=BadasoSeeder
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```json
-  "devDependencies": {
-    "axios": "^0.18",
-    "bootstrap": "^4.0.0",
-    "popper.js": "^1.12",
-    "cross-env": "^5.1",
-    "jquery": "^3.2",
-    "laravel-mix": "^2.0",
-    "lodash": "^4.17.4",
-    "vue": "^2.5.7"
-  },
-  "dependencies": {
-    "@johmun/vue-tags-input": "^2.1.0",
-    "chart.js": "^2.8.0",
-    "luxon": "^1.25.0",
-    "moment": "^2.29.1",
-    "material-icons": "^0.3.1",
-    "prismjs": "^1.17.1",
-    "vue-chartjs": "^3.4.2",
-    "vue-color": "^2.7.1",
-    "vue-datetime": "^1.0.0-beta.14",
-    "vue-draggable-nested-tree": "^3.0.0-beta2",
-    "vue-i18n": "^8.22.4",
-    "vue-prism-editor": "^1.2.2",
-    "vue-router": "^3.1.3",
-    "vue2-editor": "^2.10.2",
-    "vuedraggable": "^2.24.3",
-    "vuesax": "3.12.2",
-    "vuex": "^3.1.1",
-    "vuex-persistedstate": "^4.0.0-beta.1",
-    "weekstart": "^1.0.1"
-  }
+"devDependencies": {
+ "axios": "^0.18",
+ "bootstrap": "^4.0.0",
+ "popper.js": "^1.12",
+ "cross-env": "^5.1",
+ "jquery": "^3.2",
+ "laravel-mix": "^2.0",
+ "lodash": "^4.17.4",
+ "vue": "^2.5.7"
+},
+"dependencies": {
+ "@johmun/vue-tags-input": "^2.1.0",
+ "chart.js": "^2.8.0",
+ "luxon": "^1.25.0",
+ "moment": "^2.29.1",
+ "material-icons": "^0.3.1",
+ "prismjs": "^1.17.1",
+ "vue-chartjs": "^3.4.2",
+ "vue-color": "^2.7.1",
+ "vue-datetime": "^1.0.0-beta.14",
+ "vue-draggable-nested-tree": "^3.0.0-beta2",
+ "vue-i18n": "^8.22.4",
+ "vue-prism-editor": "^1.2.2",
+ "vue-router": "^3.1.3",
+ "vue2-editor": "^2.10.2",
+ "vuedraggable": "^2.24.3",
+ "vuesax": "3.12.2",
+ "vuex": "^3.1.1",
+ "vuex-persistedstate": "^4.0.0-beta.1",
+ "weekstart": "^1.0.1"
 }
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
