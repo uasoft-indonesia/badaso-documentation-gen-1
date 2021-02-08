@@ -118,7 +118,7 @@ class Index extends React.Component {
         padding={['bottom', 'top']}
         id={props.id}
         background={props.background}>
-        <div class="gridBlock">
+        <div class="gridBlock has-position-relative">
           <Item contents={props.children} />
         </div>
       </Container>
