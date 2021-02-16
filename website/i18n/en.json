@@ -173,6 +173,10 @@
         "title": "Prerequisite",
         "sidebar_label": "Prerequisite"
       },
+      "getting-started/upgrading": {
+        "title": "Upgrading",
+        "sidebar_label": "Upgrading"
+      },
       "getting-started/what-is-badaso": {
         "title": "What is Badaso",
         "sidebar_label": "What is Badaso"
@@ -344,6 +348,10 @@
       "version-1.0/getting-started/version-1.0-prerequisite": {
         "title": "Prerequisite",
         "sidebar_label": "Prerequisite"
+      },
+      "version-1.0/getting-started/version-1.0-upgrading": {
+        "title": "Upgrading",
+        "sidebar_label": "Upgrading"
       },
       "version-1.0/getting-started/version-1.0-what-is-badaso": {
         "title": "What is Badaso",
