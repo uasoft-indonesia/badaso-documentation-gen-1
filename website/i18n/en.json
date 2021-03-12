@@ -157,6 +157,10 @@
         "title": "Overriding Controller",
         "sidebar_label": "Overriding Controller"
       },
+      "customization/widget": {
+        "title": "Widget",
+        "sidebar_label": "Widget"
+      },
       "getting-started/configuration": {
         "title": "Configuration",
         "sidebar_label": "Configuration"
@@ -332,6 +336,10 @@
       "version-1.0/customization/version-1.0-overriding-controller": {
         "title": "Overriding Controller",
         "sidebar_label": "Overriding Controller"
+      },
+      "version-1.0/customization/version-1.0-widget": {
+        "title": "Widget",
+        "sidebar_label": "Widget"
       },
       "version-1.0/getting-started/version-1.0-configuration": {
         "title": "Configuration",
