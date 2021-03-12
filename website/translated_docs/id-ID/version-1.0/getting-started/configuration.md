@@ -47,3 +47,42 @@ GOOGLE_DRIVE_FOLDER_ID=
 DROPBOX_AUTH_TOKEN=
 ```
 `GOOGLE_DRIVE_CLIENT_ID`: Isi untuk menggunakan fitur pencadangan ke Dropbox.
+
+## Hidden Tables
+
+Hidden tables berguna untuk menyembunyikan table pengguna pada halaman CRUD Generator. Hidden tables dapat diatur pada file konfigurasi badaso yaitu `config\badaso.php`.
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--PHP-->
+```php
+<?php
+
+return [
+    ...
+    'hidden_tables' => [
+        ...
+        // tambahkan table disini
+    ],
+    ...
+];
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
+
+## Watch Tables
+
+Watch tables berguna untuk membuat seeder CRUD_DATA otomatis pada table. Watch tables dapat diatur pada file konfigurasi badaso yaitu `config\badaso.php`.
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--PHP-->
+```php
+<?php
+
+return [
+    ...
+    'watch_tables' => [
+        // add the table here
+    ],
+    ...
+];
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
