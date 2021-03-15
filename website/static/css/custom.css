@@ -251,3 +251,7 @@
   stroke: #f1c40f;
   fill: #f1c40f;
 }
+
+.tabs .nav-tabs > div.active {
+  border-bottom: 4px solid #06bbd3;
+}

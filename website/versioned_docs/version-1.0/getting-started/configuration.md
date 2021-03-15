@@ -48,3 +48,42 @@ GOOGLE_DRIVE_FOLDER_ID=
 DROPBOX_AUTH_TOKEN=
 ```
 `GOOGLE_DRIVE_CLIENT_ID`: Fill in to use the backup feature to Dropbox.
+
+## Hidden Tables
+
+The hidden table is useful for hiding the users table on the CRUD Generator page. Hidden tables can be set in badaso configuration file which is `config\badaso.php`.
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--PHP-->
+```php
+<?php
+
+return [
+    ...
+    'hidden_tables' => [
+        ...
+        // add the table here
+    ],
+    ...
+];
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
+
+## Watch Tables
+
+Watch tables allow you to create automatic CRUD_DATA seeders on tables. Watch tables can be set in badaso configuration file which is `config\badaso.php`.
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--PHP-->
+```php
+<?php
+
+return [
+    ...
+    'watch_tables' => [
+        // add the table here
+    ],
+    ...
+];
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
