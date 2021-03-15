@@ -4,7 +4,7 @@ title: Instalasi
 sidebar_label: Instalasi
 ---
 ## Catatan
-Sebelum menggunakan Badaso, Silahkan registrasi pada Dashboard Badaso untuk mendapatkan BADASO_LICENCE_KEY. Key ini harus disertakan pada .env project laravel.
+Sebelum menggunakan Badaso, Silahkan registrasi pada [Badaso Dashboard](https://badaso-dashboard.uatech.co.id/) untuk mendapatkan BADASO_LICENCE_KEY. Key ini harus disertakan pada .env project laravel.
 
 1. Menginstal Badaso sangatlah mudah. Setelah laravel terinstal, kamu dapat menambahkan Badaso dengan cara berikut ini.
 

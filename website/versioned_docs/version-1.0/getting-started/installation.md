@@ -6,7 +6,7 @@ original_id: installation
 ---
 
 ### Note
-Before using Badaso, please register on Badaso Dashboard to get BADASO_LICENCE_KEY. This key must be included in the laravel project's .env.
+Before using Badaso, please register on [Badaso Dashboard](https://badaso-dashboard.uatech.co.id/) to get BADASO_LICENCE_KEY. This key must be included in the laravel project's .env.
 
 
 1. Badaso is easy to install. After creating your new Laravel application you can include the Badaso package with the following command.
