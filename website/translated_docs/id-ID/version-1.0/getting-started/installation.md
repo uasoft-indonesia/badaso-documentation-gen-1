@@ -8,16 +8,8 @@ Sebelum menggunakan Badaso, Silahkan registrasi pada [Badaso Dashboard](https://
 
 1. Menginstal Badaso sangatlah mudah. Setelah laravel terinstal, kamu dapat menambahkan Badaso dengan cara berikut ini.
 
-```json
-"require": {
-  "uasoft-indonesia/badaso": "1.0.*"
-},
-"repositories": [
- {
-   "type": "vcs",
-   "url":  "https://gitlab.com/uasoft/badaso.git"
- }
-]
+```bash
+composer require uasoft-indonesia/badaso
 ```
 
 2. Tambahkan Badaso *provider* dan JWT *provider* berikut ini pada ```config/app.php```.

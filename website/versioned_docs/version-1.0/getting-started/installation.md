@@ -11,16 +11,8 @@ Before using Badaso, please register on [Badaso Dashboard](https://badaso-dashbo
 
 1. Badaso is easy to install. After creating your new Laravel application you can include the Badaso package with the following command.
 
-```json
-"require": {
-  "uasoft-indonesia/badaso": "1.0.*"
-},
-"repositories": [
- {
-   "type": "vcs",
-   "url":  "https://gitlab.com/uasoft/badaso.git"
- }
-]
+```bash
+composer require uasoft-indonesia/badaso
 ```
 
 2. Add the following Badaso provider and JWT provider to ```config/app.php```.
