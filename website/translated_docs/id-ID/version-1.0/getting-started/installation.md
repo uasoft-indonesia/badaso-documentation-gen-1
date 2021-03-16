@@ -100,33 +100,56 @@ mix.js('resources/js/badaso/app.js', 'public/js/badaso.js')
 
 8. Buka file ```.env``` lalu tambahkan baris berikut ini dan isi nilai dari masing-masing nilai jika dibutuhkan.
 ```
-JWT_SECRET={Your JWT secret key}
-FILESYSTEM_DRIVER={public by default}
+#REQUIRED. Set a key as secret key for generating JWT token
+JWT_SECRET=
 
-#must be filled in
+#OPTIONAL. Laravel file system driver, default public
+FILESYSTEM_DRIVER=
+
+#OPTIONAL. Set JWT Token lifetime, default 60 minutes
+BADASO_AUTH_TOKEN_LIFETIME=
+
+#REQUIRED. Licence key that can accuired in Badaso Dashbord
+BADASO_LICENCE_KEY=
+
+#REQUIRED. Set Route prefix for your dashboard. Access dashboard via {HOST}/{MIX_ADMIN_PANEL_ROUTE_PREFIX}
 MIX_ADMIN_PANEL_ROUTE_PREFIX=
+
+#REQUIRED. Set default menu to generate menu in dashboard. By default Badaso provide `admin` as default menu
 MIX_DEFAULT_MENU=
+
+#REQUIRED. Set prefix for api that badaso provide. By default Badaso provide `badaso-api` as prefix. 
 MIX_API_ROUTE_PREFIX=
+
+#REQUIRED. Badaso provide Log Viewer feature. please set a route to access this feature
 MIX_LOG_VIEWER_ROUTE=
 
+#OPTIONAL. Format to display date in UI
 MIX_DATE_FORMAT=
+
+#OPTIONAL. Format to display time in UI
 MIX_TIME_FORMAT=
+
+#OPTIONAL. Format to display datetime in UI
 MIX_DATETIME_FORMAT=
 
-#opsional
+#OPTIONAL. Set AWS credential if use aws as storage
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 AWS_DEFAULT_REGION=
 AWS_BUCKET=
 AWS_URL=
-#opsional
+
+#OPTIONAL. Set Google Drive credential if use Google Drive as storage
 GOOGLE_DRIVE_CLIENT_ID=
 GOOGLE_DRIVE_CLIENT_SECRET=
 GOOGLE_DRIVE_REFRESH_TOKEN=
 GOOGLE_DRIVE_FOLDER_ID=
-#opsional
+
+#OPTIONAL. Set Dropbox credential if use Dropbox as storage
 DROPBOX_AUTH_TOKEN=
 
+#OPTIONAL. Badaso provide backup feature. please fill variable below to use this feature.
 #fill with one of all,database,files, backup will not run if BACKUP_TARGET empty
 BACKUP_TARGET=
 #fill with many of s3,google,dropbox, backup will not run if BACKUP_TARGET empty
