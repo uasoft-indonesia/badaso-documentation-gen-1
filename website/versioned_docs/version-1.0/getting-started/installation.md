@@ -5,16 +5,29 @@ sidebar_label: Installation
 original_id: installation
 ---
 
-### Note
+### Preparation
 Before using Badaso, please register on [Badaso Dashboard](https://badaso-dashboard.uatech.co.id/) to get BADASO_LICENCE_KEY. This key must be included in the laravel project's .env.
 Here are the steps for registering and getting a license on Badaso Dashboard.
 1. Register, enter your data name, email and password
+
 ![register](assets/dashboard-register.png)
+
 2. Register, enter your data name, email and password
+
 ![verify](assets/dashboard-verify.png)
+
 3. After successful verification, you will be directed to the dashboard page.
+
 4. Your license can be obtained in the License menu (License)
+
 ![licence](assets/dashboard-licence.png)
+
+5. Add license to your .env
+
+`BADASO_LICENCE_KEY={your license from number 4}`
+
+
+### Installation step
 
 After getting the license, you can proceed to Badaso installation.
 
