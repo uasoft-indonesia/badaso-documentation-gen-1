@@ -145,7 +145,7 @@
         "title": "Additional CSS and JS",
         "sidebar_label": "Additional CSS and JS"
       },
-      "customization/create-view": {
+      "customization/version-1.0-create-view": {
         "title": "Create View",
         "sidebar_label": "Create View"
       },
@@ -156,6 +156,10 @@
       "customization/overriding-controller": {
         "title": "Overriding Controller",
         "sidebar_label": "Overriding Controller"
+      },
+      "customization/version-1.0-overriding-view": {
+        "title": "Overriding View",
+        "sidebar_label": "Overriding View"
       },
       "customization/version-1.0-widget": {
         "title": "Widget",
@@ -336,6 +340,10 @@
       "version-1.0/customization/version-1.0-overriding-controller": {
         "title": "Overriding Controller",
         "sidebar_label": "Overriding Controller"
+      },
+      "version-1.0/customization/version-1.0-overriding-view": {
+        "title": "Overriding View",
+        "sidebar_label": "Overriding View"
       },
       "version-1.0/customization/version-1.0-widget": {
         "title": "Widget",

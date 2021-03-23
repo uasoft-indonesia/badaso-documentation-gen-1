@@ -55,6 +55,7 @@
     "Customization": [
       "version-1.0-customization/introduction",
       "version-1.0-customization/overriding-controller",
+      "version-1.0-customization/overriding-view",
       "version-1.0-customization/create-view",
       "version-1.0-customization/additional-css-js",
       "version-1.0-customization/widget"

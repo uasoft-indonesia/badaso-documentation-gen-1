@@ -54,6 +54,7 @@
     "Customization": [
       "customization/introduction",
       "customization/overriding-controller",
+      "customization/overriding-view",
       "customization/create-view",
       "customization/additional-css-js",
       "customization/widget"
