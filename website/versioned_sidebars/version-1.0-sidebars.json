@@ -50,7 +50,8 @@
       "version-1.0-core-concept/site-management",
       "version-1.0-core-concept/helpers",
       "version-1.0-core-concept/multilanguage",
-      "version-1.0-core-concept/commands"
+      "version-1.0-core-concept/commands",
+      "version-1.0-core-concept/database-management"
     ],
     "Customization": [
       "version-1.0-customization/introduction",

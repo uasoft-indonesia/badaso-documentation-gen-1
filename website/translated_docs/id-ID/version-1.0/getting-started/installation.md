@@ -3,26 +3,40 @@ id: installation
 title: Instalasi
 sidebar_label: Instalasi
 ---
-## Catatan
-Sebelum menggunakan Badaso, Silahkan registrasi pada [Badaso Dashboard](https://badaso-dashboard.uatech.co.id/) untuk mendapatkan BADASO_LICENCE_KEY. Key ini harus disertakan pada .env project laravel.
+
+## Persiapan
+Sebelum menggunakan Badaso, Silahkan registrasi pada [Badaso Dashboard](https://badaso-dashboard.uatech.co.id/) untuk mendapatkan `BADASO_LICENCE_KEY`. Key ini harus disertakan pada `.env` project laravel.
 Berikut langkah-langkah untuk mendaftar dan mendapatkan lisensi di Badaso Dashboard.
-1. Register, masukkan data name, email dan password
+
+1. Register, masukkan data name, email dan password.
+ 
 ![register](assets/dashboard-register.png)
-2. Badaso will send a verification code to the email you entered
+
+2. Setelah itu, Badaso akan mengirimkan token ke email Anda untuk verifikasi email Anda.
+ 
 ![verify](assets/dashboard-verify.png)
-3. Setelah berhasil verifikasi, anda akan diarahkan ke halaman dashboard.
-4. Lisensi anda dapat diperoleh pada menu Lisensi(Licence)
+
+3. Setelah berhasil verifikasi, Anda akan diarahkan ke halaman dashboard.
+
+4. Lisensi Anda dapat diperoleh pada menu Lisensi (Licence).
+
 ![licence](assets/dashboard-licence.png)
 
-Setelah mendapatkan lisensi, anda dapat melanjutkan ke instalasi Badaso.
+5. Tambahkan lisensi Anda di `.env` project.
 
-1. Menginstal Badaso sangatlah mudah. Setelah laravel terinstal, kamu dapat menambahkan Badaso dengan cara berikut ini.
+`BADASO_LICENCE_KEY="ISI_LICENCI_DISINI"`
+
+## Instalasi
+
+Setelah mendapatkan lisensi, Anda dapat melanjutkan ke instalasi Badaso.
+
+1. Menginstal Badaso sangatlah mudah. Setelah laravel terinstal, kamu dapat menambahkan Badaso dengan perintah berikut ini.
 
 ```bash
 composer require uasoft-indonesia/badaso
 ```
 
-2. Tambahkan Badaso *provider* dan JWT *provider* berikut ini pada ```config/app.php```.
+2. Tambahkan Badaso provider dan JWT provider berikut ini pada ```config/app.php```.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
@@ -33,7 +47,7 @@ Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-3. Tambahkan juga *aliases* berikut ini pada ```config/app.php```.
+3. Tambahkan juga aliases berikut ini pada ```config/app.php```.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```php
@@ -53,7 +67,7 @@ php artisan migrate
 php artisan db:seed --class=BadasoSeeder
 ```
 
-5. Tambahkan javascript *libraries* berikut ini pada ```package.json```.
+5. Tambahkan javascript libraries berikut ini pada ```package.json```.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JSON-->
 ```json
@@ -83,6 +97,7 @@ php artisan db:seed --class=BadasoSeeder
  "vue-router": "^3.1.3",
  "vue2-editor": "^2.10.2",
  "vuedraggable": "^2.24.3",
+ "vuelidate": "^0.7.6",
  "vuesax": "3.12.2",
  "vuex": "^3.1.1",
  "vuex-persistedstate": "^4.0.0-beta.1",
@@ -158,7 +173,7 @@ BACKUP_TARGET=
 BACKUP_DISK=
 ```
 
-9. Tambahkan Badaso *guard* dan *auth provider* berikut ini pada ```config/auth.php```. Pastikan kamu menggunakan Badaso *guard* sebagai *auth default* pada ```config/auth.php```.
+9. Tambahkan Badaso guard dan auth provider berikut ini pada ```config/auth.php```. Pastikan kamu menggunakan Badaso guard sebagai auth default pada ```config/auth.php```.
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```php

@@ -4,18 +4,36 @@ title: Installation
 sidebar_label: Installation
 ---
 
+## Preparation
+Before using Badaso, please register on [Badaso Dashboard](https://badaso-dashboard.uatech.co.id/) to get `BADASO_LICENCE_KEY`. This key must be included in the laravel project's `.env`.
+Here are the steps for registering and getting a license on Badaso Dashboard.
+
+1. Register, enter your data name, email and password
+
+![register](assets/dashboard-register.png)
+
+2. After that, Badaso will send token to your email for your email verification.
+
+![verify](assets/dashboard-verify.png)
+
+3. After successful verification, you will be directed to the dashboard page.
+
+4. Your license can be obtained in the License menu (License).
+
+![licence](assets/dashboard-licence.png)
+
+5. Add license to your project `.env`.
+
+`BADASO_LICENCE_KEY="YOUR_LICENCE_HERE"`
+
+## Installation step
+
+After getting the license, you can proceed to Badaso installation.
+
 1. Badaso is easy to install. After creating your new Laravel application you can include the Badaso package with the following command.
 
-```json
-"require": {
-  "uasoft-indonesia/badaso": "1.0.*"
-},
-"repositories": [
- {
-   "type": "vcs",
-   "url":  "https://gitlab.com/uasoft/badaso.git"
- }
-]
+```bash
+composer require uasoft-indonesia/badaso
 ```
 
 2. Add the following Badaso provider and JWT provider to ```config/app.php```.
@@ -79,6 +97,7 @@ php artisan db:seed --class=BadasoSeeder
  "vue-router": "^3.1.3",
  "vue2-editor": "^2.10.2",
  "vuedraggable": "^2.24.3",
+ "vuelidate": "^0.7.6",
  "vuesax": "3.12.2",
  "vuex": "^3.1.1",
  "vuex-persistedstate": "^4.0.0-beta.1",
@@ -98,33 +117,56 @@ mix.js('resources/js/badaso/app.js', 'public/js/badaso.js')
 
 8. Open the ```env``` file then add the following lines and fill in the value of each value if needed.
 ```
-JWT_SECRET={Your JWT secret key}
-FILESYSTEM_DRIVER={public by default}
+#REQUIRED. Set a key as secret key for generating JWT token
+JWT_SECRET=
 
-#must be filled in
+#OPTIONAL. Laravel file system driver, default public
+FILESYSTEM_DRIVER=
+
+#OPTIONAL. Set JWT Token lifetime, default 60 minutes
+BADASO_AUTH_TOKEN_LIFETIME=
+
+#REQUIRED. Licence key that can accuired in Badaso Dashbord
+BADASO_LICENCE_KEY=
+
+#REQUIRED. Set Route prefix for your dashboard. Access dashboard via {HOST}/{MIX_ADMIN_PANEL_ROUTE_PREFIX}
 MIX_ADMIN_PANEL_ROUTE_PREFIX=
+
+#REQUIRED. Set default menu to generate menu in dashboard. By default Badaso provide `admin` as default menu
 MIX_DEFAULT_MENU=
+
+#REQUIRED. Set prefix for api that badaso provide. By default Badaso provide `badaso-api` as prefix. 
 MIX_API_ROUTE_PREFIX=
+
+#REQUIRED. Badaso provide Log Viewer feature. please set a route to access this feature
 MIX_LOG_VIEWER_ROUTE=
 
+#OPTIONAL. Format to display date in UI
 MIX_DATE_FORMAT=
+
+#OPTIONAL. Format to display time in UI
 MIX_TIME_FORMAT=
+
+#OPTIONAL. Format to display datetime in UI
 MIX_DATETIME_FORMAT=
 
-#opsional
+#OPTIONAL. Set AWS credential if use aws as storage
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 AWS_DEFAULT_REGION=
 AWS_BUCKET=
 AWS_URL=
-#opsional
+
+#OPTIONAL. Set Google Drive credential if use Google Drive as storage
 GOOGLE_DRIVE_CLIENT_ID=
 GOOGLE_DRIVE_CLIENT_SECRET=
 GOOGLE_DRIVE_REFRESH_TOKEN=
 GOOGLE_DRIVE_FOLDER_ID=
-#opsional
+
+#OPTIONAL. Set Dropbox credential if use Dropbox as storage
 DROPBOX_AUTH_TOKEN=
 
+#OPTIONAL. Badaso provide backup feature. please fill variable below to use this feature.
 #fill with one of all,database,files, backup will not run if BACKUP_TARGET empty
 BACKUP_TARGET=
 #fill with many of s3,google,dropbox, backup will not run if BACKUP_TARGET empty
