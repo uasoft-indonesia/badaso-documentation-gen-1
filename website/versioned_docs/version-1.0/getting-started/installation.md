@@ -5,32 +5,31 @@ sidebar_label: Installation
 original_id: installation
 ---
 
-### Preparation
-Before using Badaso, please register on [Badaso Dashboard](https://badaso-dashboard.uatech.co.id/) to get BADASO_LICENCE_KEY. This key must be included in the laravel project's .env.
+## Preparation
+Before using Badaso, please register on [Badaso Dashboard](https://badaso-dashboard.uatech.co.id/) to get `BADASO_LICENCE_KEY`. This key must be included in the laravel project's `.env`.
 Here are the steps for registering and getting a license on Badaso Dashboard.
+
 1. Register, enter your data name, email and password
 
 ![register](assets/dashboard-register.png)
 
-2. Register, enter your data name, email and password
+2. After that, Badaso will send token to your email for your email verification.
 
 ![verify](assets/dashboard-verify.png)
 
 3. After successful verification, you will be directed to the dashboard page.
 
-4. Your license can be obtained in the License menu (License)
+4. Your license can be obtained in the License menu (License).
 
 ![licence](assets/dashboard-licence.png)
 
-5. Add license to your .env
+5. Add license to your project `.env`.
 
-`BADASO_LICENCE_KEY={your license from number 4}`
+`BADASO_LICENCE_KEY="YOUR_LICENCE_HERE"`
 
-
-### Installation step
+## Installation step
 
 After getting the license, you can proceed to Badaso installation.
-
 
 1. Badaso is easy to install. After creating your new Laravel application you can include the Badaso package with the following command.
 
@@ -99,6 +98,7 @@ php artisan db:seed --class=BadasoSeeder
  "vue-router": "^3.1.3",
  "vue2-editor": "^2.10.2",
  "vuedraggable": "^2.24.3",
+ "vuelidate": "^0.7.6",
  "vuesax": "3.12.2",
  "vuex": "^3.1.1",
  "vuex-persistedstate": "^4.0.0-beta.1",

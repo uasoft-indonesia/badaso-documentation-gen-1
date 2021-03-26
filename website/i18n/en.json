@@ -9,6 +9,10 @@
         "title": "Commands",
         "sidebar_label": "Commands"
       },
+      "core-concept/database-management": {
+        "title": "Database Management",
+        "sidebar_label": "Database Management"
+      },
       "core-concept/helpers": {
         "title": "Helpers",
         "sidebar_label": "Helpers"
@@ -188,6 +192,10 @@
       "version-1.0/core-concept/version-1.0-commands": {
         "title": "Commands",
         "sidebar_label": "Commands"
+      },
+      "version-1.0/core-concept/version-1.0-database-management": {
+        "title": "Database Management",
+        "sidebar_label": "Database Management"
       },
       "version-1.0/core-concept/version-1.0-helpers": {
         "title": "Helpers",
