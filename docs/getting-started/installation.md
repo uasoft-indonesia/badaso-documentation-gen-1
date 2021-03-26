@@ -5,30 +5,31 @@ sidebar_label: Installation
 ---
 
 ## Preparation
-Before using Badaso, please register on [Badaso Dashboard](https://badaso-dashboard.uatech.co.id/) to get `BADASO_LICENCE_KEY`. This key must be included in the laravel project's `.env`.
+Before using Badaso, please register on [Badaso Dashboard](https://badaso-dashboard.uatech.co.id/) to get BADASO_KEY. This key must be included in the laravel project's .env.
 Here are the steps for registering and getting a license on Badaso Dashboard.
-
 1. Register, enter your data name, email and password
 
 ![register](assets/dashboard-register.png)
 
-2. After that, Badaso will send token to your email for your email verification.
+2. Register, enter your data name, email and password
 
 ![verify](assets/dashboard-verify.png)
 
 3. After successful verification, you will be directed to the dashboard page.
 
-4. Your license can be obtained in the License menu (License).
+4. Your license can be obtained in the License menu (License)
 
 ![licence](assets/dashboard-licence.png)
 
-5. Add license to your project `.env`.
+5. Add license to your .env
 
-`BADASO_LICENCE_KEY="YOUR_LICENCE_HERE"`
+`BADASO_KEY={your license from number 4}`
 
-## Installation step
+
+### Installation step
 
 After getting the license, you can proceed to Badaso installation.
+
 
 1. Badaso is easy to install. After creating your new Laravel application you can include the Badaso package with the following command.
 
@@ -127,18 +128,22 @@ FILESYSTEM_DRIVER=
 BADASO_AUTH_TOKEN_LIFETIME=
 
 #REQUIRED. Licence key that can accuired in Badaso Dashbord
-BADASO_LICENCE_KEY=
+BADASO_KEY=
 
-#REQUIRED. Set Route prefix for your dashboard. Access dashboard via {HOST}/{MIX_ADMIN_PANEL_ROUTE_PREFIX}
+#REQUIRED. Set Route prefix for your dashboard. 
+#Access dashboard via {HOST}/{MIX_ADMIN_PANEL_ROUTE_PREFIX}
 MIX_ADMIN_PANEL_ROUTE_PREFIX=
 
-#REQUIRED. Set default menu to generate menu in dashboard. By default Badaso provide `admin` as default menu
+#REQUIRED. Set default menu to generate menu in dashboard. 
+#By default Badaso provide `admin` as default menu
 MIX_DEFAULT_MENU=
 
-#REQUIRED. Set prefix for api that badaso provide. By default Badaso provide `badaso-api` as prefix. 
+#REQUIRED. Set prefix for api that badaso provide. By default 
+#Badaso provide `badaso-api` as prefix. 
 MIX_API_ROUTE_PREFIX=
 
-#REQUIRED. Badaso provide Log Viewer feature. please set a route to access this feature
+#REQUIRED. Badaso provide Log Viewer feature. please set a route 
+#to access this feature
 MIX_LOG_VIEWER_ROUTE=
 
 #OPTIONAL. Format to display date in UI
@@ -166,10 +171,13 @@ GOOGLE_DRIVE_FOLDER_ID=
 #OPTIONAL. Set Dropbox credential if use Dropbox as storage
 DROPBOX_AUTH_TOKEN=
 
-#OPTIONAL. Badaso provide backup feature. please fill variable below to use this feature.
-#fill with one of all,database,files, backup will not run if BACKUP_TARGET empty
+#OPTIONAL. Badaso provide backup feature. please fill variable below to 
+#use this feature.
+#fill with one of all,database,files, backup will not run if BACKUP_TARGET 
+#empty
 BACKUP_TARGET=
-#fill with many of s3,google,dropbox, backup will not run if BACKUP_TARGET empty
+#fill with many of s3,google,dropbox, backup will not run if BACKUP_TARGET 
+#empty
 BACKUP_DISK=
 ```
 

@@ -55,10 +55,14 @@
     "Customization": [
       "customization/introduction",
       "customization/overriding-controller",
-      "customization/overriding-view",
-      "customization/create-view",
       "customization/additional-css-js",
-      "customization/widget"
+      "customization/overriding-page",
+      "customization/custom-page",
+      "customization/custom-widget",
+      "customization/custom-language",
+      "customization/custom-utilities",
+      "customization/custom-API",
+      "customization/custom-component"
     ]
   }
 }

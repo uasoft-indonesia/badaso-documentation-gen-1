@@ -9,12 +9,13 @@ sidebar_label: Additional CSS and JS
 You can add custom css in the `assets` directory as in the shown below. Each SCSS file that is created, must register or import to the style.scss file
 
 ```
-|-- your project
-    |-- resources
-        |-- js
-            |-- badaso
-                |-- assets
-                    |-- scss
+📦Your Project
+ ┣ 📂resources
+ ┃ ┣ 📂js
+ ┃ ┃ ┣ 📂badaso
+ ┃ ┃ ┃ ┣ 📂assets
+ ┃ ┃ ┃ ┃ ┣ 📂scss /** register your style here **/
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜example.scss
 ```
 
 ## JS
