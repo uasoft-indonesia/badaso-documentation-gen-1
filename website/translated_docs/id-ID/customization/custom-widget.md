@@ -1,7 +1,7 @@
 ---
-id: widget
-title: Widget
-sidebar_label: Widget
+id: custom-widget
+title: Custom Widget
+sidebar_label: Custom Widget
 ---
 
 Badaso mendukung untuk membuat dan menampilkan widget pada halaman dashboard. Badaso juga menyediakan widget default (widget user, role dan permission). Berikut tampilan dari widget tersebut.
@@ -11,6 +11,13 @@ Badaso mendukung untuk membuat dan menampilkan widget pada halaman dashboard. Ba
 ## Menambahkan Widget
 
 1. Buat sebuah file php pada folder `app\Widgets` (jika folder belum ada, maka buat folder terlebih dahulu). Lalu isi file tersebut dengan template berikut.
+
+```
+📦Your Project
+ ┣ 📂app
+ ┃ ┣ 📂Widgets /** register your widget here **/
+ ┃ ┃ ┗ 📜ExampleWidget.php
+```
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
@@ -26,8 +33,8 @@ class ExampleWidget implements WidgetInterface
     public function run($params = null)
     {
         return [
-            'label' => 'Label', // Isi label sesuai keinginan
-            'value' => 0,       // Isi value sesuai keinginan
+            'label' => 'Label', /** Isi label sesuai keinginan **/
+            'value' => 0,       /** Isi value sesuai keinginan **/
         ];
     }
 }
@@ -47,7 +54,7 @@ return [
         'Uasoft\\Badaso\\Widgets\\UserWidget',
         'Uasoft\\Badaso\\Widgets\\RoleWidget',
         'Uasoft\\Badaso\\Widgets\\PermissionWidget',
-        'App\\Widgets\\ExampleWidget', // Daftarkan widget disini
+        'App\\Widgets\\ExampleWidget', /** Daftarkan widget disini **/
     ],
 ];
 ```

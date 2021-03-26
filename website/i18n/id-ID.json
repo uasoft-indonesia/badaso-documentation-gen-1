@@ -145,9 +145,29 @@
         "title": "Additional CSS and JS",
         "sidebar_label": "Additional CSS and JS"
       },
-      "customization/create-view": {
-        "title": "Create View",
-        "sidebar_label": "Create View"
+      "customization/custom-API": {
+        "title": "Custom API",
+        "sidebar_label": "Custom API"
+      },
+      "customization/custom-component": {
+        "title": "Custom Component",
+        "sidebar_label": "Custom Component"
+      },
+      "customization/custom-language": {
+        "title": "Custom Language",
+        "sidebar_label": "Custom Language"
+      },
+      "customization/custom-page": {
+        "title": "Custom Page",
+        "sidebar_label": "Custom Page"
+      },
+      "customization/custom-utilities": {
+        "title": "Custom Utilities",
+        "sidebar_label": "Custom Utilities"
+      },
+      "customization/custom-widget": {
+        "title": "Custom Widget",
+        "sidebar_label": "Custom Widget"
       },
       "customization/introduction": {
         "title": "Introduction",
@@ -156,6 +176,10 @@
       "customization/overriding-controller": {
         "title": "Overriding Controller",
         "sidebar_label": "Overriding Controller"
+      },
+      "customization/overriding-view": {
+        "title": "Overriding View",
+        "sidebar_label": "Overriding View"
       },
       "getting-started/configuration": {
         "title": "Configuration",
@@ -172,6 +196,10 @@
       "getting-started/prerequisite": {
         "title": "Prerequisite",
         "sidebar_label": "Prerequisite"
+      },
+      "getting-started/upgrading": {
+        "title": "Upgrading",
+        "sidebar_label": "Upgrading"
       },
       "getting-started/what-is-badaso": {
         "title": "What is Badaso",
@@ -317,9 +345,29 @@
         "title": "Additional CSS and JS",
         "sidebar_label": "Additional CSS and JS"
       },
-      "version-1.0/customization/version-1.0-create-view": {
-        "title": "Create View",
-        "sidebar_label": "Create View"
+      "version-1.0/customization/version-1.0-custom-API": {
+        "title": "Custom API",
+        "sidebar_label": "Custom API"
+      },
+      "version-1.0/customization/version-1.0-custom-component": {
+        "title": "Custom Component",
+        "sidebar_label": "Custom Component"
+      },
+      "version-1.0/customization/version-1.0-custom-language": {
+        "title": "Custom Language",
+        "sidebar_label": "Custom Language"
+      },
+      "version-1.0/customization/version-1.0-custom-page": {
+        "title": "Custom Page",
+        "sidebar_label": "Custom Page"
+      },
+      "version-1.0/customization/version-1.0-custom-utilities": {
+        "title": "Custom Utilities",
+        "sidebar_label": "Custom Utilities"
+      },
+      "version-1.0/customization/version-1.0-custom-widget": {
+        "title": "Custom Widget",
+        "sidebar_label": "Custom Widget"
       },
       "version-1.0/customization/version-1.0-introduction": {
         "title": "Introduction",
@@ -329,17 +377,9 @@
         "title": "Overriding Controller",
         "sidebar_label": "Overriding Controller"
       },
-      "version-1.0/version-1.0-doc2": {
-        "title": "document number 2"
-      },
-      "version-1.0/version-1.0-doc3": {
-        "title": "This is document number 3"
-      },
-      "version-1.0/version-1.0-doc4": {
-        "title": "Other Document"
-      },
-      "version-1.0/version-1.0-doc5": {
-        "title": "Fifth Document"
+      "version-1.0/customization/version-1.0-overriding-view": {
+        "title": "Overriding View",
+        "sidebar_label": "Overriding View"
       },
       "version-1.0/getting-started/version-1.0-configuration": {
         "title": "Configuration",
@@ -356,6 +396,10 @@
       "version-1.0/getting-started/version-1.0-prerequisite": {
         "title": "Prerequisite",
         "sidebar_label": "Prerequisite"
+      },
+      "version-1.0/getting-started/version-1.0-upgrading": {
+        "title": "Upgrading",
+        "sidebar_label": "Upgrading"
       },
       "version-1.0/getting-started/version-1.0-what-is-badaso": {
         "title": "What is Badaso",

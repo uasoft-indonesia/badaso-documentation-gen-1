@@ -9,12 +9,13 @@ sidebar_label: Additional CSS and JS
 Kamu dapat menambahkan css kustom di direktori `assets` seperti pada direktori di bawah ini. Setiap file SCSS yang dibuat, harus didaftarkan atau diimport ke file style.scss.
 
 ```
-|-- your project
-    |-- resources
-        |-- js
-            |-- badaso
-                |-- assets
-                    |-- scss
+📦Your Project
+ ┣ 📂resources
+ ┃ ┣ 📂js
+ ┃ ┃ ┣ 📂badaso
+ ┃ ┃ ┃ ┣ 📂assets
+ ┃ ┃ ┃ ┃ ┣ 📂scss /** register your style here **/
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜example.scss
 ```
 
 ## JS
