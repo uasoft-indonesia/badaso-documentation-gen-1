@@ -62,7 +62,7 @@
       "version-1.0-customization/custom-widget",
       "version-1.0-customization/custom-language",
       "version-1.0-customization/custom-utilities",
-      "version-1.0-customization/custom-API",
+      "version-1.0-customization/custom-API-helper",
       "version-1.0-customization/custom-component"
     ]
   }

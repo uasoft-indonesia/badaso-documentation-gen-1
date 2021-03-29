@@ -22,6 +22,10 @@ Badaso uses the VueJS framework for the frontend. Therefore, adding components t
 
 - Now you can use that custom component in your pages like below.
 
+:::important
+Custom Components will be imported automatically and can be used directly if the file naming uses the pascal case.
+:::
+
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->
 ```vue
@@ -30,16 +34,5 @@ Badaso uses the VueJS framework for the frontend. Therefore, adding components t
   <example-component></example-component>
   ...
 </template>
-<script>
-  import ExampleComponent from '../components/ExampleComponent.vue
-
-  export default {
-    ...
-    components: {
-      ExampleComponent
-    },
-    ...
-  }
-</script>
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->

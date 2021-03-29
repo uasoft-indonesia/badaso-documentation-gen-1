@@ -61,7 +61,7 @@
       "customization/custom-widget",
       "customization/custom-language",
       "customization/custom-utilities",
-      "customization/custom-API",
+      "customization/custom-API-helper",
       "customization/custom-component"
     ]
   }

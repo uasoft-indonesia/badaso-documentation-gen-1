@@ -1,15 +1,19 @@
 ---
-id: version-1.0-custom-API
-title: Custom API
-sidebar_label: Custom API
-original_id: custom-API
+id: custom-API-helper
+title: Custom API Helper
+sidebar_label: Custom API Helper
 ---
 
-Badaso also supports for customization API. Badaso uses the [Vue Router](https://router.vuejs.org/) plugin for routing. The block below is a directory structure for adding a new API.
+Badaso menyediakan utilitas berbasis [axios](https://github.com/axios/axios) untuk pemanggilan api. Bedanya resource sudah menyisipkan header seperti authorization dan content-type. Berikut ini contoh pemanggilan api tersebut.
+```js
+resource.get(url); /** equal axios.get(url) **/
+```
 
-## Add an API
+Badaso juga mendukung untuk kustomisasi API helper. Blok di bawah ini adalah struktur direktori untuk menambahkan API helper baru.
 
-- To add an API, add it to the `modules` directory in `api` directory.
+## Menambahkan sebuah API Helper
+
+- Untuk menambahkan API helper, tambahkan ke direktori `modules` di direktori `api`.
 
 ```
 📦Your Project
@@ -21,7 +25,7 @@ Badaso also supports for customization API. Badaso uses the [Vue Router](https:/
  ┃ ┃ ┃ ┃ ┃ ┗ 📜example-api.js
 ```
 
-- Below is an example of HTTP request method that you can use.
+- Di bawah ini adalah contoh HTTP request method yang dapat Anda gunakan.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--GET-->
@@ -62,7 +66,7 @@ example(data) {
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-- Here is the example of using the custom API.
+- Di bawah ini adalah contoh penerapan dari kustom API helper.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Template-->

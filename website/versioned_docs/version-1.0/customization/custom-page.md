@@ -9,7 +9,7 @@ Badaso uses the VueJS framework for the Frontend. Therefore, adding pages to the
 
 ## Add Custom Page
 
-- To add a pages, add it to the `pages` directory.
+- To add a pages, add it to the `custom-pages` directory.
 
 ```
 📦Your Project
@@ -35,8 +35,8 @@ Badaso uses the VueJS framework for the Frontend. Therefore, adding pages to the
  ┃ ┃ ┃ ┣ 📂router   /** create your own router .js here **/
  ┃ ┃ ┃ ┃ ┣ 📂admin  /** router page that using admin layout **/
  ┃ ┃ ┃ ┃ ┣ 📂auth   /** router page that using auth layout **/
- ┃ ┃ ┃ ┃ ┣ 📂others /** router page that using public layout **/
- ┃ ┃ ┃ ┃ ┗ 📂public /** router page that using custom layout **/
+ ┃ ┃ ┃ ┃ ┣ 📂others /** router page that using your custom layout **/
+ ┃ ┃ ┃ ┃ ┗ 📂public /** router page that using public layout **/
 ```
 
 - layout adjustments can be made in the `layout` directory.

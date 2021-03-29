@@ -21,6 +21,10 @@ Badaso menggunakan VueJS framework untuk frontend. Oleh karena itu, penambahan k
 
 - Sekarang Anda dapat menggunakan komponen kustom itu di halaman Anda seperti contoh di bawah.
 
+:::important
+Custom Component akan di-import otomatis dan dapat digunakan secara langsung jika penamaan file menggunakan pascal case.
+:::
+
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Vue-->
 ```vue
@@ -29,16 +33,5 @@ Badaso menggunakan VueJS framework untuk frontend. Oleh karena itu, penambahan k
   <example-component></example-component>
   ...
 </template>
-<script>
-  import ExampleComponent from '../components/ExampleComponent.vue
-
-  export default {
-    ...
-    components: {
-      ExampleComponent
-    },
-    ...
-  }
-</script>
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
