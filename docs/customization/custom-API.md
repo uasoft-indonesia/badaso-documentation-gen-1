@@ -1,14 +1,14 @@
 ---
-id: custom-API
-title: Custom API
-sidebar_label: Custom API
+id: custom-API-helper
+title: Custom API Helper
+sidebar_label: Custom API Helper
 ---
 
-Badaso also supports for customization API. The block below is a directory structure for adding a new API.
+Badaso also supports for customization API helper. The block below is a directory structure for adding a new API  helper.
 
 ## Add an API
 
-- To add an API, add it to the `modules` directory in `api` directory.
+- To add an API helper, add it to the `modules` directory in `api` directory.
 
 ```
 📦Your Project
@@ -16,7 +16,7 @@ Badaso also supports for customization API. The block below is a directory struc
  ┃ ┣ 📂js
  ┃ ┃ ┣ 📂badaso
  ┃ ┃ ┃ ┣ 📂api
- ┃ ┃ ┃ ┃ ┣ 📂modules /** you can add an API here **/
+ ┃ ┃ ┃ ┃ ┣ 📂modules /** you can add an API helper here **/
  ┃ ┃ ┃ ┃ ┃ ┗ 📜example-api.js
 ```
 
@@ -61,7 +61,7 @@ example(data) {
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-- Here is the example of using the custom API.
+- Here is the example of using the custom API helper.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Template-->

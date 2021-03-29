@@ -1,14 +1,14 @@
 ---
-id: custom-API
-title: Custom API
-sidebar_label: Custom API
+id: custom-API-helper
+title: Custom API Helper
+sidebar_label: Custom API Helper
 ---
 
-Badaso juga mendukung untuk kustomisasi API. Blok di bawah ini adalah struktur direktori untuk menambahkan API baru.
+Badaso juga mendukung untuk kustomisasi API helper. Blok di bawah ini adalah struktur direktori untuk menambahkan API helper baru.
 
 ## Menambahkan sebuah API
 
-- Untuk menambahkan API, tambahkan ke direktori `modules` di direktori `api`.
+- Untuk menambahkan API helper, tambahkan ke direktori `modules` di direktori `api`.
 
 ```
 📦Your Project
@@ -61,7 +61,7 @@ example(data) {
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-- Di bawah ini adalah contoh penerapan dari kustom API.
+- Di bawah ini adalah contoh penerapan dari kustom API helper.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Template-->
