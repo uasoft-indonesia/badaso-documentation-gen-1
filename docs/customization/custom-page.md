@@ -4,7 +4,7 @@ title: Custom Page
 sidebar_label: Custom Page
 ---
 
-Badaso uses the VueJS framework for the Frontend. Therefore, adding pages to the frontend also uses VueJS. The block below is a directory structure for adding a new page to the frontend.
+Badaso uses the VueJS framework for the Frontend and [Vue-Router](https://router.vuejs.org/) for routing. Therefore, adding pages to the frontend also uses VueJS. The block below is a directory structure for adding a new page to the frontend.
 
 ## Add Custom Page
 

@@ -4,7 +4,7 @@ title: Custom Page
 sidebar_label: Custom Page
 ---
 
-Badaso menggunakan framework VueJS untuk Frontend. Maka dari itu untuk menambahkan page pada frontend juga menggunakan VueJS. Blok di bawah adalah struktur direktori untuk menambahkan page baru pada frontend.
+Badaso menggunakan framework VueJS untuk Frontend dan [Vue-Router](https://router.vuejs.org/) untuk routing. Maka dari itu untuk menambahkan page pada frontend juga menggunakan VueJS. Blok di bawah adalah struktur direktori untuk menambahkan page baru pada frontend.
 
 ## Menambahkan Kustom Page
 
