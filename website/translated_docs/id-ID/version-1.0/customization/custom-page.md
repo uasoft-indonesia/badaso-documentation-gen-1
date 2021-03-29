@@ -9,19 +9,14 @@ Badaso menggunakan framework VueJS untuk Frontend. Maka dari itu untuk menambahk
 ## Menambahkan Kustom Page
 
 - Untuk menambahkan page, tambahkan file ke dalam folder `custom-pages`.
-- Perubahan layout dapat diubah di folder `layout`.
     
 ```
 📦Your Project
  ┣ 📂resources
  ┃ ┣ 📂js
  ┃ ┃ ┣ 📂badaso
- ┃ ┃ ┃ ┣ 📂layout /** you can modify layout here **/
- ┃ ┃ ┃ ┃ ┣ 📂admin-panel
- ┃ ┃ ┃ ┃ ┣ 📂auth
- ┃ ┃ ┃ ┃ ┗ 📂public
- ┃ ┃ ┃ ┣ 📂custom-pages /** create your own pages here **/
- ┃ ┃ ┃ ┃ ┣ 📂{slug}
+ ┃ ┃ ┃ ┣ 📂custom-pages 
+ ┃ ┃ ┃ ┃ ┣ 📂{your-page} /** create your own pages here **/
  ┃ ┃ ┃ ┃ ┃ ┣ 📜browse.vue
  ┃ ┃ ┃ ┃ ┃ ┣ 📜read.vue
  ┃ ┃ ┃ ┃ ┃ ┣ 📜edit.vue
@@ -36,6 +31,22 @@ Badaso menggunakan framework VueJS untuk Frontend. Maka dari itu untuk menambahk
  ┣ 📂resources
  ┃ ┣ 📂js
  ┃ ┃ ┣ 📂badaso
- ┃ ┃ ┃ ┣ 📂router /** create your own router .js here **/
- ┃ ┃ ┃ ┃ ┗ 📜example-router.js
+ ┃ ┃ ┃ ┣ 📂router   /** create your own router .js here **/
+ ┃ ┃ ┃ ┃ ┣ 📂admin  /** router page that using admin layout **/
+ ┃ ┃ ┃ ┃ ┣ 📂auth   /** router page that using auth layout **/
+ ┃ ┃ ┃ ┃ ┣ 📂others /** router page that using public layout **/
+ ┃ ┃ ┃ ┃ ┗ 📂public /** router page that using custom layout **/
+```
+
+- Perubahan layout dapat diubah di folder `layout`.
+
+```
+📦Your Project
+ ┣ 📂resources
+ ┃ ┣ 📂js
+ ┃ ┃ ┣ 📂badaso
+ ┃ ┃ ┃ ┣ 📂layout /** you can modify layout here **/
+ ┃ ┃ ┃ ┃ ┣ 📂admin-panel
+ ┃ ┃ ┃ ┃ ┣ 📂auth
+ ┃ ┃ ┃ ┃ ┗ 📂public
 ```

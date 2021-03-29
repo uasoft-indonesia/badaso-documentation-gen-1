@@ -19,4 +19,26 @@ Badaso menggunakan VueJS framework untuk frontend. Oleh karena itu, penambahan k
  ┃ ┃ ┃ ┃ ┗ 📜ExampleComponent.vue
 ```
 
-- Sekarang Anda dapat menggunakan komponen kustom itu di halaman Anda.
+- Sekarang Anda dapat menggunakan komponen kustom itu di halaman Anda seperti contoh di bawah.
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Vue-->
+```vue
+<template>
+  ...
+  <example-component></example-component>
+  ...
+</template>
+<script>
+  import ExampleComponent from '../components/ExampleComponent.vue
+
+  export default {
+    ...
+    components: {
+      ExampleComponent
+    },
+    ...
+  }
+</script>
+```
+<!--END_DOCUSAURUS_CODE_TABS-->

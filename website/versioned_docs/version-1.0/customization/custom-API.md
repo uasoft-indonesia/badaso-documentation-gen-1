@@ -61,3 +61,16 @@ example(data) {
 },
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
+
+- Here is the example of using the custom API.
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Template-->
+```js
+$api.exampleApi.example(data)
+```
+<!--Script-->
+```js
+this.$api.exampleApi.example(data)
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
