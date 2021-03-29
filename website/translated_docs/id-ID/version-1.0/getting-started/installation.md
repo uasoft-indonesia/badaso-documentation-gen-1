@@ -5,7 +5,7 @@ sidebar_label: Instalasi
 ---
 
 ## Persiapan
-Sebelum menggunakan Badaso, Silahkan registrasi pada [Badaso Dashboard](https://badaso-dashboard.uatech.co.id/) untuk mendapatkan BADASO_KEY. Key ini harus disertakan pada .env project laravel.
+Sebelum menggunakan Badaso, Silahkan registrasi pada <a href="https://badaso.uatech.co.id/" target="_blank">Badaso</a> untuk mendapatkan BADASO_LICENSE_KEY. Key ini harus disertakan pada .env project laravel.
 Berikut langkah-langkah untuk mendaftar dan mendapatkan lisensi di Badaso Dashboard.
 1. Register, masukkan data name, email dan password
 
@@ -17,13 +17,13 @@ Berikut langkah-langkah untuk mendaftar dan mendapatkan lisensi di Badaso Dashbo
 
 3. Setelah berhasil verifikasi, anda akan diarahkan ke halaman dashboard.
 
-4. Lisensi anda dapat diperoleh pada menu Lisensi(Licence)
+4. Lisensi anda dapat diperoleh pada menu Lisensi(License)
 
-![licence](assets/dashboard-licence.png)
+![license](assets/dashboard-licence.png)
 
 5. Tambahkan lisensi pada .env
 
-`BADASO_KEY={your license from number 4}`
+`BADASO_LICENSE_KEY={your license from number 4}`
 
 ### Langkah Instalasi
 
@@ -125,8 +125,8 @@ FILESYSTEM_DRIVER=
 #OPTIONAL. Set JWT Token lifetime, default 60 minutes
 BADASO_AUTH_TOKEN_LIFETIME=
 
-#REQUIRED. Licence key that can accuired in Badaso Dashbord
-BADASO_KEY=
+#REQUIRED. License key that can accuired in Badaso Dashbord
+BADASO_LICENSE_KEY=
 
 #REQUIRED. Set Route prefix for your dashboard. 
 #Access dashboard via {HOST}/{MIX_ADMIN_PANEL_ROUTE_PREFIX}
