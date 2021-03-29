@@ -5,7 +5,7 @@ sidebar_label: Custom API
 original_id: custom-API
 ---
 
-Badaso also supports for customization API. Badaso uses the [Vue Router](https://router.vuejs.org/) plugin for routing. The block below is a directory structure for adding a new API.
+Badaso also supports for customization API. The block below is a directory structure for adding a new API.
 
 ## Add an API
 
