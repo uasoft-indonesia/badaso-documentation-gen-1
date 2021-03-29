@@ -7,11 +7,13 @@
 
 const React = require('react');
 
+const Icon = require("@material-ui/core/Icon").default;
 const CompLibrary = require('../../core/CompLibrary.js');
 
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
+const translate = require('../../server/translate.js').translate;
 
 class HomeSplash extends React.Component {
   render() {
@@ -36,9 +38,10 @@ class HomeSplash extends React.Component {
     );
 
     const ProjectTitle = (props) => (
-      <h2 className="projectTitle">
-        {props.title}
+      <h2 className="projectTitle has-text-weight-bold">
+        <div className="is-unselectable">{props.title}</div>
         <small>{props.tagline}</small>
+        <small></small>
       </h2>
     );
 
@@ -52,7 +55,7 @@ class HomeSplash extends React.Component {
 
     const Button = (props) => (
       <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={props.href} target={props.target}>
+        <a className="badaso-btn btn-primary has-text-weight-bold" href={props.href} target={props.target}>
           {props.children}
         </a>
       </div>
@@ -60,13 +63,13 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
+        <Logo img_src={`${baseUrl}img/badaso.png`} />
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href={docUrl('getting-started/introduction')}><translate>Get Started</translate></Button>
+            {/* <Button href={docUrl('doc1.html')}>Example Link</Button>
+            <Button href={docUrl('doc2.html')}>Example Link 2</Button> */}
           </PromoSection>
         </div>
       </SplashContainer>
@@ -92,79 +95,103 @@ class Index extends React.Component {
       </Container>
     );
 
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
+    const Item = (props) => {
+      let items = []
+      props.contents.forEach((item, index) => {
+        items.push(
+          <div class="blockElement has-zindex-100 alignCenter threeByGridBlock">
+            <div class="blockContent">
+              <Icon className="has-icon-big is-unselectable has-text-color-light">{item.icon}</Icon>
+              <div>
+                <span className="has-text-weight-bold has-text-size-6 has-text-color-light">{item.content}</span>
+              </div>
+              <span className="has-text-color-light">{item.title}</span>
+            </div>
+          </div>
+        )
+      });
+      return items
+    }
+
+    const GithubBlock = (props) => (
+      <Container
+        padding={['bottom', 'top']}
+        id={props.id}
+        background={props.background}>
+        <div class="gridBlock has-position-relative">
+          <Item contents={props.children} />
+        </div>
+      </Container>
     );
 
-    const TryOut = () => (
-      <Block id="try">
-        {[
-          {
-            content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
-            imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
-          },
-        ]}
-      </Block>
-    );
-
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
-            imageAlign: 'right',
-            title: 'Description',
-          },
-        ]}
-      </Block>
-    );
-
-    const LearnHow = () => (
+    const BadasoCRUD = () => (
       <Block background="light">
         {[
           {
-            content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
-            imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
+            content: (
+              <translate>Badaso is admin interface allows you to create CRUD functionality to your posts, pages, or any other table in your database.</translate>
+            ),
+            image: `${baseUrl}img/undraw_code_review.svg`,
+            imageAlign: 'left',
+            title: (
+              <translate>CRUD Generator</translate>
+            ),
           },
         ]}
       </Block>
     );
 
-    const Features = () => (
-      <Block layout="fourColumn">
+    const Github = () => (
+      <GithubBlock layout="threeColumn">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
+            content: '250.000',
+            // image: `${baseUrl}img/undraw_react.svg`,
             imageAlign: 'top',
-            title: 'Feature One',
+            icon: 'download',
+            title: (
+              <translate>Downloads</translate>
+            )
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
+            content: '125.000',
+            // image: `${baseUrl}img/undraw_operating_system.svg`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            icon: 'star_rate',
+            title: (
+              <translate>Stars</translate>
+            )
+          },
+          {
+            content: '45.000',
+            imageAlign: 'top',
+            icon: 'account_tree',
+            title: (
+              <translate>Forks</translate>
+            )
+          },
+        ]}
+      </GithubBlock>
+    );
+
+    const BadasoIsAwesome = () => (
+      <Block>
+        {[
+          {
+            content: (
+              <translate>Badaso can save you so much time and it'll make building applications even more fun!</translate>
+            ),
+            image: `${baseUrl}img/undraw_website_builder.svg`,
+            imageAlign: 'right',
+            title: (
+              <translate>Badaso is Awesome</translate>
+            ),
           },
         ]}
       </Block>
     );
 
-    const Showcase = () => {
+    const Users = () => {
       if ((siteConfig.users || []).length === 0) {
         return null;
       }
@@ -174,6 +201,7 @@ class Index extends React.Component {
         .map((user) => (
           <a href={user.infoLink} key={user.infoLink}>
             <img src={user.image} alt={user.caption} title={user.caption} />
+            <p className="has-text-color-dark">{user.caption}</p>
           </a>
         ));
 
@@ -182,12 +210,12 @@ class Index extends React.Component {
 
       return (
         <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
+          <h2><translate>Who is Using Badaso?</translate></h2>
+          {/* <p>This project is used by all these people</p> */}
           <div className="logos">{showcase}</div>
           <div className="more-users">
             <a className="button" href={pageUrl('users.html')}>
-              More {siteConfig.title} Users
+              <translate>All Badaso Users</translate>
             </a>
           </div>
         </div>
@@ -197,13 +225,15 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
-        <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
-          <Showcase />
+        <div className="mainContainer p-0">
+          {/* <Features /> */}
+          {/* <FeatureCallout /> */}
+          <BadasoIsAwesome />
+          <BadasoCRUD />
+          <Users />
+          <div style={{backgroundImage: 'url(' + baseUrl + 'img/badaso.png)', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}} class="has-background-overlay has-position-relative">
+            <Github className="has-primary-background" />
+          </div>
         </div>
       </div>
     );

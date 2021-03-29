@@ -18,11 +18,59 @@ const users = [
     infoLink: 'https://www.facebook.com',
     pinned: true,
   },
+  {
+    caption: 'User2',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/img/undraw_open_source.svg',
+    infoLink: 'https://www.facebook.com',
+    pinned: true,
+  },
+  {
+    caption: 'User3',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/img/undraw_open_source.svg',
+    infoLink: 'https://www.facebook.com',
+    pinned: true,
+  },
+  {
+    caption: 'User4',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/img/undraw_open_source.svg',
+    infoLink: 'https://www.facebook.com',
+    pinned: true,
+  },
+  {
+    caption: 'User5',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/img/undraw_open_source.svg',
+    infoLink: 'https://www.facebook.com',
+    pinned: true,
+  },
+  {
+    caption: 'User6',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/img/undraw_open_source.svg',
+    infoLink: 'https://www.facebook.com',
+    pinned: true,
+  },
+  {
+    caption: 'User7',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/img/undraw_open_source.svg',
+    infoLink: 'https://www.facebook.com',
+    pinned: true,
+  },
 ];
 
 const siteConfig = {
   title: 'Badaso', // Title for your website.
-  tagline: 'Laravel CRUD Generator with SPA interface',
+  tagline: 'Laravel CRUD generator with SPA interface',
   url: 'https://your-docusaurus-test-site.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -38,19 +86,19 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'getting-started/what-is-badaso', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    { doc: 'getting-started/introduction', label: 'Docs' },
+    // {doc: 'doc4', label: 'API'},
+    { page: 'help', label: 'Help' },
+    // {blog: false, label: 'Blog'},
   ],
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
-  favicon: 'img/favicon.ico',
+  headerIcon: 'img/badaso.png',
+  footerIcon: 'img/badaso.png',
+  favicon: 'img/badaso.png',
 
   /* Colors for website */
   colors: {
@@ -88,7 +136,8 @@ const siteConfig = {
   ],
 
   stylesheets: [
-    '/css/code-block-buttons.css'
+    '/css/code-block-buttons.css',
+    'https://fonts.googleapis.com/icon?family=Material+Icons',
   ],
 
   // On page navigation for the current documentation page.
@@ -113,6 +162,11 @@ const siteConfig = {
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   // repoUrl: 'https://github.com/facebook/test-site',
+
+  markdownPlugins: [
+    // Highlight admonitions.
+    require('remarkable-admonitions')({ icon: 'svg-inline' })
+  ]
 };
 
 module.exports = siteConfig;

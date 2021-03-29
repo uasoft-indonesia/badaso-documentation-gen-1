@@ -1,16 +1,68 @@
 {
   "docs": {
     "Getting Started": [
+      "getting-started/introduction",
       "getting-started/what-is-badaso",
       "getting-started/prerequisite",
       "getting-started/installation",
       "getting-started/configuration"
     ],
-    "CRUD": [
-      "crud/introduction"
+    "CRUD Generator": [
+      "crud/introduction",
+      {
+        "type": "subcategory",
+        "label": "Form Field",
+        "ids" :[
+          "crud/form-fields/checkbox",
+          "crud/form-fields/code-editor",
+          "crud/form-fields/color-picker",
+          "crud/form-fields/date",
+          "crud/form-fields/datetime",
+          "crud/form-fields/email",
+          "crud/form-fields/hidden",
+          "crud/form-fields/number",
+          "crud/form-fields/password",
+          "crud/form-fields/radio",
+          "crud/form-fields/search",
+          "crud/form-fields/select",
+          "crud/form-fields/select-multiple",
+          "crud/form-fields/slider",
+          "crud/form-fields/switch",
+          "crud/form-fields/tags",
+          "crud/form-fields/text-editor",
+          "crud/form-fields/textarea",
+          "crud/form-fields/time",
+          "crud/form-fields/upload-file",
+          "crud/form-fields/upload-file-multiple",
+          "crud/form-fields/upload-image",
+          "crud/form-fields/upload-image-multiple",
+          "crud/form-fields/url",
+          "crud/form-fields/text",
+          "crud/form-fields/relation"
+        ]
+      }
     ],
-    "Core Concept": ["doc3"],
-    "Customization": ["doc4"],
-    "Troubleshooting": ["doc5"]
+    "Core Concept": [
+      "core-concept/routing",
+      "core-concept/role-and-permissions",
+      "core-concept/menu-builder",
+      "core-concept/site-management",
+      "core-concept/helpers",
+      "core-concept/multilanguage",
+      "core-concept/commands",
+      "core-concept/database-management"
+    ],
+    "Customization": [
+      "customization/introduction",
+      "customization/overriding-controller",
+      "customization/additional-css-js",
+      "customization/overriding-page",
+      "customization/custom-page",
+      "customization/custom-widget",
+      "customization/custom-language",
+      "customization/custom-utilities",
+      "customization/custom-API-helper",
+      "customization/custom-component"
+    ]
   }
 }

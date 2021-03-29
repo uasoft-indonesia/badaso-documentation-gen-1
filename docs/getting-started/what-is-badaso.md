@@ -1,16 +1,21 @@
 ---
 id: what-is-badaso
-title: Apa itu Badaso
-sidebar_label: Apa itu Badaso
+title: What is Badaso
+sidebar_label: What is Badaso
 ---
 
-Sebelum menginstal Badaso, luangkan waktu sejenak untuk mempelajari apa itu Badaso.
+Before installing Badaso it is very important to take a quick moment to learn what is Badaso.
 
-## Apa sih itu?
+## What is Badaso?
 
-Badaso merupakan produk SPA (*Single Page Application*) Skalabel untuk Laravel dalam bentuk dashboard admin dan API generator berdasarkan AJAX dan REST API dari Indonesia. Berikut merupakan fitur dari Badaso:
+Badaso is a scalable SPA (Single Page Application) product for Laravel in the form of admin dashboard and API Generator based on AJAX and REST API from Indonesia. The following are the features of Badaso:
 
-- Sebuah dashboard admin untuk aplikasi laravel kamu
-- Tambah, edit atau hapus data aplikasi kamu dengan mudah 
-- Buat menu kamu dengan mudah dengan menggunakan menu builder
-- CRUD atau BREAD Generator
+- An admin dashboard for your laravel application.
+- Add, edit or delete your data easily.
+- Create your menu easily using the menu builder.
+- Change the color, title and logo of the site without changing the code.
+- CRUD generator.
+- View system logs on the dashboard.
+- Record your admin activities.
+- Easily back up database and project files (Google Drive, AWS and Dropbox supported).
+- Manage users, roles and permissions easily.
