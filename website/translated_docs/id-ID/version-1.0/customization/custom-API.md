@@ -60,3 +60,16 @@ example(data) {
 },
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
+
+- Di bawah ini adalah contoh penerapan dari kustom API.
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Template-->
+```js
+$api.exampleApi.example(data)
+```
+<!--Script-->
+```js
+this.$api.exampleApi.example(data)
+```
+<!--END_DOCUSAURUS_CODE_TABS-->

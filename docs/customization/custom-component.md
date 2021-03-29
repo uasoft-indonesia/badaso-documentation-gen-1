@@ -19,4 +19,26 @@ Badaso uses the VueJS framework for the frontend. Therefore, adding components t
  ┃ ┃ ┃ ┃ ┗ 📜ExampleComponent.vue
 ```
 
-- Now you can use that custom component in your pages.
+- Now you can use that custom component in your pages like below.
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Vue-->
+```vue
+<template>
+  ...
+  <example-component></example-component>
+  ...
+</template>
+<script>
+  import ExampleComponent from '../components/ExampleComponent.vue
+
+  export default {
+    ...
+    components: {
+      ExampleComponent
+    },
+    ...
+  }
+</script>
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
