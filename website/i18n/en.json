@@ -145,9 +145,9 @@
         "title": "Additional CSS and JS",
         "sidebar_label": "Additional CSS and JS"
       },
-      "customization/custom-API": {
-        "title": "Custom API",
-        "sidebar_label": "Custom API"
+      "customization/custom-API-helper": {
+        "title": "Custom API Helper",
+        "sidebar_label": "Custom API Helper"
       },
       "customization/custom-component": {
         "title": "Custom Component",
@@ -345,9 +345,9 @@
         "title": "Additional CSS and JS",
         "sidebar_label": "Additional CSS and JS"
       },
-      "version-1.0/customization/version-1.0-custom-API": {
-        "title": "Custom API",
-        "sidebar_label": "Custom API"
+      "version-1.0/customization/version-1.0-custom-API-helper": {
+        "title": "Custom API Helper",
+        "sidebar_label": "Custom API Helper"
       },
       "version-1.0/customization/version-1.0-custom-component": {
         "title": "Custom Component",

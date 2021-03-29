@@ -4,9 +4,14 @@ title: Custom API Helper
 sidebar_label: Custom API Helper
 ---
 
+Badaso menyediakan utilitas berbasis [axios](https://github.com/axios/axios) untuk pemanggilan api. Bedanya resource sudah menyisipkan header seperti authorization dan content-type. Berikut ini contoh pemanggilan api tersebut.
+```js
+resource.get(url); /** equal axios.get(url) **/
+```
+
 Badaso juga mendukung untuk kustomisasi API helper. Blok di bawah ini adalah struktur direktori untuk menambahkan API helper baru.
 
-## Menambahkan sebuah API
+## Menambahkan sebuah API Helper
 
 - Untuk menambahkan API helper, tambahkan ke direktori `modules` di direktori `api`.
 

@@ -9,7 +9,7 @@ Badaso uses the VueJS framework for the Frontend. Therefore, adding pages to the
 
 ## Add Custom Page
 
-- To add a pages, add it to the `pages` directory.
+- To add a pages, add it to the `custom-pages` directory.
 
 ```
 📦Your Project

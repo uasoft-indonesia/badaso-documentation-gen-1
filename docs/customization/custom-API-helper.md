@@ -4,9 +4,14 @@ title: Custom API Helper
 sidebar_label: Custom API Helper
 ---
 
+Badaso provides a [axios](https://github.com/axios/axios) based utility for calling an API. The difference is that resource have inserted headers such as authorization and content-type. Here is an example of calling the API.
+```js
+resource.get(url); /** equal axios.get(url) **/
+```
+
 Badaso also supports for customization API helper. The block below is a directory structure for adding a new API  helper.
 
-## Add an API
+## Add an API Helper
 
 - To add an API helper, add it to the `modules` directory in `api` directory.
 
