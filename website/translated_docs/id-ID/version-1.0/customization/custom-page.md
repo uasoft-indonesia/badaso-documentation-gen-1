@@ -34,8 +34,8 @@ Badaso menggunakan framework VueJS untuk Frontend. Maka dari itu untuk menambahk
  ┃ ┃ ┃ ┣ 📂router   /** create your own router .js here **/
  ┃ ┃ ┃ ┃ ┣ 📂admin  /** router page that using admin layout **/
  ┃ ┃ ┃ ┃ ┣ 📂auth   /** router page that using auth layout **/
- ┃ ┃ ┃ ┃ ┣ 📂others /** router page that using public layout **/
- ┃ ┃ ┃ ┃ ┗ 📂public /** router page that using custom layout **/
+ ┃ ┃ ┃ ┃ ┣ 📂others /** router page that using your custom layout **/
+ ┃ ┃ ┃ ┃ ┗ 📂public /** router page that using public layout **/
 ```
 
 - Perubahan layout dapat diubah di folder `layout`.
