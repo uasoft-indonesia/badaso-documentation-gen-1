@@ -5,6 +5,10 @@
     "previous": "Previous",
     "tagline": "Laravel CRUD generator with SPA interface",
     "docs": {
+      "core-concept/auto-backup": {
+        "title": "Auto Backup",
+        "sidebar_label": "Auto Backup"
+      },
       "core-concept/commands": {
         "title": "Commands",
         "sidebar_label": "Commands"
@@ -12,6 +16,10 @@
       "core-concept/database-management": {
         "title": "Database Management",
         "sidebar_label": "Database Management"
+      },
+      "core-concept/format-datetime": {
+        "title": "Format Datetime",
+        "sidebar_label": "Format Datetime"
       },
       "core-concept/helpers": {
         "title": "Helpers",
@@ -213,207 +221,215 @@
         "title": "What is Badaso",
         "sidebar_label": "What is Badaso"
       },
-      "version-1.0/core-concept/version-1.0-commands": {
+      "version-1.0.0/core-concept/version-1.0.0-auto-backup": {
+        "title": "Auto Backup",
+        "sidebar_label": "Auto Backup"
+      },
+      "version-1.0.0/core-concept/version-1.0.0-commands": {
         "title": "Commands",
         "sidebar_label": "Commands"
       },
-      "version-1.0/core-concept/version-1.0-database-management": {
+      "version-1.0.0/core-concept/version-1.0.0-database-management": {
         "title": "Database Management",
         "sidebar_label": "Database Management"
       },
-      "version-1.0/core-concept/version-1.0-helpers": {
+      "version-1.0.0/core-concept/version-1.0.0-format-datetime": {
+        "title": "Format Datetime",
+        "sidebar_label": "Format Datetime"
+      },
+      "version-1.0.0/core-concept/version-1.0.0-helpers": {
         "title": "Helpers",
         "sidebar_label": "Helpers"
       },
-      "version-1.0/core-concept/version-1.0-menu-builder": {
+      "version-1.0.0/core-concept/version-1.0.0-menu-builder": {
         "title": "Menu Builder",
         "sidebar_label": "Menu Builder"
       },
-      "version-1.0/core-concept/version-1.0-multilanguage": {
+      "version-1.0.0/core-concept/version-1.0.0-multilanguage": {
         "title": "Multilanguage",
         "sidebar_label": "Multilanguage"
       },
-      "version-1.0/core-concept/version-1.0-role-and-permissions": {
+      "version-1.0.0/core-concept/version-1.0.0-role-and-permissions": {
         "title": "Role and Permissions",
         "sidebar_label": "Role and Permissions"
       },
-      "version-1.0/core-concept/version-1.0-routing": {
+      "version-1.0.0/core-concept/version-1.0.0-routing": {
         "title": "Routing",
         "sidebar_label": "Routing"
       },
-      "version-1.0/core-concept/version-1.0-site-management": {
+      "version-1.0.0/core-concept/version-1.0.0-site-management": {
         "title": "Site Management",
         "sidebar_label": "Site Management"
       },
-      "version-1.0/crud/form-fields/version-1.0-checkbox": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-checkbox": {
         "title": "Checkbox",
         "sidebar_label": "Checkbox"
       },
-      "version-1.0/crud/form-fields/version-1.0-code-editor": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-code-editor": {
         "title": "Code Editor",
         "sidebar_label": "Code Editor"
       },
-      "version-1.0/crud/form-fields/version-1.0-color-picker": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-color-picker": {
         "title": "Color Picker",
         "sidebar_label": "Color Picker"
       },
-      "version-1.0/crud/form-fields/version-1.0-date": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-date": {
         "title": "Date",
         "sidebar_label": "Date"
       },
-      "version-1.0/crud/form-fields/version-1.0-datetime": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-datetime": {
         "title": "Datetime",
         "sidebar_label": "Datetime"
       },
-      "version-1.0/crud/form-fields/version-1.0-text-editor": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-text-editor": {
         "title": "Text Editor",
         "sidebar_label": "Text Editor"
       },
-      "version-1.0/crud/form-fields/version-1.0-email": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-email": {
         "title": "Email",
         "sidebar_label": "Email"
       },
-      "version-1.0/crud/form-fields/version-1.0-hidden": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-hidden": {
         "title": "Hidden",
         "sidebar_label": "Hidden"
       },
-      "version-1.0/crud/form-fields/version-1.0-number": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-number": {
         "title": "Number",
         "sidebar_label": "Number"
       },
-      "version-1.0/crud/form-fields/version-1.0-password": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-password": {
         "title": "Password",
         "sidebar_label": "Password"
       },
-      "version-1.0/crud/form-fields/version-1.0-radio": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-radio": {
         "title": "Radio",
         "sidebar_label": "Radio"
       },
-      "version-1.0/crud/form-fields/version-1.0-relation": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-relation": {
         "title": "Relation",
         "sidebar_label": "Relation"
       },
-      "version-1.0/crud/form-fields/version-1.0-search": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-search": {
         "title": "Search",
         "sidebar_label": "Search"
       },
-      "version-1.0/crud/form-fields/version-1.0-select-multiple": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-select-multiple": {
         "title": "Select Multiple",
         "sidebar_label": "Select Multiple"
       },
-      "version-1.0/crud/form-fields/version-1.0-select": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-select": {
         "title": "Select",
         "sidebar_label": "Select"
       },
-      "version-1.0/crud/form-fields/version-1.0-slider": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-slider": {
         "title": "Slider",
         "sidebar_label": "Slider"
       },
-      "version-1.0/crud/form-fields/version-1.0-switch": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-switch": {
         "title": "Switch",
         "sidebar_label": "Switch"
       },
-      "version-1.0/crud/form-fields/version-1.0-tags": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-tags": {
         "title": "Tags",
         "sidebar_label": "Tags"
       },
-      "version-1.0/crud/form-fields/version-1.0-text": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-text": {
         "title": "Text",
         "sidebar_label": "Text"
       },
-      "version-1.0/crud/form-fields/version-1.0-textarea": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-textarea": {
         "title": "Textarea",
         "sidebar_label": "Textarea"
       },
-      "version-1.0/crud/form-fields/version-1.0-time": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-time": {
         "title": "Time",
         "sidebar_label": "Time"
       },
-      "version-1.0/crud/form-fields/version-1.0-upload-file-multiple": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-upload-file-multiple": {
         "title": "Upload File Multiple",
         "sidebar_label": "Upload File Multiple"
       },
-      "version-1.0/crud/form-fields/version-1.0-upload-file": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-upload-file": {
         "title": "Upload File",
         "sidebar_label": "Upload File"
       },
-      "version-1.0/crud/form-fields/version-1.0-upload-image-multiple": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-upload-image-multiple": {
         "title": "Upload Image Multiple",
         "sidebar_label": "Upload Image Multiple"
       },
-      "version-1.0/crud/form-fields/version-1.0-upload image": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-upload image": {
         "title": "Upload Image",
         "sidebar_label": "Upload Image"
       },
-      "version-1.0/crud/form-fields/version-1.0-url": {
+      "version-1.0.0/crud/form-fields/version-1.0.0-url": {
         "title": "Url",
         "sidebar_label": "Url"
       },
-      "version-1.0/crud/version-1.0-introduction": {
+      "version-1.0.0/crud/version-1.0.0-introduction": {
         "title": "Introduction",
         "sidebar_label": "Introduction"
       },
-      "version-1.0/customization/version-1.0-additional-css-js": {
+      "version-1.0.0/customization/version-1.0.0-additional-css-js": {
         "title": "Additional CSS and JS",
         "sidebar_label": "Additional CSS and JS"
       },
-      "version-1.0/customization/version-1.0-custom-API-helper": {
+      "version-1.0.0/customization/version-1.0.0-custom-API-helper": {
         "title": "Custom API Helper",
         "sidebar_label": "Custom API Helper"
       },
-      "version-1.0/customization/version-1.0-custom-component": {
+      "version-1.0.0/customization/version-1.0.0-custom-component": {
         "title": "Custom Component",
         "sidebar_label": "Custom Component"
       },
-      "version-1.0/customization/version-1.0-custom-language": {
+      "version-1.0.0/customization/version-1.0.0-custom-language": {
         "title": "Custom Language",
         "sidebar_label": "Custom Language"
       },
-      "version-1.0/customization/version-1.0-custom-page": {
+      "version-1.0.0/customization/version-1.0.0-custom-page": {
         "title": "Custom Page",
         "sidebar_label": "Custom Page"
       },
-      "version-1.0/customization/version-1.0-custom-utilities": {
+      "version-1.0.0/customization/version-1.0.0-custom-utilities": {
         "title": "Custom Utilities",
         "sidebar_label": "Custom Utilities"
       },
-      "version-1.0/customization/version-1.0-custom-widget": {
+      "version-1.0.0/customization/version-1.0.0-custom-widget": {
         "title": "Custom Widget",
         "sidebar_label": "Custom Widget"
       },
-      "version-1.0/customization/version-1.0-introduction": {
+      "version-1.0.0/customization/version-1.0.0-introduction": {
         "title": "Introduction",
         "sidebar_label": "Introduction"
       },
-      "version-1.0/customization/version-1.0-overriding-controller": {
+      "version-1.0.0/customization/version-1.0.0-overriding-controller": {
         "title": "Overriding Controller",
         "sidebar_label": "Overriding Controller"
       },
-      "version-1.0/customization/version-1.0-overriding-page": {
+      "version-1.0.0/customization/version-1.0.0-overriding-page": {
         "title": "Overriding Page",
         "sidebar_label": "Overriding Page"
       },
-      "version-1.0/getting-started/version-1.0-configuration": {
+      "version-1.0.0/getting-started/version-1.0.0-configuration": {
         "title": "Configuration",
         "sidebar_label": "Configuration"
       },
-      "version-1.0/getting-started/version-1.0-installation": {
+      "version-1.0.0/getting-started/version-1.0.0-installation": {
         "title": "Installation",
         "sidebar_label": "Installation"
       },
-      "version-1.0/getting-started/version-1.0-introduction": {
+      "version-1.0.0/getting-started/version-1.0.0-introduction": {
         "title": "Introduction",
         "sidebar_label": "Introduction"
       },
-      "version-1.0/getting-started/version-1.0-prerequisite": {
+      "version-1.0.0/getting-started/version-1.0.0-prerequisite": {
         "title": "Prerequisite",
         "sidebar_label": "Prerequisite"
       },
-      "version-1.0/getting-started/version-1.0-upgrading": {
+      "version-1.0.0/getting-started/version-1.0.0-upgrading": {
         "title": "Upgrading",
         "sidebar_label": "Upgrading"
       },
-      "version-1.0/getting-started/version-1.0-what-is-badaso": {
+      "version-1.0.0/getting-started/version-1.0.0-what-is-badaso": {
         "title": "What is Badaso",
         "sidebar_label": "What is Badaso"
       }

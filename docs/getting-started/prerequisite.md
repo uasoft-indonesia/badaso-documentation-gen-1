@@ -18,3 +18,7 @@ Before installing Badaso, make sure the laravel you are using is supported by Ba
     - **Node v12.16.1** - Tested ✔️
 5. NPM
     - **NPM 6.13.4** - Tested ✔️
+
+:::important
+Badaso assumes that the user is familiar with the basics of <a href="https://laravel.com/docs/5.8">Laravel</a> and <a href="https://vuejs.org/v2/guide/">Vue</a>. Therefore Badaso doesn't explain how to use Laravel or Vue.
+:::

@@ -12,17 +12,17 @@ Badaso also supports for customization your language. Badaso uses the [Vue-i18n 
 - To override current language, add it the the `custom_modules` directory.
 
 ```
-📦Your Project
- ┣ 📂resources
- ┃ ┣ 📂js
- ┃ ┃ ┣ 📂badaso
- ┃ ┃ ┃ ┣ 📂lang
- ┃ ┃ ┃ ┃ ┣ 📂custom_modules /** you can add a language here or you can override
+📦 Your Project
+ ┣ 📂 resources
+ ┃ ┣ 📂 js
+ ┃ ┃ ┣ 📂 badaso
+ ┃ ┃ ┃ ┣ 📂 lang
+ ┃ ┃ ┃ ┃ ┣ 📂 custom_modules /** you can add a language here or you can override
  ┃ ┃ ┃ ┃ ┃ ┃                    current translation here too **/
- ┃ ┃ ┃ ┃ ┃ ┣ 📜en.js /** here I override the en locale **/
- ┃ ┃ ┃ ┃ ┃ ┗ 📜example-lang.js
- ┃ ┃ ┃ ┃ ┣ 📂modules /** you can add a language here too but not for override **/
- ┃ ┃ ┃ ┃ ┃ ┗ 📜example-lang.js
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜 en.js /** here I override the en locale **/
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜 example-lang.js
+ ┃ ┃ ┃ ┃ ┣ 📂 modules /** you can add a language here too but not for override **/
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜 example-lang.js
 ```
 
 :::important
@@ -36,13 +36,13 @@ badaso.js will be overwritten if you call the command `vendor:publish --force`.
 :::
 
 ```
-📦Your Project
- ┣ 📂resources
- ┃ ┣ 📂js
- ┃ ┃ ┣ 📂badaso
- ┃ ┃ ┃ ┣ 📂store
- ┃ ┃ ┃ ┃ ┣ 📂modules
- ┃ ┃ ┃ ┃ ┃ ┗ 📜badaso.js /** register your language here **/
+📦 Your Project
+ ┣ 📂 resources
+ ┃ ┣ 📂 js
+ ┃ ┃ ┣ 📂 badaso
+ ┃ ┃ ┃ ┣ 📂 store
+ ┃ ┃ ┃ ┃ ┣ 📂 modules
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜 badaso.js /** register your language here **/
 ```
 
 <!--DOCUSAURUS_CODE_TABS-->

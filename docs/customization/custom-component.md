@@ -11,12 +11,12 @@ Badaso uses the VueJS framework for the frontend. Therefore, adding components t
 - To add a component, add it to the `components` directory.
 
 ```
-📦Your Project
- ┣ 📂resources
- ┃ ┣ 📂js
- ┃ ┃ ┣ 📂badaso
- ┃ ┃ ┃ ┣ 📂components /** you can add a component here **/
- ┃ ┃ ┃ ┃ ┗ 📜ExampleComponent.vue
+📦 Your Project
+ ┣ 📂 resources
+ ┃ ┣ 📂 js
+ ┃ ┃ ┣ 📂 badaso
+ ┃ ┃ ┃ ┣ 📂 components /** you can add a component here **/
+ ┃ ┃ ┃ ┃ ┗ 📜 ExampleComponent.vue
 ```
 
 - Now you can use that custom component in your pages like below.

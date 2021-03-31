@@ -16,13 +16,13 @@ Badaso also supports for customization API helper. The block below is a director
 - To add an API helper, add it to the `modules` directory in `api` directory.
 
 ```
-📦Your Project
- ┣ 📂resources
- ┃ ┣ 📂js
- ┃ ┃ ┣ 📂badaso
- ┃ ┃ ┃ ┣ 📂api
- ┃ ┃ ┃ ┃ ┣ 📂modules /** you can add an API helper here **/
- ┃ ┃ ┃ ┃ ┃ ┗ 📜example-api.js
+📦 Your Project
+ ┣ 📂 resources
+ ┃ ┣ 📂 js
+ ┃ ┃ ┣ 📂 badaso
+ ┃ ┃ ┃ ┣ 📂 api
+ ┃ ┃ ┃ ┃ ┣ 📂 modules /** you can add an API helper here **/
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜 example-api.js
 ```
 
 - Below is an example of HTTP request method that you can use.

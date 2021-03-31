@@ -18,17 +18,17 @@ Here are the steps for creating a custom view to customize the appearance of the
 
 - Create a vue file on the resource like the following structure.
 ```
-📦Your Project
- ┣ 📂resources
- ┃ ┣ 📂js
- ┃ ┃ ┣ 📂badaso
- ┃ ┃ ┃ ┣ 📂custom_pages
- ┃ ┃ ┃ ┃ ┣ 📂{slug} /** put the override you want here, for example book-management **/
- ┃ ┃ ┃ ┃ ┃ ┣ 📜browse.vue
- ┃ ┃ ┃ ┃ ┃ ┣ 📜read.vue
- ┃ ┃ ┃ ┃ ┃ ┣ 📜edit.vue
- ┃ ┃ ┃ ┃ ┃ ┣ 📜add.vue
- ┃ ┃ ┃ ┃ ┃ ┗ 📜sort.vue
+📦 Your Project
+ ┣ 📂 resources
+ ┃ ┣ 📂 js
+ ┃ ┃ ┣ 📂 badaso
+ ┃ ┃ ┃ ┣ 📂 custom_pages
+ ┃ ┃ ┃ ┃ ┣ 📂 {slug} /** put the override you want here, for example book-management **/
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜 browse.vue
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜 read.vue
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜 edit.vue
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜 add.vue
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜 sort.vue
 ```
 
 Note:
@@ -44,17 +44,17 @@ Here are the steps for creating a custom view to customize the appearance of the
 
 - Create a vue file on the resource like the following structure.
 ```
-📦Your Project
- ┣ 📂resources
- ┃ ┣ 📂js
- ┃ ┃ ┣ 📂badaso
- ┃ ┃ ┃ ┣ 📂custom_pages
- ┃ ┃ ┃ ┃ ┣ 📂{pages} /** put the override you want here, for example database-management **/
- ┃ ┃ ┃ ┃ ┃ ┣ 📜browse.vue
- ┃ ┃ ┃ ┃ ┃ ┣ 📜read.vue
- ┃ ┃ ┃ ┃ ┃ ┣ 📜edit.vue
- ┃ ┃ ┃ ┃ ┃ ┣ 📜add.vue
- ┃ ┃ ┃ ┃ ┃ ┗ 📜sort.vue
+📦 Your Project
+ ┣ 📂 resources
+ ┃ ┣ 📂 js
+ ┃ ┃ ┣ 📂 badaso
+ ┃ ┃ ┃ ┣ 📂 custom_pages
+ ┃ ┃ ┃ ┃ ┣ 📂 {pages} /** put the override you want here, for example database-management **/
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜 browse.vue
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜 read.vue
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜 edit.vue
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜 add.vue
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜 sort.vue
 ```
 
 Note:

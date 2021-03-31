@@ -11,13 +11,13 @@ Badaso also supports for customization utilities. The block below is a directory
 - To add a utilities, add it to the `utils` directory.
 
 ```
-📦Your Project
- ┣ 📂resources
- ┃ ┣ 📂js
- ┃ ┃ ┣ 📂badaso
- ┃ ┃ ┃ ┣ 📂utils /** you can add a utility here **/
- ┃ ┃ ┃ ┃ ┣ 📜example-utils.js /** example one **/
- ┃ ┃ ┃ ┃ ┗ 📜exampleutils.js /** example two **/
+📦 Your Project
+ ┣ 📂 resources
+ ┃ ┣ 📂 js
+ ┃ ┃ ┣ 📂 badaso
+ ┃ ┃ ┃ ┣ 📂 utils /** you can add a utility here **/
+ ┃ ┃ ┃ ┃ ┣ 📜 example-utils.js /** example one **/
+ ┃ ┃ ┃ ┃ ┗ 📜 exampleutils.js /** example two **/
 ```
 
 - To use the utility that was just added, you can try using syntax below.
