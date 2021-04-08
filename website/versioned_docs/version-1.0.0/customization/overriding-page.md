@@ -23,7 +23,7 @@ Here are the steps for creating a custom view to customize the appearance of the
  ┣ 📂 resources
  ┃ ┣ 📂 js
  ┃ ┃ ┣ 📂 badaso
- ┃ ┃ ┃ ┣ 📂 custom_pages
+ ┃ ┃ ┃ ┣ 📂 pages
  ┃ ┃ ┃ ┃ ┣ 📂 {slug} /** put the override you want here, for example book-management **/
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 browse.vue
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 read.vue
@@ -39,7 +39,7 @@ Note:
 * add.vue: Add if you need to change the appearance of the add page.
 * sort.vue: Add if you need to change the appearance of the sort page.
 
-## Overriding Pages
+## Overriding Badaso Default Pages
 
 Here are the steps for creating a custom view to customize the appearance of the page except Crud Generated and index.vue.
 
@@ -49,13 +49,27 @@ Here are the steps for creating a custom view to customize the appearance of the
  ┣ 📂 resources
  ┃ ┣ 📂 js
  ┃ ┃ ┣ 📂 badaso
- ┃ ┃ ┃ ┣ 📂 custom_pages
- ┃ ┃ ┃ ┃ ┣ 📂 {pages} /** put the override you want here, for example database-management **/
+ ┃ ┃ ┃ ┣ 📂 pages
+ ┃ ┃ ┃ ┃ ┣ 📂 {badaso-pages} /** put the override you want here, for example database-management **/
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 browse.vue
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 read.vue
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 edit.vue
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 add.vue
  ┃ ┃ ┃ ┃ ┃ ┗ 📜 sort.vue
+```
+
+You can find `badaso-pages` at
+
+```
+📦 Your Project
+ ┣ 📂 vendor
+ ┃ ┣ 📂 uasoft-indonesia
+ ┃ ┃ ┣  📂 badaso
+ ┃ ┃ ┃ ┣ 📂 src
+ ┃ ┃ ┃ ┃ ┣ 📂 resources
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂 js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂 pages
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂 {badaso-pages} /** HERE **/
 ```
 
 Note:

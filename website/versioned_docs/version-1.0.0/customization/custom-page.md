@@ -9,14 +9,14 @@ Badaso uses the VueJS framework for the Frontend and [Vue-Router](https://router
 
 ## Add Custom Page
 
-- To add a pages, add it to the `custom-pages` directory.
+- To add a pages, add it to the `pages` directory.
 
 ```
 📦 Your Project
  ┣ 📂 resources
  ┃ ┣ 📂 js
  ┃ ┃ ┣ 📂 badaso
- ┃ ┃ ┃ ┣ 📂 custom-pages 
+ ┃ ┃ ┃ ┣ 📂 pages 
  ┃ ┃ ┃ ┃ ┣ 📂 {your-page} /** create your own pages here **/
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 browse.vue
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 read.vue
@@ -32,22 +32,9 @@ Badaso uses the VueJS framework for the Frontend and [Vue-Router](https://router
  ┣ 📂 resources
  ┃ ┣ 📂 js
  ┃ ┃ ┣ 📂 badaso
- ┃ ┃ ┃ ┣ 📂 router   /** create your own router .js here **/
+ ┃ ┃ ┃ ┣ 📂 routers   /** create your own router .js here **/
  ┃ ┃ ┃ ┃ ┣ 📂 admin  /** router page that using admin layout **/
  ┃ ┃ ┃ ┃ ┣ 📂 auth   /** router page that using auth layout **/
  ┃ ┃ ┃ ┃ ┣ 📂 others /** router page that using your custom layout **/
  ┃ ┃ ┃ ┃ ┗ 📂 public /** router page that using public layout **/
 ```
-
-- layout adjustments can be made in the `layout` directory.
-
-```
-📦 Your Project
- ┣ 📂 resources
- ┃ ┣ 📂 js
- ┃ ┃ ┣ 📂 badaso
- ┃ ┃ ┃ ┣ 📂 layout /** you can modify layout here **/
- ┃ ┃ ┃ ┃ ┣ 📂 admin-panel
- ┃ ┃ ┃ ┃ ┣ 📂 auth
- ┃ ┃ ┃ ┃ ┗ 📂 public
- ```

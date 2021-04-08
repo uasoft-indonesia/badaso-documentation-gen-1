@@ -35,19 +35,3 @@ Pada tampilan berikut, tersedia beberapa kolom yang harus diisi ketika membuat s
 Setiap menu bisa dipasangkan satu atau beberapa permission. Jika pengguna yang masuk memiliki salah satu dari permission tersebut, maka menu tersebut akan muncul pada sidebar. Jika menu ini tidak dipasangkan dengan permission, maka menu akan selalu muncul.
 
 ![set-menu-item-permissions](assets/set-menu-item-permissions.png)
-
-```
-MIX_DEFAULT_MENU
-```
-
-Pada frontend, menu diambil dari file store.js. Berikut struktur direktori untuk mengubah pemanggilan API menu.
-
-```
-- your project
-    - resources
-        - js
-            - badaso
-                - store
-                    - store.js 
-                        - FETCH_MENU
-```

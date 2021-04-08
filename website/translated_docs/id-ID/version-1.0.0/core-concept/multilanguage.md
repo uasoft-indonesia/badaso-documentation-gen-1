@@ -6,44 +6,33 @@ sidebar_label: Multilanguage
 
 ## Backend
 
+## Backend
+
 Badaso menyediakan bahasa inggris secara default untuk bahasa dari backend. Untuk mengubah bahasa, perlu dibuatkan konfigurasi lokalisasi untuk laravel, konfigurasi ini dapat diatur melalui `.env`. Kode di bawah adalah struktur direktori untuk menambahkan bahasa baru.
 
 ```
-|-- your project
-    |-- resources
-        |-- lang
-            |-- badaso
-                |-- en
-                    |-- api_response.php
-                    |-- validation.php
-                |-- add your lang
-                    |-- api_response.php
-                    |-- validation.php
+📦 Your Project
+┃ ┣ 📂 resources
+┃ ┃ ┣ 📂 lang
+┃ ┃ ┃ ┣ 📂 badaso
+┃ ┃ ┃ ┃ ┣ 📂 en
+┃ ┃ ┃ ┃ ┃ ┣ 📜 api_response.php
+┃ ┃ ┃ ┃ ┃ ┣ 📜 validation.php
+┃ ┃ ┃ ┃ ┣ 📂 add your lang
+┃ ┃ ┃ ┃ ┃ ┣ 📜 api_response.php
+┃ ┃ ┃ ┃ ┃ ┣ 📜 validation.php
 ```
 
 ## Frontend
 
-Untuk beberapa label pada frontent, juga menggunakan bahasa terpisah dari backend. Kode di bawah adalah struktur direktori bahasa di frontend. Bahasa pada frontend dapat di ubah melalui navbar header pada dashboard. Bahasa di frontend hanya mengubah label pada frontend, tidak termasuk response dari backend Badaso.
+For some labels on the frontend, also use a separate language from backend. The code below is the language directory structure in frontend. The language on the frontend can be changed via the header navbar on the dashboard. The language in frontend only changes labels on frontend, not including responses from backend Badaso.
 
 ```
-|-- your project
-    |-- resources
-        |-- js
-            |-- lang
-                |-- module
-                    |-- en.js
-                    |-- add your lang js
-```
-
-Tambahkan juga konfigurasi bahasa custom di `store.js`.
-
-```
-|-- your project
-    |-- resources
-        |-- js
-            |-- badaso
-                |-- store
-                    |-- store.js 
-                        |-- state:
-                            |-- locale: []
+📦 Your Project
+┃ ┣ 📂 resources
+┃ ┃ ┣ 📂 js
+┃ ┃ ┃ ┣ 📂 badaso
+┃ ┃ ┃ ┃ ┣ 📂 lang
+┃ ┃ ┃ ┃ ┃ ┣ 📜 en.js
+┃ ┃ ┃ ┃ ┃ ┣ 📜 id.js
 ```

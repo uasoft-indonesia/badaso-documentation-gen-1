@@ -6,7 +6,9 @@ sidebar_label: Custom API Helper
 
 Badaso provides a [axios](https://github.com/axios/axios) based utility for calling an API. The difference is that resource have inserted headers such as authorization and content-type. Here is an example of calling the API.
 ```js
-resource.get(url); /** equal axios.get(url) **/
+import Vue from 'vue'
+
+Vue.prototype.$resource.get(url); /** equal axios.get(url) **/
 ```
 
 Badaso also supports for customization API helper. The block below is a directory structure for adding a new API  helper.
@@ -21,8 +23,7 @@ Badaso also supports for customization API helper. The block below is a director
  ┃ ┣ 📂 js
  ┃ ┃ ┣ 📂 badaso
  ┃ ┃ ┃ ┣ 📂 api
- ┃ ┃ ┃ ┃ ┣ 📂 modules /** you can add an API helper here **/
- ┃ ┃ ┃ ┃ ┃ ┗ 📜 example-api.js
+ ┃ ┃ ┃ ┃ ┗ 📜 example-api.js
 ```
 
 - Below is an example of HTTP request method that you can use.
@@ -34,25 +35,25 @@ example(data = {}) {
   let ep = '/example';
   let qs = QueryString(data);
   let url = ep + qs;
-  return resource.get(url);
+  return Vue.prototype.$resource.get(url);
 },
 ```
 <!--POST-->
 ```js
 example(data) {
-  return resource.post('/example', data);
+  return Vue.prototype.$resource.post('/example', data);
 },
 ```
 <!--PUT-->
 ```js
 example(data) {
-  return resource.put('/example', data);
+  return Vue.prototype.$resource.put('/example', data);
 },
 ```
 <!--PATCH-->
 ```js
 example(data) {
-  return resource.patch('/example', data);
+  return Vue.prototype.$resource.patch('/example', data);
 },
 ```
 <!--DELETE-->
@@ -61,7 +62,7 @@ example(data) {
   let paramData = {
     data: data,
   };
-  return resource.delete('/example', paramData);
+  return Vue.prototype.$resource.delete('/example', paramData);
 },
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->

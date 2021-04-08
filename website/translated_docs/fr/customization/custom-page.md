@@ -8,7 +8,7 @@ Badaso menggunakan framework VueJS untuk Frontend dan [Vue-Router](https://route
 
 ## Menambahkan Kustom Page
 
-- Untuk menambahkan page, tambahkan file ke dalam folder `custom-pages`.
+- Untuk menambahkan page, tambahkan file ke dalam folder `pages`.
     
 ```
 📦Your Project

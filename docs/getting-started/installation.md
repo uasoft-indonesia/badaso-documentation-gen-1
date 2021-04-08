@@ -118,7 +118,10 @@ php artisan db:seed --class=BadasoSeeder
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JavaScript-->
 ```js
-mix.js('resources/js/badaso/app.js', 'public/js/badaso.js')
+mix.js(
+    "vendor/uasoft-indonesia/badaso/src/resources/js/app.js",
+    "public/js/badaso.js"
+);
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
@@ -147,7 +150,6 @@ MIX_API_ROUTE_PREFIX=admin
 
 #Badaso provide Log Viewer feature. please set a route to access this feature
 MIX_LOG_VIEWER_ROUTE="log-viewer"
-
 ```
 :::important
 MIX_ADMIN_PANEL_ROUTE_PREFIX, MIX_API_ROUTE_PREFIX & MIX_LOG_VIEWER_ROUTE should be different

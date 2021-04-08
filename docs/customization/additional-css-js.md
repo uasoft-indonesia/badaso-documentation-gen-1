@@ -6,16 +6,15 @@ sidebar_label: Additional CSS and JS
 
 ## CSS
 
-You can add custom css in the `assets` directory as in the shown below. Each SCSS file that is created, must register or import to the style.scss file
+Badaso uses SCSS for styling. You can add custom css in the `scss` directory as in the shown below. You can directly create css in `custom.scss` or create new scss file and import it in `custom.scss`. Badaso only read `custom.scss`
 
 ```
 📦 Your Project
  ┣ 📂 resources
  ┃ ┣ 📂 js
  ┃ ┃ ┣ 📂 badaso
- ┃ ┃ ┃ ┣ 📂 assets
- ┃ ┃ ┃ ┃ ┣ 📂 scss /** register your style here **/
- ┃ ┃ ┃ ┃ ┃ ┗ 📜 example.scss
+ ┃ ┃ ┃ ┃ ┣ 📂 scss
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜 custom.scss
 ```
 
 ## JS

@@ -6,16 +6,15 @@ sidebar_label: Additional CSS and JS
 
 ## CSS
 
-Kamu dapat menambahkan css kustom di direktori `assets` seperti pada direktori di bawah ini. Setiap file SCSS yang dibuat, harus didaftarkan atau diimport ke file style.scss.
+Badaso menggunakan SCSS sebagai tool untuk pengaturan tampilan. Anda bisa menambahkan penyesuaian css di dalam direktori `scss` seperti struktur di bawah. Anda bisa langsung menambahkan css di dalam `custom.scss` atau membuat file scss baru dan import ke dalam `custom.scss`. Badaso hanya membaca file `custom.scs`.
 
 ```
 📦 Your Project
  ┣ 📂 resources
  ┃ ┣ 📂 js
  ┃ ┃ ┣ 📂 badaso
- ┃ ┃ ┃ ┣ 📂 assets
- ┃ ┃ ┃ ┃ ┣ 📂 scss /** register your style here **/
- ┃ ┃ ┃ ┃ ┃ ┗ 📜 example.scss
+ ┃ ┃ ┃ ┃ ┣ 📂 scss
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜 custom.scss
 ```
 
 ## JS

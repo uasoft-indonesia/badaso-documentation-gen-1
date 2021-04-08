@@ -193,10 +193,6 @@
         "title": "Overriding Page",
         "sidebar_label": "Overriding Page"
       },
-      "customization/version-1.0-overriding-view": {
-        "title": "Overriding View",
-        "sidebar_label": "Overriding View"
-      },
       "getting-started/configuration": {
         "title": "Configuration",
         "sidebar_label": "Configuration"

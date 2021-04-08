@@ -23,7 +23,7 @@ Badaso menyediakan bahasa inggris secara default untuk bahasa dari backend. Untu
 
 ## Frontend
 
-Untuk beberapa label pada frontent, juga menggunakan bahasa terpisah dari backend. Kode di bawah adalah struktur direktori bahasa di frontend. Bahasa pada frontend dapat di ubah melalui navbar header pada dashboard. Bahasa di frontend hanya mengubah label pada frontend, tidak termasuk response dari backend Badaso.
+Untuk beberapa label pada frontend, juga menggunakan bahasa terpisah dari backend. Kode di bawah adalah struktur direktori bahasa di frontend. Bahasa pada frontend dapat di ubah melalui navbar header pada dashboard. Bahasa di frontend hanya mengubah label pada frontend, tidak termasuk response dari backend Badaso.
 
 ```
 |-- your project

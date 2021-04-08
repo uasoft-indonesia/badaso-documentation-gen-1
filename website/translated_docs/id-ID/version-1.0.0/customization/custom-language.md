@@ -8,74 +8,41 @@ Badaso juga mendukung untuk kustomisasi bahasa. Badaso menggunakan plugin [Vue-i
 
 ## Menambahkan atau Override Bahasa
 
-- Untuk menambahkan bahasa, tambahkan ke direktori `custom_modules` atau `modules`.
-- Untuk mengganti (override) bahasa saat ini, tambahkan ke direktori `custom_modules`.
-
+Untuk menambahkan bahasa baru, anda bisa membuat file js di dalam direktori lang yang disediakan badaso seperti struktur dibawah. 
 ```
 📦 Your Project
  ┣ 📂 resources
  ┃ ┣ 📂 js
  ┃ ┃ ┣ 📂 badaso
  ┃ ┃ ┃ ┣ 📂 lang
- ┃ ┃ ┃ ┃ ┣ 📂 custom_modules /** you can add a language here or you can override
- ┃ ┃ ┃ ┃ ┃ ┃                    current translation here too **/
- ┃ ┃ ┃ ┃ ┃ ┣ 📜 en.js /** here I override the en locale **/
- ┃ ┃ ┃ ┃ ┃ ┗ 📜 example-lang.js
- ┃ ┃ ┃ ┃ ┣ 📂 modules /** you can add a language here too but not for override **/
- ┃ ┃ ┃ ┃ ┃ ┗ 📜 example-lang.js
+ ┃ ┃ ┃ ┃ ┣ 📜 lang.js /** Your lang here **/
 ```
 
-:::important
-Anda tidak dapat mengganti (override) bahasa di direktori `module` karena bahasa pada direktori ini akan di timpa setiap badaso diperbarui.
-:::
+File tersebut harus berisi 2 variable yang di eksport. Contoh: fr.js
+```
+export const label = 'France'
+export default {
+};
 
-- Daftarkan bahasa yang baru saja dibuat di store seperti struktur direktori dibawah ini.
+```
 
-:::warning
-badaso.js akan ditimpa bila perintah `vendor:publish --force` dijalankan.
-:::
+Variable defaulr adalah struktur object bahasa dan label adalah variable yang digunakan sebagai option pada dropdown pemilihan bahasa di dashboard.
+Bahasa yang ditambahkan akan otomatis terdaftar pada dropdown pemilihan bahasa.
 
+## Overriding Bahasa
+
+Badaso menyediakan bahasa Inggris dan Indonesia. Anda bisa menimpa label-label yang disediakan dengan membuat file id.js dan en.js di dalam direktori lang. Untuk ini, tidak diperlukan variable `label. Anda dapat menemukan struktur object lang badaso pada struktur dibawah.
 ```
 📦 Your Project
- ┣ 📂 resources
- ┃ ┣ 📂 js
- ┃ ┃ ┣ 📂 badaso
- ┃ ┃ ┃ ┣ 📂 store
- ┃ ┃ ┃ ┃ ┣ 📂 modules
- ┃ ┃ ┃ ┃ ┃ ┗ 📜 badaso.js /** register your language here **/
+ ┣ 📂 vendor
+ ┃ ┣ 📂 uasoft-indonesia
+ ┃ ┃ ┣  📂 badaso
+ ┃ ┃ ┃ ┣ 📂 src
+ ┃ ┃ ┃ ┃ ┣ 📂 resources
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂 js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂 lang
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂 modules
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜 id.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜 en.js
 ```
-
-<!--DOCUSAURUS_CODE_TABS-->
-<!--JavaScript-->
-```js
-import ...
-
-export default {
-  state: {
-    ...,
-    locale: [
-      {
-        key: "en",
-        label: "English",
-      },
-      {
-        key: "id",
-        label: "Indonesia",
-      },
-      {
-        key: "example-lang", /** register your language here **/
-        label: "Example Language" /** add label to your language **/
-      }
-    ],
-    selectedLocale: {
-      key: "en", /** you could also change the default locale **/
-      label: "English",
-    },
-    ...,
-  },
-  ...,
-};
-```
-<!--END_DOCUSAURUS_CODE_TABS-->
-
-- Anda dapat memilih dan menggunakan bahasa khusus yang baru saja ditambahkan pada app navigation bar.
+Ikuti struktur object untuk menimpa atau tambahkan property baru untuk menambahkan label baru

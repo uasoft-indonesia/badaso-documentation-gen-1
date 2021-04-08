@@ -12,7 +12,7 @@ Badaso berasumsi pengguna sudah paham dengan dasar vue. Maka dari itu Badaso tid
 Anda dapat melakukan override pada semua pages yang ada di dalam direktori `pages` kecuali `index.vue`
 :::
 
-## Overriding CRUD Generated Page 
+## Overriding CRUD Generated Page
 
 Berikut langkah-langkah untuk membuat custom view guna menyesuaikan tampilan dari CRUD Generated.
 
@@ -22,7 +22,7 @@ Berikut langkah-langkah untuk membuat custom view guna menyesuaikan tampilan dar
  ┣ 📂 resources
  ┃ ┣ 📂 js
  ┃ ┃ ┣ 📂 badaso
- ┃ ┃ ┃ ┣ 📂 custom_pages
+ ┃ ┃ ┃ ┣ 📂 pages
  ┃ ┃ ┃ ┃ ┣ 📂 {slug} /** put the override you want here, for example book-management **/
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 browse.vue
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 read.vue
@@ -38,7 +38,7 @@ Catatan:
 * add.vue: Tambahkan jika butuh mengubah tampilan halaman add.
 * sort.vue: Tambahkan jika butuh mengubah tampilan halaman pengurutan.
 
-## Overriding Pages
+## Overriding Badaso Default Pages
 
 Berikut langkah-langkah untuk membuat custom view guna menyesuaikan tampilan dari page kecuali CRUD Generated dan index.vue.
 
@@ -48,13 +48,27 @@ Berikut langkah-langkah untuk membuat custom view guna menyesuaikan tampilan dar
  ┣ 📂 resources
  ┃ ┣ 📂 js
  ┃ ┃ ┣ 📂 badaso
- ┃ ┃ ┃ ┣ 📂 custom_pages
- ┃ ┃ ┃ ┃ ┣ 📂 {pages} /** put the override you want here, for example database-management **/
+ ┃ ┃ ┃ ┣ 📂 pages
+ ┃ ┃ ┃ ┃ ┣ 📂 {badaso-pages} /** put the override you want here, for example database-management **/
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 browse.vue
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 read.vue
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 edit.vue
  ┃ ┃ ┃ ┃ ┃ ┣ 📜 add.vue
  ┃ ┃ ┃ ┃ ┃ ┗ 📜 sort.vue
+```
+
+Anda bisa menemukan `badaso-pages` pada
+
+```
+📦 Your Project
+ ┣ 📂 vendor
+ ┃ ┣ 📂 uasoft-indonesia
+ ┃ ┃ ┣  📂 badaso
+ ┃ ┃ ┃ ┣ 📂 src
+ ┃ ┃ ┃ ┃ ┣ 📂 resources
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂 js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂 pages
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂 {badaso-pages} /** HERE **/
 ```
 
 Catatan:

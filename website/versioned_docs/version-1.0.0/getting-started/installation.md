@@ -119,7 +119,10 @@ php artisan db:seed --class=BadasoSeeder
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JavaScript-->
 ```js
-mix.js('resources/js/badaso/app.js', 'public/js/badaso.js')
+mix.js(
+    "vendor/uasoft-indonesia/badaso/src/resources/js/app.js",
+    "public/js/badaso.js"
+);
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
