@@ -35,19 +35,3 @@ In the following display, there are several fields that must be filled in when c
 Each menu can be assigned one or more permissions. If the logged-in user has one of these permissions, the menu will appear in the sidebar. If this menu isn't paired with permissions, it will always appear.
 
 ![set-menu-item-permissions](assets/set-menu-item-permissions.png)
-
-```
-MIX_DEFAULT_MENU
-```
-
-On the frontend, the menus are loaded from the store.js file. Here's the directory structure for changing the menu API calls.
-
-```
-- your project
-    - resources
-        - js
-            - badaso
-                - store
-                    - store.js 
-                        - FETCH_MENU
-```

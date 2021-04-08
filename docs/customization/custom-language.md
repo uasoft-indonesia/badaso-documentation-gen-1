@@ -6,76 +6,43 @@ sidebar_label: Custom Language
 
 Badaso also supports for customization your language. Badaso uses the [Vue-i18n by Kazupon](https://kazupon.github.io/vue-i18n/) plugin for internationalization. The block below is a directory structure for adding a new language or for overridding current language translation.
 
-## Add or Override the Language
+## Add New Language
 
-- To add a language, add it to the `custom_modules` or `modules` directory.
-- To override current language, add it the the `custom_modules` directory.
-
+To add new languages, you can create file js in lang directory inside badaso directory like below.
 ```
-📦Your Project
- ┣ 📂resources
- ┃ ┣ 📂js
- ┃ ┃ ┣ 📂badaso
- ┃ ┃ ┃ ┣ 📂lang
- ┃ ┃ ┃ ┃ ┣ 📂custom_modules /** you can add a language here or you can override
- ┃ ┃ ┃ ┃ ┃ ┃                    current translation here too **/
- ┃ ┃ ┃ ┃ ┃ ┣ 📜en.js /** here I override the en locale **/
- ┃ ┃ ┃ ┃ ┃ ┗ 📜example-lang.js
- ┃ ┃ ┃ ┃ ┣ 📂modules /** you can add a language here too but not for override **/
- ┃ ┃ ┃ ┃ ┃ ┗ 📜example-lang.js
+📦 Your Project
+ ┣ 📂 resources
+ ┃ ┣ 📂 js
+ ┃ ┃ ┣ 📂 badaso
+ ┃ ┃ ┃ ┣ 📂 lang
+ ┃ ┃ ┃ ┃ ┣ 📜 lang.js /** Your lang here **/
 ```
 
-:::important
-You cannot override the language in the `module` directory because the language in this directory will be overwritten every time the badaso update.
-:::
-
-- Register your language in store in below directory structure.
-
-:::warning
-badaso.js will be overwritten if you call the command `vendor:publish --force`.
-:::
-
+The file must be containt 2 exported variable. Example: fr.js
 ```
-📦Your Project
- ┣ 📂resources
- ┃ ┣ 📂js
- ┃ ┃ ┣ 📂badaso
- ┃ ┃ ┃ ┣ 📂store
- ┃ ┃ ┃ ┃ ┣ 📂modules
- ┃ ┃ ┃ ┃ ┃ ┗ 📜badaso.js /** register your language here **/
-```
-
-<!--DOCUSAURUS_CODE_TABS-->
-<!--JavaScript-->
-```js
-import ...
-
+export const label = 'France'
 export default {
-  state: {
-    ...,
-    locale: [
-      {
-        key: "en",
-        label: "English",
-      },
-      {
-        key: "id",
-        label: "Indonesia",
-      },
-      {
-        key: "example-lang", /** register your language here **/
-        label: "Example Language" /** add label to your language **/
-      }
-    ],
-    selectedLocale: {
-      key: "en", /** you could also change the default locale **/
-      label: "English",
-    },
-    ...,
-  },
-  ...,
 };
-```
-<!--END_DOCUSAURUS_CODE_TABS-->
 
-- You can select and use the custom language that you add in app navigation bar.
+```
+
+Default variable is the object of languages and label is used for language select at dashboard.
+Your language will be registered into language select at dashboard panel automatically.
+
+## Override Existing Language
+Badaso provide English and Indonesia language. You can override this lang by create id.js and en.jd in lang directory. You dont need to specify const `label` here. 
+You can see default lang Badaso at
+```
+📦 Your Project
+ ┣ 📂 vendor
+ ┃ ┣ 📂 uasoft-indonesia
+ ┃ ┃ ┣  📂 badaso
+ ┃ ┃ ┃ ┣ 📂 src
+ ┃ ┃ ┃ ┃ ┣ 📂 resources
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂 js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂 lang
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂 modules
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜 id.js
+ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜 en.js
+```
+Follow the object structure or create new property to add new label.

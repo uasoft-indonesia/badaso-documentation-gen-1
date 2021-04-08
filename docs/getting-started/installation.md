@@ -42,8 +42,11 @@ composer require uasoft-indonesia/badaso
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```php
-Uasoft\Badaso\Providers\BadasoServiceProvider::class,
-Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+'providers' => [
+  ...,
+  Uasoft\Badaso\Providers\BadasoServiceProvider::class,
+  Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+]
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
@@ -52,8 +55,11 @@ Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 <!--DOCUSAURUS_CODE_TABS-->
 <!--PHP-->
 ```php
-'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
-'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+'aliases' => [
+  ...,
+  'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+  'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+]
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
@@ -112,74 +118,42 @@ php artisan db:seed --class=BadasoSeeder
 <!--DOCUSAURUS_CODE_TABS-->
 <!--JavaScript-->
 ```js
-mix.js('resources/js/badaso/app.js', 'public/js/badaso.js')
+mix.js(
+    "vendor/uasoft-indonesia/badaso/src/resources/js/app.js",
+    "public/js/badaso.js"
+);
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
 8. Open the ```env``` file then add the following lines and fill in the value of each value if needed.
 ```
-#REQUIRED. Set a key as secret key for generating JWT token
+#Set a key as secret key for generating JWT token
 JWT_SECRET=
 
-#OPTIONAL. Laravel file system driver, default public
-FILESYSTEM_DRIVER=
-
-#OPTIONAL. Set JWT Token lifetime, default 60 minutes
+#Set JWT Token lifetime, default 60 minutes
 BADASO_AUTH_TOKEN_LIFETIME=
 
-#REQUIRED. License key that can accuired in Badaso Dashbord
+#License key that can accuired in Badaso Dashbord
 BADASO_LICENSE_KEY=
 
-#REQUIRED. Set Route prefix for your dashboard. 
-#Access dashboard via {HOST}/{MIX_ADMIN_PANEL_ROUTE_PREFIX}
-MIX_ADMIN_PANEL_ROUTE_PREFIX=
-
-#REQUIRED. Set default menu to generate menu in dashboard. 
+#Set default menu to generate menu in dashboard. 
 #By default Badaso provide `admin` as default menu
-MIX_DEFAULT_MENU=
+MIX_DEFAULT_MENU=admin
 
-#REQUIRED. Set prefix for api that badaso provide. By default 
+#Set Route prefix for your dashboard. 
+#Access dashboard via {HOST}/{MIX_ADMIN_PANEL_ROUTE_PREFIX}
+MIX_ADMIN_PANEL_ROUTE_PREFIX=dashboard
+
+#Set prefix for api that badaso provide. By default 
 #Badaso provide `badaso-api` as prefix. 
-MIX_API_ROUTE_PREFIX=
+MIX_API_ROUTE_PREFIX=admin
 
-#REQUIRED. Badaso provide Log Viewer feature. please set a route 
-#to access this feature
-MIX_LOG_VIEWER_ROUTE=
-
-#OPTIONAL. Format to display date in UI
-MIX_DATE_FORMAT=
-
-#OPTIONAL. Format to display time in UI
-MIX_TIME_FORMAT=
-
-#OPTIONAL. Format to display datetime in UI
-MIX_DATETIME_FORMAT=
-
-#OPTIONAL. Set AWS credential if use aws as storage
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_DEFAULT_REGION=
-AWS_BUCKET=
-AWS_URL=
-
-#OPTIONAL. Set Google Drive credential if use Google Drive as storage
-GOOGLE_DRIVE_CLIENT_ID=
-GOOGLE_DRIVE_CLIENT_SECRET=
-GOOGLE_DRIVE_REFRESH_TOKEN=
-GOOGLE_DRIVE_FOLDER_ID=
-
-#OPTIONAL. Set Dropbox credential if use Dropbox as storage
-DROPBOX_AUTH_TOKEN=
-
-#OPTIONAL. Badaso provide backup feature. please fill variable below to 
-#use this feature.
-#fill with one of all,database,files, backup will not run if BACKUP_TARGET 
-#empty
-BACKUP_TARGET=
-#fill with many of s3,google,dropbox, backup will not run if BACKUP_TARGET 
-#empty
-BACKUP_DISK=
+#Badaso provide Log Viewer feature. please set a route to access this feature
+MIX_LOG_VIEWER_ROUTE="log-viewer"
 ```
+:::important
+MIX_ADMIN_PANEL_ROUTE_PREFIX, MIX_API_ROUTE_PREFIX & MIX_LOG_VIEWER_ROUTE should be different
+:::
 
 9. Add the following Badaso guard and auth provider in ```config/auth.php```. Make sure to use Badaso guard as auth default in ```config/auth.php```.
 <!--DOCUSAURUS_CODE_TABS-->
@@ -212,60 +186,7 @@ return [
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-11. Add the following line to the ```config/database.php```
-<!--DOCUSAURUS_CODE_TABS-->
-<!--PHP-->
-```php
-...,
-'connections' => [
-	'mysql' => [
-		'driver'    => 'mysql'
-		...,
-		'dump' => [
-		   'dump_binary_path' => env('DUMP_BINARY_PATH', 'C:\xampp\mysql\bin'),
-		   'use_single_transaction',
-		   'timeout' => 60 * 5, // 5 minute timeout
-		]  
-  ],
-...,
-```
-<!--END_DOCUSAURUS_CODE_TABS-->
-
-12. Add the following line to the ```config/filesystem.php```
-<!--DOCUSAURUS_CODE_TABS-->
-<!--PHP-->
-```php
-'disks' => [
-
-  ...,
-
-  's3' => [
-    'driver' => 's3',
-    'key' => env('AWS_ACCESS_KEY_ID'),
-    'secret' => env('AWS_SECRET_ACCESS_KEY'),
-    'region' => env('AWS_DEFAULT_REGION'),
-    'bucket' => env('AWS_BUCKET'),
-    'url' => env('AWS_URL'),
-  ],
-
-  'google' => [
-    'driver' => 'google',
-    'clientId' => env('GOOGLE_DRIVE_CLIENT_ID'),
-    'clientSecret' => env('GOOGLE_DRIVE_CLIENT_SECRET'),
-    'refreshToken' => env('GOOGLE_DRIVE_REFRESH_TOKEN'),
-    'folderId' => env('GOOGLE_DRIVE_FOLDER_ID'),
-  ],
-
-  'dropbox' => [
-    'driver' => 'dropbox',
-    'authorization_token' => env('DROPBOX_AUTH_TOKEN'),
-  ],
-
-],
-```
-<!--END_DOCUSAURUS_CODE_TABS-->
-
-13. The final step is creating an admin account by typing the following command.
+10. The final step is creating an admin account by typing the following command.
 ```
 php artisan badaso:admin your@email.com --create
 ```

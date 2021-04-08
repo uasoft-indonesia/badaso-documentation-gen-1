@@ -50,7 +50,9 @@
       "core-concept/helpers",
       "core-concept/multilanguage",
       "core-concept/commands",
-      "core-concept/database-management"
+      "core-concept/database-management",
+      "core-concept/auto-backup",
+      "core-concept/format-datetime"
     ],
     "Customization": [
       "customization/introduction",

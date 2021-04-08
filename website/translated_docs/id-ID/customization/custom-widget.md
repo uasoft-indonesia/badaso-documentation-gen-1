@@ -13,10 +13,10 @@ Badaso mendukung untuk membuat dan menampilkan widget pada halaman dashboard. Ba
 1. Buat sebuah file php pada folder `app\Widgets` (jika folder belum ada, maka buat folder terlebih dahulu). Lalu isi file tersebut dengan template berikut.
 
 ```
-📦Your Project
- ┣ 📂app
- ┃ ┣ 📂Widgets /** register your widget here **/
- ┃ ┃ ┗ 📜ExampleWidget.php
+📦 Your Project
+ ┣ 📂 app
+ ┃ ┣ 📂 Widgets /** register your widget here **/
+ ┃ ┃ ┗ 📜 ExampleWidget.php
 ```
 
 <!--DOCUSAURUS_CODE_TABS-->
