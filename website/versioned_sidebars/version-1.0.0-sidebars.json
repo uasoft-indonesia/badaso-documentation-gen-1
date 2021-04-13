@@ -44,6 +44,7 @@
       }
     ],
     "Core Concept": [
+      "version-1.0.0-core-concept/storage",
       "version-1.0.0-core-concept/routing",
       "version-1.0.0-core-concept/role-and-permissions",
       "version-1.0.0-core-concept/menu-builder",
