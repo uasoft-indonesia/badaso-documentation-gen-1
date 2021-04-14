@@ -10,22 +10,6 @@ To use Auto Backup, there is some config needs to setup.
 
 1. Setup ENV
 ```
-#OPTIONAL. Set AWS credential if use aws as storage
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_DEFAULT_REGION=
-AWS_BUCKET=
-AWS_URL=
-
-#OPTIONAL. Set Google Drive credential if use Google Drive as storage
-GOOGLE_DRIVE_CLIENT_ID=
-GOOGLE_DRIVE_CLIENT_SECRET=
-GOOGLE_DRIVE_REFRESH_TOKEN=
-GOOGLE_DRIVE_FOLDER_ID=
-
-#OPTIONAL. Set Dropbox credential if use Dropbox as storage
-DROPBOX_AUTH_TOKEN=
-
 #OPTIONAL. Badaso provide backup feature. please fill variable below to 
 #use this feature.
 #fill with one of all,database,files, backup will not run if BACKUP_TARGET 

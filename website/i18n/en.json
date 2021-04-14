@@ -45,6 +45,10 @@
         "title": "Site Management",
         "sidebar_label": "Site Management"
       },
+      "core-concept/storage": {
+        "title": "Storage",
+        "sidebar_label": "Storage"
+      },
       "crud/form-fields/checkbox": {
         "title": "Checkbox",
         "sidebar_label": "Checkbox"
@@ -256,6 +260,10 @@
       "version-1.0.0/core-concept/version-1.0.0-site-management": {
         "title": "Site Management",
         "sidebar_label": "Site Management"
+      },
+      "version-1.0.0/core-concept/version-1.0.0-storage": {
+        "title": "Storage",
+        "sidebar_label": "Storage"
       },
       "version-1.0.0/crud/form-fields/version-1.0.0-checkbox": {
         "title": "Checkbox",

@@ -43,6 +43,7 @@
       }
     ],
     "Core Concept": [
+      "core-concept/storage",
       "core-concept/routing",
       "core-concept/role-and-permissions",
       "core-concept/menu-builder",
