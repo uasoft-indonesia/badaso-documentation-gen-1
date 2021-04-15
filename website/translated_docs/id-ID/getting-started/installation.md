@@ -32,7 +32,7 @@ Setelah mendapatkan lisensi, anda dapat melanjutkan ke instalasi Badaso.
 1. Menginstal Badaso sangatlah mudah. Setelah laravel terinstal, kamu dapat menambahkan Badaso dengan perintah berikut ini.
 
 ```bash
-composer require uasoft-indonesia/badaso
+composer require uasoft-indonesia/badaso:^1.0@alpha
 ```
 
 2. Tambahkan Badaso provider dan JWT provider berikut ini pada ```config/app.php```.
