@@ -62,20 +62,16 @@ composer require uasoft-indonesia/badaso:^1.0@alpha
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-4. Jalankan perintah berikut ini secara berurutan.
+4. Jalankan perintah berikut untuk memperbarui dependensi pada package.json, webpack and publish provider vendor.
 ```
-php artisan vendor:publish --tag=Badaso
-php artisan vendor:publish --provider="Spatie\Backup\BackupServiceProvider"
-php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="migrations"
-php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="config"
+php artisan badaso:setup
+```
+
+5. Jalankan perintah berikut ini secara berurutan.
+```
 composer dump-autoload
 php artisan migrate
 php artisan db:seed --class=BadasoSeeder
-```
-
-5. Jalankan perintah berikut untuk memperbarui dependensi pada package.json dan webpack.
-```
-php artisan badaso:setup
 ```
 
 
