@@ -133,7 +133,3 @@ If possible, test any visual changes in all latest versions of the following bro
 1.  Go to the [badaso-documentation repo](https://github.com/uasoft-indonesia/badaso-documentation) and you should see recently pushed branches.
 1.  Follow GitHub's instructions.
 1.  Describe briefly your changes (in case of visual changes, please include screenshots).
-
-## 📄 License
-
-React Native is [MIT licensed](./LICENSE).
