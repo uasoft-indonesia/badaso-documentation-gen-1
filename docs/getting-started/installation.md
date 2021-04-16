@@ -68,20 +68,16 @@ Badaso is still in Alpha version. See the latest alpha version <a href="https://
 ```
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-4. Run the following commands in sequence.
+4. Run the following commands to update dependencies in package.json, webpack and publish vendor provider.
 ```
-php artisan vendor:publish --tag=Badaso
-php artisan vendor:publish --provider="Spatie\Backup\BackupServiceProvider"
-php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="migrations"
-php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="config"
+php artisan badaso:setup
+```
+
+5. Run the following commands in sequence.
+```
 composer dump-autoload
 php artisan migrate
 php artisan db:seed --class=BadasoSeeder
-```
-
-5. Run the following commands to update dependencies in package.json and webpack.
-```
-php artisan badaso:setup
 ```
 
 6. Open the ```env``` file then add the following lines and fill in the value of each value if needed.
