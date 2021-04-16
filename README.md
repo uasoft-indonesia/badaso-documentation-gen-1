@@ -1,4 +1,4 @@
-# [badaso-dosc.uatech.co.id](https://badaso-docs.uatech.co.id/) 
+# [badaso-docs.uatech.co.id](https://badaso-docs.uatech.co.id/) 
 
 This repo contains the website configuration and documentation powering the [Badaso docs](https://badaso-docs.uatech.co.id/).
 
