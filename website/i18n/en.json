@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "Laravel CRUD generator with SPA interface",
+    "tagline": "The First Open-Source Laravel Vue headless PWA CMS.",
     "docs": {
       "core-concept/auto-backup": {
         "title": "Auto Backup",
@@ -439,8 +439,7 @@
       }
     },
     "links": {
-      "Docs": "Docs",
-      "Help": "Help"
+      "Docs": "Docs"
     },
     "categories": {
       "Getting Started": "Getting Started",
@@ -450,14 +449,6 @@
     }
   },
   "pages-strings": {
-    "Learn more using the [documentation on this site.](/test-site/docs/en/doc1.html)|no description given": "Learn more using the [documentation on this site.](/test-site/docs/en/doc1.html)",
-    "Browse Docs|no description given": "Browse Docs",
-    "Ask questions about the documentation and project|no description given": "Ask questions about the documentation and project",
-    "Join the community|no description given": "Join the community",
-    "Find out what's new with this project|no description given": "Find out what's new with this project",
-    "Stay up to date|no description given": "Stay up to date",
-    "Need help?|no description given": "Need help?",
-    "This project is maintained by a dedicated group of people.|statement made to reader": "This project is maintained by a dedicated group of people.",
     "Get Started|no description given": "Get Started",
     "Badaso is admin interface allows you to create CRUD functionality to your posts, pages, or any other table in your database.|no description given": "Badaso is admin interface allows you to create CRUD functionality to your posts, pages, or any other table in your database.",
     "CRUD Generator|no description given": "CRUD Generator",
