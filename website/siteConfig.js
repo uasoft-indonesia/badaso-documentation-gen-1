@@ -9,69 +9,12 @@
 // site configuration options.
 
 // List of projects/orgs using your project for the users page.
-const users = [
-  {
-    caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-  {
-    caption: 'User2',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-  {
-    caption: 'User3',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-  {
-    caption: 'User4',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-  {
-    caption: 'User5',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-  {
-    caption: 'User6',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-  {
-    caption: 'User7',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-];
+const users = [];
 
 const siteConfig = {
   title: 'Badaso', // Title for your website.
-  tagline: 'Laravel CRUD generator with SPA interface',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
+  tagline: 'The First Open-Source Laravel Vue headless PWA CMS.',
+  url: 'http://badaso-docs.uatech.co.id', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -88,7 +31,7 @@ const siteConfig = {
   headerLinks: [
     { doc: 'getting-started/introduction', label: 'Docs' },
     // {doc: 'doc4', label: 'API'},
-    { page: 'help', label: 'Help' },
+    // { page: 'help', label: 'Help' },
     // {blog: false, label: 'Blog'},
   ],
 
@@ -98,11 +41,11 @@ const siteConfig = {
   /* path to images for header/footer */
   headerIcon: 'img/badaso.png',
   footerIcon: 'img/badaso.png',
-  favicon: 'img/badaso.png',
+  favicon: 'img/favicon.ico',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#2a62ff',
+    primaryColor: '#06bbd3',
     secondaryColor: '#2b4cab',
   },
 
@@ -110,7 +53,7 @@ const siteConfig = {
   /*
   fonts: {
     myFont: [
-      "Times New Roman",
+      ""Nunito Sans",sans-serif",
       "Serif"
     ],
     myOtherFont: [

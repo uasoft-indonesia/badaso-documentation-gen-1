@@ -31,17 +31,15 @@ class HomeSplash extends React.Component {
       </div>
     );
 
-    const Logo = (props) => (
-      <div className="projectLogo">
-        <img src={props.img_src} alt="Project Logo" />
-      </div>
-    );
-
     const ProjectTitle = (props) => (
       <h2 className="projectTitle has-text-weight-bold">
-        <div className="is-unselectable">{props.title}</div>
+        <div className="is-unselectable">
+          <div className="flex justifyContentCenter alignItemsCenter">
+            <img src={props.img_src} alt="Project Logo" className="customProjectLogo" /> 
+            <span className="customProjectTitle">Docs</span>
+          </div>
+        </div>
         <small>{props.tagline}</small>
-        <small></small>
       </h2>
     );
 
@@ -63,9 +61,8 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/badaso.png`} />
         <div className="inner">
-          <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
+          <ProjectTitle tagline={siteConfig.tagline} img_src={`${baseUrl}img/badaso.png`}/>
           <PromoSection>
             <Button href={docUrl('getting-started/introduction')}><translate>Get Started</translate></Button>
             {/* <Button href={docUrl('doc1.html')}>Example Link</Button>
@@ -99,8 +96,8 @@ class Index extends React.Component {
       let items = []
       props.contents.forEach((item, index) => {
         items.push(
-          <div class="blockElement has-zindex-100 alignCenter threeByGridBlock">
-            <div class="blockContent">
+          <div className="blockElement has-zindex-100 alignCenter threeByGridBlock">
+            <div className="blockContent">
               <Icon className="has-icon-big is-unselectable has-text-color-light">{item.icon}</Icon>
               <div>
                 <span className="has-text-weight-bold has-text-size-6 has-text-color-light">{item.content}</span>
@@ -118,7 +115,7 @@ class Index extends React.Component {
         padding={['bottom', 'top']}
         id={props.id}
         background={props.background}>
-        <div class="gridBlock has-position-relative">
+        <div className="gridBlock has-position-relative">
           <Item contents={props.children} />
         </div>
       </Container>
@@ -225,16 +222,16 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
-        <div className="mainContainer p-0">
+        {/* <div className="mainContainer p-0"> */}
           {/* <Features /> */}
           {/* <FeatureCallout /> */}
-          <BadasoIsAwesome />
+          {/* <BadasoIsAwesome />
           <BadasoCRUD />
           <Users />
-          <div style={{backgroundImage: 'url(' + baseUrl + 'img/badaso.png)', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}} class="has-background-overlay has-position-relative">
+          <div style={{backgroundImage: 'url(' + baseUrl + 'img/badaso.png)', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}} className="has-background-overlay has-position-relative">
             <Github className="has-primary-background" />
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     );
   }
