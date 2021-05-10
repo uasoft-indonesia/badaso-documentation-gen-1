@@ -53,7 +53,8 @@
       "core-concept/commands",
       "core-concept/database-management",
       "core-concept/auto-backup",
-      "core-concept/format-datetime"
+      "core-concept/format-datetime",
+      "core-concept/push-notification"
     ],
     "Customization": [
       "customization/introduction",

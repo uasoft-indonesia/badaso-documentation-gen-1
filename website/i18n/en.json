@@ -249,6 +249,10 @@
         "title": "Multilanguage",
         "sidebar_label": "Multilanguage"
       },
+      "version-1.0.0/core-concept/version-1.0.0-push-notification": {
+        "title": "Push Notification",
+        "sidebar_label": "Push Notification"
+      },
       "version-1.0.0/core-concept/version-1.0.0-role-and-permissions": {
         "title": "Role and Permissions",
         "sidebar_label": "Role and Permissions"
@@ -459,10 +463,6 @@
     "Badaso is Awesome|no description given": "Badaso is Awesome",
     "Who is Using Badaso?|no description given": "Who is Using Badaso?",
     "All Badaso Users|no description given": "All Badaso Users",
-    "Who is Using This?|no description given": "Who is Using This?",
-    "This project is used by many folks|no description given": "This project is used by many folks",
-    "Are you using this project?|no description given": "Are you using this project?",
-    "Add your company|no description given": "Add your company",
     "Badaso Versions|no description given": "Badaso Versions",
     "New versions of this project are released every so often.|no description given": "New versions of this project are released every so often.",
     "Current version (Stable)|no description given": "Current version (Stable)",
