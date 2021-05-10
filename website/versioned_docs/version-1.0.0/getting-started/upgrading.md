@@ -5,27 +5,32 @@ sidebar_label: Upgrading
 original_id: upgrading
 ---
 
-## Updating Existing Badaso
+## Update to latest badaso version
 
-Before updating the Badaso version, you should first backup the project. 
+:::important
+Before updating the Badaso version, you should first backup / commit the project. 
+:::
 
-Publish all files from Badaso and overwrite the previously published ones.
+1. Update badaso to latest version with command below
 
-```php artisan vendor:publish --tag=Badaso --force```
+```composer update uasoft-indonesia/badaso```
 
-Publish only seeder files from Badaso and overwrite seeders that were previously published.
+2. Run command below for setup project to latest badaso version configuration
 
-```php artisan vendor:publish --tag=BadasoSeeder --force```
-
-Publish only config files from badaso and overwrite previously published config.
-
-```php artisan vendor:publish --tag=BadasoConfig --force```
-
-Publish only resource files from badaso, and overwrite previously published resources.
-Resource files include vue file, lang file and assets.
-
-```php artisan vendor:publish --tag=BadasoResource --force```
+```php artisan badaso:setup --force```
 
 :::important
 --force is used to overwrite previously published ones. Don't use --force if you only want to publish unpublished files.
 :::
+
+3. Migrate database if available
+
+```php artisan migrate```
+
+4. Re-seed badaso 
+
+```php artisan db:seed --class=BadasoSeeder```
+
+5. Install new Javascript packages if available 
+
+```npm install```
