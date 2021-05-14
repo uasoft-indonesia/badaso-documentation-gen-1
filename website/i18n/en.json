@@ -5,6 +5,10 @@
     "previous": "Previous",
     "tagline": "The First Open-Source Laravel Vue headless PWA CMS.",
     "docs": {
+      "core-concept/analytics": {
+        "title": "Analytics",
+        "sidebar_label": "Analytics"
+      },
       "core-concept/auto-backup": {
         "title": "Auto Backup",
         "sidebar_label": "Auto Backup"
@@ -32,6 +36,10 @@
       "core-concept/multilanguage": {
         "title": "Multilanguage",
         "sidebar_label": "Multilanguage"
+      },
+      "core-concept/plugins": {
+        "title": "Plugins",
+        "sidebar_label": "Plugins"
       },
       "core-concept/role-and-permissions": {
         "title": "Role and Permissions",
@@ -221,6 +229,10 @@
         "title": "What is Badaso",
         "sidebar_label": "What is Badaso"
       },
+      "version-1.0.0/core-concept/version-1.0.0-analytics": {
+        "title": "Analytics",
+        "sidebar_label": "Analytics"
+      },
       "version-1.0.0/core-concept/version-1.0.0-auto-backup": {
         "title": "Auto Backup",
         "sidebar_label": "Auto Backup"
@@ -248,6 +260,10 @@
       "version-1.0.0/core-concept/version-1.0.0-multilanguage": {
         "title": "Multilanguage",
         "sidebar_label": "Multilanguage"
+      },
+      "version-1.0.0/core-concept/version-1.0.0-plugins": {
+        "title": "Plugins",
+        "sidebar_label": "Plugins"
       },
       "version-1.0.0/core-concept/version-1.0.0-role-and-permissions": {
         "title": "Role and Permissions",

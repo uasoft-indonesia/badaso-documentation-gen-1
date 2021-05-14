@@ -53,7 +53,9 @@
       "core-concept/commands",
       "core-concept/database-management",
       "core-concept/auto-backup",
-      "core-concept/format-datetime"
+      "core-concept/format-datetime",
+      "core-concept/plugins",
+      "core-concept/analytics"
     ],
     "Customization": [
       "customization/introduction",
