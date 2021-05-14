@@ -265,6 +265,10 @@
         "title": "Plugins",
         "sidebar_label": "Plugins"
       },
+      "version-1.0.0/core-concept/version-1.0.0-push-notification": {
+        "title": "Push Notification",
+        "sidebar_label": "Push Notification"
+      },
       "version-1.0.0/core-concept/version-1.0.0-role-and-permissions": {
         "title": "Role and Permissions",
         "sidebar_label": "Role and Permissions"
