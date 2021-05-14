@@ -55,6 +55,8 @@
       "version-1.0.0-core-concept/database-management",
       "version-1.0.0-core-concept/auto-backup",
       "version-1.0.0-core-concept/format-datetime",
+      "version-1.0.0-core-concept/plugins",
+      "version-1.0.0-core-concept/analytics",
       "version-1.0.0-core-concept/push-notification"
     ],
     "Customization": [

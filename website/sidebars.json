@@ -54,6 +54,8 @@
       "core-concept/database-management",
       "core-concept/auto-backup",
       "core-concept/format-datetime",
+      "core-concept/plugins",
+      "core-concept/analytics",
       "core-concept/push-notification"
     ],
     "Customization": [
